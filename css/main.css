@@ -35,7 +35,14 @@ body{
     cursor:pointer;
 }
 
+.startString{
+    color:white;
+    text-align: center;
+    padding-top: 3%;
+}
 
+
+/* Class Icon CSS */
 .druidClass{
     background-image: url("../images/class icons/classicon_druid.jpg");
     background-repeat: no-repeat;
@@ -93,26 +100,26 @@ body{
 
 
 
-/* Tri-panel CSS*/
+/* Tri-panel CSS */
 .column1{
     float: left;
     width: 204px;
     height: 404px;
-    background-image: url("../images/spec backgrounds/background-druid-balance.jpg");
+    background-image: none;
     background-size: 100% 100%;
 }
 .column2{
     float: left;
     width: 204px;
     height: 404px;
-    background-image: url("../images/spec backgrounds/background-druid-feral-combat.jpg");
+    background-image: none;
     background-size: 100% 100%;
 }
 .column3{
     float: left;
     width: 204px;
     height: 404px;
-    background-image: url("../images/spec backgrounds/background-druid-restoration.jpg");
+    background-image: none;
     background-size: 100% 100%;
 }
 .row:after{

@@ -1,9 +1,10 @@
 function classSwap(classID) {
 
-    var column1 = document.getElementById("column1")
-    var column2 = document.getElementById("column2")
-    var column3 = document.getElementById("column3")
+    var column1 = document.getElementById("column1");
+    var column2 = document.getElementById("column2");
+    var column3 = document.getElementById("column3");
 
+    document.getElementById("startString").innerHTML = "";
 
 
     if(classID == "druidIcon"){
