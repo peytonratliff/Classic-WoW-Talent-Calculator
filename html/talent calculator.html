@@ -6,6 +6,7 @@
         <title>Classic WoW Talent Calculator</title>
         <link href="../css/main.css" rel="stylesheet" type="text/css">
         <script src=../js/iconDiscovery.js></script>
+        <script src=../js/classSwap.js></script>
     </head>
 
     <body onLoad="iconDiscovery()">
@@ -17,15 +18,15 @@
         <section class="flexBox">
 
             <div>
-                <img src="../images/icon borders/icon_border_noglow.png" class="icon druidClass" id="druidIcon">
-                <img src="../images/icon borders/icon_border_noglow.png" class="icon hunterClass" id="hunterIcon">
-                <img src="../images/icon borders/icon_border_noglow.png" class="icon mageClass" id="mageIcon">
-                <img src="../images/icon borders/icon_border_noglow.png" class="icon paladinClass" id="paladinIcon">
-                <img src="../images/icon borders/icon_border_noglow.png" class="icon priestClass" id="priestIcon">
-                <img src="../images/icon borders/icon_border_noglow.png" class="icon rogueClass" id="rogueIcon">
-                <img src="../images/icon borders/icon_border_noglow.png" class="icon shamanClass" id="shamanIcon">
-                <img src="../images/icon borders/icon_border_noglow.png" class="icon warlockClass" id="warlockIcon">
-                <img src="../images/icon borders/icon_border_noglow.png" class="icon warriorClass" id="warriorIcon">
+                <img src="../images/icon borders/icon_border_noglow.png" class="icon druidClass" id="druidIcon" onclick="classSwap(this.id)">
+                <img src="../images/icon borders/icon_border_noglow.png" class="icon hunterClass" id="hunterIcon" onclick="classSwap(this.id)">
+                <img src="../images/icon borders/icon_border_noglow.png" class="icon mageClass" id="mageIcon" onclick="classSwap(this.id)">
+                <img src="../images/icon borders/icon_border_noglow.png" class="icon paladinClass" id="paladinIcon" onclick="classSwap(this.id)">
+                <img src="../images/icon borders/icon_border_noglow.png" class="icon priestClass" id="priestIcon" onclick="classSwap(this.id)">
+                <img src="../images/icon borders/icon_border_noglow.png" class="icon rogueClass" id="rogueIcon" onclick="classSwap(this.id)">
+                <img src="../images/icon borders/icon_border_noglow.png" class="icon shamanClass" id="shamanIcon" onclick="classSwap(this.id)">
+                <img src="../images/icon borders/icon_border_noglow.png" class="icon warlockClass" id="warlockIcon" onclick="classSwap(this.id)">
+                <img src="../images/icon borders/icon_border_noglow.png" class="icon warriorClass" id="warriorIcon" onclick="classSwap(this.id)">
             </div>
 
         </section>
@@ -33,13 +34,13 @@
         <section class="flexBox">
             
             <div class="row">
-                <div class="column1">
+                <div class="column1" id="column1">
                     <p></p>
                 </div>
-                <div class="column2">
+                <div class="column2" id="column2">
                     <p></p>
                 </div>
-                <div class="column3">
+                <div class="column3" id="column3">
                     <p></p>
                 </div>
             </div>

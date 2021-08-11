@@ -98,21 +98,21 @@ body{
     float: left;
     width: 204px;
     height: 404px;
-    background: url("../images/spec backgrounds/background-druid-balance.jpg");
+    background-image: url("../images/spec backgrounds/background-druid-balance.jpg");
     background-size: 100% 100%;
 }
 .column2{
     float: left;
     width: 204px;
     height: 404px;
-    background: url("../images/spec backgrounds/background-druid-feral-combat.jpg");
+    background-image: url("../images/spec backgrounds/background-druid-feral-combat.jpg");
     background-size: 100% 100%;
 }
 .column3{
     float: left;
     width: 204px;
     height: 404px;
-    background: url("../images/spec backgrounds/background-druid-restoration.jpg");
+    background-image: url("../images/spec backgrounds/background-druid-restoration.jpg");
     background-size: 100% 100%;
 }
 .row:after{
