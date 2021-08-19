@@ -11,8 +11,6 @@ function classSwap(classID) {
         column1.style.backgroundImage = "url('../images/spec backgrounds/background-druid-balance.jpg')";
         column2.style.backgroundImage = "url('../images/spec backgrounds/background-druid-feral-combat.jpg')";
         column3.style.backgroundImage = "url('../images/spec backgrounds/background-druid-restoration.jpg')";
-
-        buildDruid();
     }
     else if(classID == "hunter"){
         column1.style.backgroundImage = "url('../images/spec backgrounds/background-hunter-beast-mastery.jpg')";
@@ -58,66 +56,35 @@ function classSwap(classID) {
         alert("Something went wrong");
     }
 
+    fetch('https://peytonratliff.github.io/classicWoWxml/' + classID + ".xml")
+    .then(function(resp){
+        return resp.text();
+    })
+    .then(function(data){
+        let parser = new DOMParser(),
+            xmlDoc = parser.parseFromString(data, 'text/xml');
+        build(xmlDoc, classID);
+    });
 }
 
-function buildDruid(){
-    var spec1row1col1 = document.getElementById("spec1row1col1icon");
-    var spec1row1col2 = document.getElementById("spec1row1col2icon");
-    var spec1row1col3 = document.getElementById("spec1row1col3icon");
-    var spec1row1col4 = document.getElementById("spec1row1col4icon");
+function build(xmlDoc, classID){
+    console.log(xmlDoc.getElementsByTagName(classID));
 
-    //Build spec1row1col1 Improved Wrath
-    spec1row1col1.style.display = "block";
-    spec1row1col1.style.backgroundImage = "url('../images/spell icons/druid/talents/improved_wrath.jpg')";
-    spec1row1col1.style.backgroundRepeat = "no-repeat";
-    spec1row1col1.style.backgroundSize = "34px 34px";
-    spec1row1col1.style.backgroundPosition = "center center";
+    let spec1 = xmlDoc.querySelectorAll('spec1');
+    console.log(spec1[0].children[0].children[0].innerHTML);
 
-    //Build spec1row1col2 Nature's Grasp
-    spec1row1col2.style.display = "block";
-    spec1row1col2.style.backgroundImage = "url('../images/spell icons/druid/talents/natures_grasp.jpg')";
-    spec1row1col2.style.backgroundRepeat = "no-repeat";
-    spec1row1col2.style.backgroundSize = "34px 34px";
-    spec1row1col2.style.backgroundPosition = "center center";
-
-    //Build spec1row1col3 Improves Nature's Grasp
-    spec1row1col3.style.display = "block";
-    spec1row1col3.style.backgroundImage = "url('../images/spell icons/druid/talents/improved_wrath.jpg')";
-    spec1row1col3.style.backgroundRepeat = "no-repeat";
-    spec1row1col3.style.backgroundSize = "34px 34px";
-    spec1row1col3.style.backgroundPosition = "center center";
-
-    //Build spec1row1col4 EMPTY
-}
-
-function buildHunter(){
-
-}
-
-function buildMage(){
-
-}
-
-function buildPaladin(){
-
-}
-
-function buildPriest(){
-
-}
-
-function buildRogue(){
-
-}
-
-function buildShaman(){
-
-}
-
-function buildWarlock(){
-
-}
-
-function buildWarrior(){
+    //Build Spec 1:
+    if(spec1[0].children[0].children[0].innerHTML == "true"){
+        console.log("slot 1 is active")
+    }
+    if(spec1[0].children[1].children[0].innerHTML == "true"){
+        console.log("slot 2 is active")
+    }
+    if(spec1[0].children[2].children[0].innerHTML == "true"){
+        console.log("slot 3 is active")
+    }
+    if(spec1[0].children[3].children[0].innerHTML == "true"){
+        console.log("slot 4 is active")
+    }
 
 }
