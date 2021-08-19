@@ -70,7 +70,22 @@ function classSwap(classID) {
 function build(xmlDoc, classID){
     console.log(xmlDoc.getElementsByTagName(classID));
 
-    var cellEdit = document.getElementById("row1col1");
+    let spec1 = xmlDoc.querySelectorAll('spec1');
+    //console.log(spec1[0].children[0].children[0].innerHTML);
 
-    // cellEdit = xmlDoc.get
+    for (var i = 1; i <= 4; i++){
+        var cellEdit = document.getElementById("row1col" + i);
+        var counter = 0; //Problem here, this sets counter to 0 despite ++
+
+        if(spec1[0].children[0].children[0].innerHTML == "true"){
+
+            //cellEdit.innerHTML = spec1[0].children[0].children[1].innerHTML;
+            cellEdit.innerHTML = counter;
+        }
+        else{
+            console.log("error")
+        }
+        console.log(counter);
+        counter++; //Problem here, see above
+    }
 }
