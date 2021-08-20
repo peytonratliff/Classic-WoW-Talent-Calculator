@@ -31,12 +31,12 @@ body{
     margin-left: 2px;
     margin-right: 2px;
 }
-.dontDisplay{
-    display: none;
-}
-
 .icon:hover{
     cursor:pointer;
+}
+
+.dontDisplay{
+    display: none;
 }
 
 .startString{
@@ -152,4 +152,33 @@ td{
     content: "";
     display: table;
     clear: both;
+}
+
+/* Spec Label CSS */
+.column {
+    float: left;
+    width: 204px;
+    height: 70px;
+}
+
+.specBarCenter{
+    padding-top: 5px;
+    width: 42px;
+    height: 42px;
+    margin-left: 30px;
+    margin-right: 2px;
+    float: left;
+}
+
+.specName{
+    color: white;
+    float: left;
+    margin-top: 15px;
+}
+
+.pointTotal{
+    color: white;
+    float: left;
+    margin-top: 15px;
+    padding-left: 5px;
 }

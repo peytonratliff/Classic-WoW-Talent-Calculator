@@ -5,11 +5,10 @@
     <head>
         <title>Classic WoW Talent Calculator</title>
         <link href="../css/main.css" rel="stylesheet" type="text/css">
-        <script src=../js/iconDiscovery.js></script>
         <script src=../js/classSwap.js></script>
     </head>
 
-    <body onLoad="iconDiscovery()">
+    <body>
 
         <section class="whitespace flexbox">
             <p class="startString" id="startString">Select a class to begin</p>
@@ -174,6 +173,29 @@
                 </div>
             </div>
 
+        </section>
+
+        <section class="flexBox">
+            <div class="row" id="specBar" style="display: none;">
+                <div class="column">
+                    <img class="specBarCenter" id="spec1icon" src="../images/icon borders/icon_border_noglow.png">
+                    <p class="specName" id="spec1name">SpecName</p>
+                    <p class="pointTotal">:</p>
+                    <p class="pointTotal" id="spec1total">0</p>
+                </div>
+                <div class="column">
+                    <img class="specBarCenter" id="spec2icon" src="../images/icon borders/icon_border_noglow.png">
+                    <p class="specName" id="spec2name">SpecName</p>
+                    <p class="pointTotal">:</p>
+                    <p class="pointTotal" id="spec2total">0</p>
+                </div>
+                <div class="column">
+                    <img class="specBarCenter" id="spec3icon" src="../images/icon borders/icon_border_noglow.png">
+                    <p class="specName" id="spec3name">SpecName</p>
+                    <p class="pointTotal">:</p>
+                    <p class="pointTotal" id="spec3total">0</p>
+                </div>
+              </div>
         </section>
 
     </body>
