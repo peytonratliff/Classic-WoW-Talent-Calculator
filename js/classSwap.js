@@ -1,3 +1,5 @@
+const arrowArray = [];
+
 function classSwap(classID) {
 
     var column1 = document.getElementById("column1");
@@ -10,7 +12,6 @@ function classSwap(classID) {
     column1.style.border = "1px solid gray";
     column2.style.border = "1px solid gray";
     column3.style.border = "1px solid gray";
-
 
 
     //The swap of the background should probably be moved to the respective class functions
@@ -84,12 +85,18 @@ function classSwap(classID) {
 }
 
 function buildDruid(){
+    removeArrows(); //Arrows are built every time a new class is selected. The removeArrows() funtion clears the arrows from the previous selection
+
     var spec1row1col1 = document.getElementById("spec1row1col1icon");
     var spec1row1col2 = document.getElementById("spec1row1col2icon");
     var spec1row1col3 = document.getElementById("spec1row1col3icon");
     var spec1row1col4 = document.getElementById("spec1row1col4icon");
+    var spec1row2col1 = document.getElementById("spec1row2col1icon");
+    var spec1row2col2 = document.getElementById("spec1row2col2icon");
+    var spec1row2col3 = document.getElementById("spec1row2col3icon");
+    var spec1row2col4 = document.getElementById("spec1row1col4icon");
 
-    //Show specBar
+    //Build specBar
     var spec1icon = document.getElementById("spec1icon");
     var spec2icon = document.getElementById("spec2icon");
     var spec3icon = document.getElementById("spec3icon");
@@ -97,15 +104,15 @@ function buildDruid(){
     var spec2name = document.getElementById("spec2name");
     var spec3name = document.getElementById("spec3name");
     specBar.style.display = "block";
-    spec1icon.style.backgroundImage = "url('../images/class icons/spec icons/druid/balance.jpg')"
+    spec1icon.style.backgroundImage = "url('../images/class icons/spec icons/druid/balance.jpg')";
         spec1icon.style.backgroundRepeat = "no-repeat";
         spec1icon.style.backgroundSize = "34px 34px";
         spec1icon.style.backgroundPosition = "center center";
-    spec2icon.style.backgroundImage = "url('../images/class icons/spec icons/druid/feralcombat.jpg')"
+    spec2icon.style.backgroundImage = "url('../images/class icons/spec icons/druid/feralcombat.jpg')";
         spec2icon.style.backgroundRepeat = "no-repeat";
         spec2icon.style.backgroundSize = "34px 34px";
         spec2icon.style.backgroundPosition = "center center";
-    spec3icon.style.backgroundImage = "url('../images/class icons/spec icons/druid/restoration.jpg')"
+    spec3icon.style.backgroundImage = "url('../images/class icons/spec icons/druid/restoration.jpg')";
         spec3icon.style.backgroundRepeat = "no-repeat";
         spec3icon.style.backgroundSize = "34px 34px";
         spec3icon.style.backgroundPosition = "center center";
@@ -129,8 +136,23 @@ function buildDruid(){
     spec1row1col2.style.backgroundSize = "34px 34px";
     spec1row1col2.style.backgroundPosition = "center center";
     spec1row1col2.style.filter = "grayscale(100%)";
+        //Build arrow
+        var spec1row1col2div = document.createElement('div');
+        spec1row1col2div.style.maxHeight = "0px";
+        spec1row1col2div.style.position = "absolute";
+        spec1row1col2div.id = "spec1row1col2div";
+        document.getElementById('spec1row1col2').appendChild(spec1row1col2div);
+        var spec1row1col2arrow = document.createElement('img');
+        spec1row1col2arrow.src = '../images/table elements/arrow_direct_right.png';
+        document.getElementById('spec1row1col2div').appendChild(spec1row1col2arrow);
+        spec1row1col2arrow.style.position = "relative";
+        spec1row1col2arrow.style.top = "-31px"
+        spec1row1col2arrow.style.left = "43px"
+        spec1row1col2arrow.style.zIndex += 1;
+        arrowArray.push(spec1row1col2div, spec1row1col2arrow);
+        console.log(arrowArray);
 
-    //Build spec1row1col3 Improves Nature's Grasp
+    //Build spec1row1col3 Improved Nature's Grasp
     spec1row1col3.style.display = "block";
     spec1row1col3.style.backgroundImage = "url('../images/spell icons/druid/talents/improved_natures_grasp.jpg')";
     spec1row1col3.style.backgroundRepeat = "no-repeat";
@@ -140,15 +162,49 @@ function buildDruid(){
 
     //Build spec1row1col4 EMPTY
     spec1row1col4.style.display = "none";
+
+    //Build spec1row2col1 Improved Entangling Roots
+    spec1row2col1.style.display = "block";
+    spec1row2col1.style.backgroundImage = "url('../images/spell icons/druid/talents/improved_entangling_roots.jpg')";
+    spec1row2col1.style.backgroundRepeat = "no-repeat";
+    spec1row2col1.style.backgroundSize = "34px 34px";
+    spec1row2col1.style.backgroundPosition = "center center";
+    spec1row2col1.style.filter = "grayscale(100%)";
+
+    //Build spec1row2col2 Improved Moonfire
+    spec1row2col2.style.display = "block";
+    spec1row2col2.style.backgroundImage = "url('../images/spell icons/druid/talents/improved_moonfire.jpg')";
+    spec1row2col2.style.backgroundRepeat = "no-repeat";
+    spec1row2col2.style.backgroundSize = "34px 34px";
+    spec1row2col2.style.backgroundPosition = "center center";
+    spec1row2col2.style.filter = "grayscale(100%)";
+
+    //Build spec1row2col3 Natural Weapons
+    spec1row2col3.style.display = "block";
+    spec1row2col3.style.backgroundImage = "url('../images/spell icons/druid/talents/natural_weapons.jpg')";
+    spec1row2col3.style.backgroundRepeat = "no-repeat";
+    spec1row2col3.style.backgroundSize = "34px 34px";
+    spec1row2col3.style.backgroundPosition = "center center";
+    spec1row2col3.style.filter = "grayscale(100%)";
+
+    //Build spec1row2col4 Natural Shapeshifter
+    spec1row2col3.style.display = "block";
+    spec1row2col3.style.backgroundImage = "url('../images/spell icons/druid/talents/natural_shapeshifter.jpg')";
+    spec1row2col3.style.backgroundRepeat = "no-repeat";
+    spec1row2col3.style.backgroundSize = "34px 34px";
+    spec1row2col3.style.backgroundPosition = "center center";
+    spec1row2col3.style.filter = "grayscale(100%)";
 }
 
 function buildHunter(){
+    removeArrows();
+
     var spec1row1col1 = document.getElementById("spec1row1col1icon");
     var spec1row1col2 = document.getElementById("spec1row1col2icon");
     var spec1row1col3 = document.getElementById("spec1row1col3icon");
     var spec1row1col4 = document.getElementById("spec1row1col4icon");
 
-    //Show specBar
+    //Build specBar
     var spec1icon = document.getElementById("spec1icon");
     var spec2icon = document.getElementById("spec2icon");
     var spec3icon = document.getElementById("spec3icon");
@@ -156,15 +212,15 @@ function buildHunter(){
     var spec2name = document.getElementById("spec2name");
     var spec3name = document.getElementById("spec3name");
     specBar.style.display = "block";
-    spec1icon.style.backgroundImage = "url('../images/class icons/spec icons/hunter/beastmastery.jpg')"
+    spec1icon.style.backgroundImage = "url('../images/class icons/spec icons/hunter/beastmastery.jpg')";
         spec1icon.style.backgroundRepeat = "no-repeat";
         spec1icon.style.backgroundSize = "34px 34px";
         spec1icon.style.backgroundPosition = "center center";
-    spec2icon.style.backgroundImage = "url('../images/class icons/spec icons/hunter/marksmanship.jpg')"
+    spec2icon.style.backgroundImage = "url('../images/class icons/spec icons/hunter/marksmanship.jpg')";
         spec2icon.style.backgroundRepeat = "no-repeat";
         spec2icon.style.backgroundSize = "34px 34px";
         spec2icon.style.backgroundPosition = "center center";
-    spec3icon.style.backgroundImage = "url('../images/class icons/spec icons/hunter/survival.jpg')"
+    spec3icon.style.backgroundImage = "url('../images/class icons/spec icons/hunter/survival.jpg')";
         spec3icon.style.backgroundRepeat = "no-repeat";
         spec3icon.style.backgroundSize = "34px 34px";
         spec3icon.style.backgroundPosition = "center center";
@@ -222,4 +278,11 @@ function buildWarlock(){
 
 function buildWarrior(){
 
+}
+
+function removeArrows(){
+    for (let i = arrowArray.length; i > 0; i--){
+        arrowArray[0].remove();
+        arrowArray.shift()
+    }
 }
