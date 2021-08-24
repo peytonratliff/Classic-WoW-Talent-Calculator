@@ -356,6 +356,12 @@ function buildDruid(){
     spec1row7col2.style.backgroundSize = "34px 34px";
     spec1row7col2.style.backgroundPosition = "center center";
     spec1row7col2.style.filter = "grayscale(100%)";
+
+    //Build spec1row7col3 EMPTY
+    spec1row7col3.style.display = "none";
+
+    //Build spec1row7col4 EMPTY
+    spec1row7col4.style.display = "none";
 }
 
 function buildHunter(){
