@@ -116,6 +116,64 @@ function buildDruid(){
     var spec1row7col3 = document.getElementById("spec1row7col3icon");
     var spec1row7col4 = document.getElementById("spec1row7col4icon");
 
+    var spec2row1col1 = document.getElementById("spec2row1col1icon");
+    var spec2row1col2 = document.getElementById("spec2row1col2icon");
+    var spec2row1col3 = document.getElementById("spec2row1col3icon");
+    var spec2row1col4 = document.getElementById("spec2row1col4icon");
+    var spec2row2col1 = document.getElementById("spec2row2col1icon");
+    var spec2row2col2 = document.getElementById("spec2row2col2icon");
+    var spec2row2col3 = document.getElementById("spec2row2col3icon");
+    var spec2row2col4 = document.getElementById("spec2row2col4icon");
+    var spec2row3col1 = document.getElementById("spec2row3col1icon");
+    var spec2row3col2 = document.getElementById("spec2row3col2icon");
+    var spec2row3col3 = document.getElementById("spec2row3col3icon");
+    var spec2row3col4 = document.getElementById("spec2row3col4icon");
+    var spec2row4col1 = document.getElementById("spec2row4col1icon");
+    var spec2row4col2 = document.getElementById("spec2row4col2icon");
+    var spec2row4col3 = document.getElementById("spec2row4col3icon");
+    var spec2row4col4 = document.getElementById("spec2row4col4icon");
+    var spec2row5col1 = document.getElementById("spec2row5col1icon");
+    var spec2row5col2 = document.getElementById("spec2row5col2icon");
+    var spec2row5col3 = document.getElementById("spec2row5col3icon");
+    var spec2row5col4 = document.getElementById("spec2row5col4icon");
+    var spec2row6col1 = document.getElementById("spec2row6col1icon");
+    var spec2row6col2 = document.getElementById("spec2row6col2icon");
+    var spec2row6col3 = document.getElementById("spec2row6col3icon");
+    var spec2row6col4 = document.getElementById("spec2row6col4icon");
+    var spec2row7col1 = document.getElementById("spec2row7col1icon");
+    var spec2row7col2 = document.getElementById("spec2row7col2icon");
+    var spec2row7col3 = document.getElementById("spec2row7col3icon");
+    var spec2row7col4 = document.getElementById("spec2row7col4icon");
+
+    var spec3row1col1 = document.getElementById("spec3row1col1icon");
+    var spec3row1col2 = document.getElementById("spec3row1col2icon");
+    var spec3row1col3 = document.getElementById("spec3row1col3icon");
+    var spec3row1col4 = document.getElementById("spec3row1col4icon");
+    var spec3row2col1 = document.getElementById("spec3row2col1icon");
+    var spec3row2col2 = document.getElementById("spec3row2col2icon");
+    var spec3row2col3 = document.getElementById("spec3row2col3icon");
+    var spec3row2col4 = document.getElementById("spec3row2col4icon");
+    var spec3row3col1 = document.getElementById("spec3row3col1icon");
+    var spec3row3col2 = document.getElementById("spec3row3col2icon");
+    var spec3row3col3 = document.getElementById("spec3row3col3icon");
+    var spec3row3col4 = document.getElementById("spec3row3col4icon");
+    var spec3row4col1 = document.getElementById("spec3row4col1icon");
+    var spec3row4col2 = document.getElementById("spec3row4col2icon");
+    var spec3row4col3 = document.getElementById("spec3row4col3icon");
+    var spec3row4col4 = document.getElementById("spec3row4col4icon");
+    var spec3row5col1 = document.getElementById("spec3row5col1icon");
+    var spec3row5col2 = document.getElementById("spec3row5col2icon");
+    var spec3row5col3 = document.getElementById("spec3row5col3icon");
+    var spec3row5col4 = document.getElementById("spec3row5col4icon");
+    var spec3row6col1 = document.getElementById("spec3row6col1icon");
+    var spec3row6col2 = document.getElementById("spec3row6col2icon");
+    var spec3row6col3 = document.getElementById("spec3row6col3icon");
+    var spec3row6col4 = document.getElementById("spec3row6col4icon");
+    var spec3row7col1 = document.getElementById("spec3row7col1icon");
+    var spec3row7col2 = document.getElementById("spec3row7col2icon");
+    var spec3row7col3 = document.getElementById("spec3row7col3icon");
+    var spec3row7col4 = document.getElementById("spec3row7col4icon");
+
 
     //Build specBar
     var spec1icon = document.getElementById("spec1icon");
@@ -141,7 +199,7 @@ function buildDruid(){
     spec2name.innerHTML = "Feral Combat";
     spec3name.innerHTML = "Restoration";
 
-
+    //Build spec1 Balance
     //Build spec1row1col1 Improved Wrath
     spec1row1col1.style.display = "block";
     spec1row1col1.style.backgroundImage = "url('../images/spell icons/druid/talents/improved_wrath.jpg')";
@@ -167,8 +225,8 @@ function buildDruid(){
         spec1row1col2arrow.src = '../images/table elements/arrow_direct_right.png';
         document.getElementById('spec1row1col2div').appendChild(spec1row1col2arrow);
         spec1row1col2arrow.style.position = "relative";
-        spec1row1col2arrow.style.top = "-31px"
-        spec1row1col2arrow.style.left = "43px"
+        spec1row1col2arrow.style.top = "-31px";
+        spec1row1col2arrow.style.left = "43px";
         spec1row1col2arrow.style.zIndex += 1;
         arrowArray.push(spec1row1col2div, spec1row1col2arrow);
 
@@ -208,8 +266,8 @@ function buildDruid(){
         spec1row2col2arrow.src = '../images/table elements/arrow_skip1_down.png';
         document.getElementById('spec1row2col2div').appendChild(spec1row2col2arrow);
         spec1row2col2arrow.style.position = "relative";
-        spec1row2col2arrow.style.top = "-3px"
-        spec1row2col2arrow.style.left = "19px"
+        spec1row2col2arrow.style.top = "-3px";
+        spec1row2col2arrow.style.left = "19px";
         spec1row2col2arrow.style.zIndex += 1;
         arrowArray.push(spec1row2col2div, spec1row2col2arrow);
 
@@ -230,8 +288,8 @@ function buildDruid(){
         spec1row2col3arrow.src = '../images/table elements/arrow_direct_down.png';
         document.getElementById('spec1row2col3div').appendChild(spec1row2col3arrow);
         spec1row2col3arrow.style.position = "relative";
-        spec1row2col3arrow.style.top = "-3px"
-        spec1row2col3arrow.style.left = "19px"
+        spec1row2col3arrow.style.top = "-3px";
+        spec1row2col3arrow.style.left = "19px";
         spec1row2col3arrow.style.zIndex += 1;
         arrowArray.push(spec1row2col3div, spec1row2col3arrow);
     
@@ -313,8 +371,8 @@ function buildDruid(){
         spec1row5col2arrow.src = '../images/table elements/arrow_direct_down.png';
         document.getElementById('spec1row5col2div').appendChild(spec1row5col2arrow);
         spec1row5col2arrow.style.position = "relative";
-        spec1row5col2arrow.style.top = "-3px"
-        spec1row5col2arrow.style.left = "19px"
+        spec1row5col2arrow.style.top = "-3px";
+        spec1row5col2arrow.style.left = "19px";
         spec1row5col2arrow.style.zIndex += 1;
         arrowArray.push(spec1row5col2div, spec1row5col2arrow);
 
@@ -362,6 +420,415 @@ function buildDruid(){
 
     //Build spec1row7col4 EMPTY
     spec1row7col4.style.display = "none";
+
+    //Build spec2 Feral Combat
+    //Build spec2row1col1 EMPTY
+    spec2row1col1.style.display = "none";
+
+    //Build spec2row1col2 Ferocity
+    spec2row1col2.style.display = "block";
+    spec2row1col2.style.backgroundImage = "url('../images/spell icons/druid/talents/ferocity.jpg')";
+    spec2row1col2.style.backgroundRepeat = "no-repeat";
+    spec2row1col2.style.backgroundSize = "34px 34px";
+    spec2row1col2.style.backgroundPosition = "center center";
+    spec2row1col2.style.filter = "grayscale(100%)";
+
+    //Build spec2row1col2 Feral Aggression
+    spec2row1col3.style.display = "block";
+    spec2row1col3.style.backgroundImage = "url('../images/spell icons/druid/talents/feral_aggression.jpg')";
+    spec2row1col3.style.backgroundRepeat = "no-repeat";
+    spec2row1col3.style.backgroundSize = "34px 34px";
+    spec2row1col3.style.backgroundPosition = "center center";
+    spec2row1col3.style.filter = "grayscale(100%)";
+
+    //Build spec2row1col4 EMPTY
+    spec2row1col4.style.display = "none";
+
+    //Build spec2row2col1 Feral Instinct
+    spec2row2col1.style.display = "block";
+    spec2row2col1.style.backgroundImage = "url('../images/spell icons/druid/talents/feral_instinct.jpg')";
+    spec2row2col1.style.backgroundRepeat = "no-repeat";
+    spec2row2col1.style.backgroundSize = "34px 34px";
+    spec2row2col1.style.backgroundPosition = "center center";
+    spec2row2col1.style.filter = "grayscale(100%)";
+
+    //Build spec2row2col2 Brutal Impact
+    spec2row2col2.style.display = "block";
+    spec2row2col2.style.backgroundImage = "url('../images/spell icons/druid/talents/brutal_impact.jpg')";
+    spec2row2col2.style.backgroundRepeat = "no-repeat";
+    spec2row2col2.style.backgroundSize = "34px 34px";
+    spec2row2col2.style.backgroundPosition = "center center";
+    spec2row2col2.style.filter = "grayscale(100%)";
+
+    //Build spec2row2col3 Thick Hide
+    spec2row2col3.style.display = "block";
+    spec2row2col3.style.backgroundImage = "url('../images/spell icons/druid/talents/thick_hide.jpg')";
+    spec2row2col3.style.backgroundRepeat = "no-repeat";
+    spec2row2col3.style.backgroundSize = "34px 34px";
+    spec2row2col3.style.backgroundPosition = "center center";
+    spec2row2col3.style.filter = "grayscale(100%)";
+
+    //Build spec2row2col4 EMPTY
+    spec2row2col4.style.display = "none";
+
+    //Build spec2row3col1 Feline Swiftness
+    spec2row3col1.style.display = "block";
+    spec2row3col1.style.backgroundImage = "url('../images/spell icons/druid/talents/feline_swiftness.jpg')";
+    spec2row3col1.style.backgroundRepeat = "no-repeat";
+    spec2row3col1.style.backgroundSize = "34px 34px";
+    spec2row3col1.style.backgroundPosition = "center center";
+    spec2row3col1.style.filter = "grayscale(100%)";
+
+    //Build spec2row3col2 Feral Charge
+    spec2row3col2.style.display = "block";
+    spec2row3col2.style.backgroundImage = "url('../images/spell icons/druid/talents/feral_charge.jpg')";
+    spec2row3col2.style.backgroundRepeat = "no-repeat";
+    spec2row3col2.style.backgroundSize = "34px 34px";
+    spec2row3col2.style.backgroundPosition = "center center";
+    spec2row3col2.style.filter = "grayscale(100%)";
+
+    //Build spec2row3col3 Sharpened Claws
+    spec2row3col3.style.display = "block";
+    spec2row3col3.style.backgroundImage = "url('../images/spell icons/druid/talents/sharpened_claws.jpg')";
+    spec2row3col3.style.backgroundRepeat = "no-repeat";
+    spec2row3col3.style.backgroundSize = "34px 34px";
+    spec2row3col3.style.backgroundPosition = "center center";
+    spec2row3col3.style.filter = "grayscale(100%)";
+        //Build arrow
+        var spec2row3col3div = document.createElement('div');
+        spec2row3col3div.style.maxHeight = "0px";
+        spec2row3col3div.style.position = "absolute";
+        spec2row3col3div.id = "spec2row3col3div";
+        document.getElementById('spec2row3col3').appendChild(spec2row3col3div);
+        var spec2row3col3arrow = document.createElement('img');
+        spec2row3col3arrow.src = '../images/table elements/arrow_direct_down.png';
+        document.getElementById('spec2row3col3div').appendChild(spec2row3col3arrow);
+        spec2row3col3arrow.style.position = "relative";
+        spec2row3col3arrow.style.top = "-3px";
+        spec2row3col3arrow.style.left = "19px";
+        spec2row3col3arrow.style.zIndex += 1;
+        arrowArray.push(spec2row3col3div, spec2row3col3arrow);
+        //Build arrow
+        var spec2row3col3div2 = document.createElement('div');
+        spec2row3col3div2.style.maxHeight = "0px";
+        spec2row3col3div2.style.position = "absolute";
+        spec2row3col3div2.id = "spec2row3col3div2";
+        document.getElementById('spec2row3col3').appendChild(spec2row3col3div2);
+        var spec2row3col3arrow2 = document.createElement('img');
+        spec2row3col3arrow2.src = '../images/table elements/arrow_right_down.png';
+        document.getElementById('spec2row3col3div2').appendChild(spec2row3col3arrow2);
+        spec2row3col3arrow2.style.position = "relative";
+        spec2row3col3arrow2.style.top = "-26px";
+        spec2row3col3arrow2.style.left = "43px";
+        spec2row3col3arrow2.style.zIndex += 1;
+        arrowArray.push(spec2row3col3div2, spec2row3col3arrow2);
+
+    //Build spec2row3col4 EMPTY
+    spec2row3col4.style.display = "none";
+
+    //Build spec2row4col1 Improved Shred
+    spec2row4col1.style.display = "block";
+    spec2row4col1.style.backgroundImage = "url('../images/spell icons/druid/talents/improved_shred.jpg')";
+    spec2row4col1.style.backgroundRepeat = "no-repeat";
+    spec2row4col1.style.backgroundSize = "34px 34px";
+    spec2row4col1.style.backgroundPosition = "center center";
+    spec2row4col1.style.filter = "grayscale(100%)";
+
+    //Build spec2row4col2 Predatory Strikes
+    spec2row4col2.style.display = "block";
+    spec2row4col2.style.backgroundImage = "url('../images/spell icons/druid/talents/predatory_strikes.jpg')";
+    spec2row4col2.style.backgroundRepeat = "no-repeat";
+    spec2row4col2.style.backgroundSize = "34px 34px";
+    spec2row4col2.style.backgroundPosition = "center center";
+    spec2row4col2.style.filter = "grayscale(100%)";
+        //Build arrow
+        var spec2row4col2div = document.createElement('div');
+        spec2row4col2div.style.maxHeight = "0px";
+        spec2row4col2div.style.position = "absolute";
+        spec2row4col2div.id = "spec2row4col2div";
+        document.getElementById('spec2row4col2').appendChild(spec2row4col2div);
+        var spec2row4col2arrow = document.createElement('img');
+        spec2row4col2arrow.src = '../images/table elements/arrow_skip1_down.png';
+        document.getElementById('spec2row4col2div').appendChild(spec2row4col2arrow);
+        spec2row4col2arrow.style.position = "relative";
+        spec2row4col2arrow.style.top = "-3px";
+        spec2row4col2arrow.style.left = "19px";
+        spec2row4col2arrow.style.zIndex += 1;
+        arrowArray.push(spec2row4col2div, spec2row4col2arrow);
+
+    //Build spec2row4col3 Blood Frenzy
+    spec2row4col3.style.display = "block";
+    spec2row4col3.style.backgroundImage = "url('../images/spell icons/druid/talents/blood_frenzy.jpg')";
+    spec2row4col3.style.backgroundRepeat = "no-repeat";
+    spec2row4col3.style.backgroundSize = "34px 34px";
+    spec2row4col3.style.backgroundPosition = "center center";
+    spec2row4col3.style.filter = "grayscale(100%)";
+
+    //Build spec2row4col4 Primal Fury
+    spec2row4col4.style.display = "block";
+    spec2row4col4.style.backgroundImage = "url('../images/spell icons/druid/talents/primal_fury.jpg')";
+    spec2row4col4.style.backgroundRepeat = "no-repeat";
+    spec2row4col4.style.backgroundSize = "34px 34px";
+    spec2row4col4.style.backgroundPosition = "center center";
+    spec2row4col4.style.filter = "grayscale(100%)";
+
+    //Build spec2row5col1 Savage Fury
+    spec2row5col1.style.display = "block";
+    spec2row5col1.style.backgroundImage = "url('../images/spell icons/druid/talents/savage_fury.jpg')";
+    spec2row5col1.style.backgroundRepeat = "no-repeat";
+    spec2row5col1.style.backgroundSize = "34px 34px";
+    spec2row5col1.style.backgroundPosition = "center center";
+    spec2row5col1.style.filter = "grayscale(100%)";
+
+    //Build spec2row5col2 EMPTY
+    spec2row5col2.style.display = "none";
+
+    //Build spec2row5col3 Faerie Fire
+    spec2row5col3.style.display = "block";
+    spec2row5col3.style.backgroundImage = "url('../images/spell icons/druid/talents/faerie_fire.jpg')";
+    spec2row5col3.style.backgroundRepeat = "no-repeat";
+    spec2row5col3.style.backgroundSize = "34px 34px";
+    spec2row5col3.style.backgroundPosition = "center center";
+    spec2row5col3.style.filter = "grayscale(100%)";
+
+    //Build spec2row5col4 EMPTY
+    spec2row5col4.style.display = "none";
+
+    //Build spec2row6col1 EMPTY
+    spec2row6col1.style.display = "none";
+
+    //Build spec2row6col2 Savage Fury
+    spec2row6col2.style.display = "block";
+    spec2row6col2.style.backgroundImage = "url('../images/spell icons/druid/talents/heart_of_the_wild.jpg')";
+    spec2row6col2.style.backgroundRepeat = "no-repeat";
+    spec2row6col2.style.backgroundSize = "34px 34px";
+    spec2row6col2.style.backgroundPosition = "center center";
+    spec2row6col2.style.filter = "grayscale(100%)";
+
+    //Build spec2row6col3 EMPTY
+    spec2row6col3.style.display = "none";
+
+    //Build spec2row6col4 EMPTY
+    spec2row6col4.style.display = "none";
+
+    //Build spec2row7col1 EMPTY
+    spec2row7col1.style.display = "none";
+
+    //Build spec2row7col2 EMPTY
+    spec2row7col2.style.display = "block";
+    spec2row7col2.style.backgroundImage = "url('../images/spell icons/druid/talents/leader_of_the_pack.jpg')";
+    spec2row7col2.style.backgroundRepeat = "no-repeat";
+    spec2row7col2.style.backgroundSize = "34px 34px";
+    spec2row7col2.style.backgroundPosition = "center center";
+    spec2row7col2.style.filter = "grayscale(100%)";
+
+    //Build spec2row7col3 EMPTY
+    spec2row7col3.style.display = "none";
+
+    //Build spec2row7col4 EMPTY
+    spec2row7col4.style.display = "none";
+
+    //Build spec3 Restoration
+    //Build spec3row1col1 EMPTY
+    spec3row1col1.style.display = "none";
+
+    //Build spec3row1col2 Improved Mark of the Wild
+    spec3row1col2.style.display = "block";
+    spec3row1col2.style.backgroundImage = "url('../images/spell icons/druid/talents/improved_mark_of_the_wild.jpg')";
+    spec3row1col2.style.backgroundRepeat = "no-repeat";
+    spec3row1col2.style.backgroundSize = "34px 34px";
+    spec3row1col2.style.backgroundPosition = "center center";
+    spec3row1col2.style.filter = "grayscale(100%)";
+
+    //Build spec3row1col2 Furor
+    spec3row1col3.style.display = "block";
+    spec3row1col3.style.backgroundImage = "url('../images/spell icons/druid/talents/furor.jpg')";
+    spec3row1col3.style.backgroundRepeat = "no-repeat";
+    spec3row1col3.style.backgroundSize = "34px 34px";
+    spec3row1col3.style.backgroundPosition = "center center";
+    spec3row1col3.style.filter = "grayscale(100%)";
+
+    //Build spec3row1col4 EMPTY
+    spec3row1col4.style.display = "none";
+
+    //Build spec3row2col1 Healing Touch
+    spec3row2col1.style.display = "block";
+    spec3row2col1.style.backgroundImage = "url('../images/spell icons/druid/talents/improved_healing_touch.jpg')";
+    spec3row2col1.style.backgroundRepeat = "no-repeat";
+    spec3row2col1.style.backgroundSize = "34px 34px";
+    spec3row2col1.style.backgroundPosition = "center center";
+    spec3row2col1.style.filter = "grayscale(100%)";
+        //Build arrow
+        var spec3row2col1div = document.createElement('div');
+        spec3row2col1div.style.maxHeight = "0px";
+        spec3row2col1div.style.position = "absolute";
+        spec3row2col1div.id = "spec3row2col1div";
+        document.getElementById('spec3row2col1').appendChild(spec3row2col1div);
+        var spec3row2col1arrow = document.createElement('img');
+        spec3row2col1arrow.src = '../images/table elements/arrow_skip2_down.png';
+        document.getElementById('spec3row2col1div').appendChild(spec3row2col1arrow);
+        spec3row2col1arrow.style.position = "relative";
+        spec3row2col1arrow.style.top = "-3px";
+        spec3row2col1arrow.style.left = "19px";
+        spec3row2col1arrow.style.zIndex += 1;
+        arrowArray.push(spec3row2col1div, spec3row2col1arrow);
+
+    //Build spec3row2col2 Nature's Focus
+    spec3row2col2.style.display = "block";
+    spec3row2col2.style.backgroundImage = "url('../images/spell icons/druid/talents/natures_focus.jpg')";
+    spec3row2col2.style.backgroundRepeat = "no-repeat";
+    spec3row2col2.style.backgroundSize = "34px 34px";
+    spec3row2col2.style.backgroundPosition = "center center";
+    spec3row2col2.style.filter = "grayscale(100%)";
+
+    //Build spec3row2col3 Improved Enrage
+    spec3row2col3.style.display = "block";
+    spec3row2col3.style.backgroundImage = "url('../images/spell icons/druid/talents/improved_enrage.jpg')";
+    spec3row2col3.style.backgroundRepeat = "no-repeat";
+    spec3row2col3.style.backgroundSize = "34px 34px";
+    spec3row2col3.style.backgroundPosition = "center center";
+    spec3row2col3.style.filter = "grayscale(100%)";
+
+    //Build spec3row2col4 EMPTY
+    spec3row2col4.style.display = "none";
+
+    //Build spec3row3col1 EMPTY
+    spec3row3col1.style.display = "none";
+
+    //Build spec3row3col2 Reflection
+    spec3row3col2.style.display = "block";
+    spec3row3col2.style.backgroundImage = "url('../images/spell icons/druid/talents/reflection.jpg')";
+    spec3row3col2.style.backgroundRepeat = "no-repeat";
+    spec3row3col2.style.backgroundSize = "34px 34px";
+    spec3row3col2.style.backgroundPosition = "center center";
+    spec3row3col2.style.filter = "grayscale(100%)";
+
+    //Build spec3row3col3 Inesct Swarm
+    spec3row3col3.style.display = "block";
+    spec3row3col3.style.backgroundImage = "url('../images/spell icons/druid/talents/insect_swarm.jpg')";
+    spec3row3col3.style.backgroundRepeat = "no-repeat";
+    spec3row3col3.style.backgroundSize = "34px 34px";
+    spec3row3col3.style.backgroundPosition = "center center";
+    spec3row3col3.style.filter = "grayscale(100%)";
+        //Build arrow
+        var spec3row3col3div = document.createElement('div');
+        spec3row3col3div.style.maxHeight = "0px";
+        spec3row3col3div.style.position = "absolute";
+        spec3row3col3div.id = "spec3row3col3div";
+        document.getElementById('spec3row3col3').appendChild(spec3row3col3div);
+        var spec3row3col3arrow = document.createElement('img');
+        spec3row3col3arrow.src = '../images/table elements/arrow_skip1_down.png';
+        document.getElementById('spec3row3col3div').appendChild(spec3row3col3arrow);
+        spec3row3col3arrow.style.position = "relative";
+        spec3row3col3arrow.style.top = "-3px";
+        spec3row3col3arrow.style.left = "19px";
+        spec3row3col3arrow.style.zIndex += 1;
+        arrowArray.push(spec3row3col3div, spec3row3col3arrow);
+
+    //Build spec3row3col4 Subtlety
+    spec3row3col4.style.display = "block";
+    spec3row3col4.style.backgroundImage = "url('../images/spell icons/druid/talents/subtlety.jpg')";
+    spec3row3col4.style.backgroundRepeat = "no-repeat";
+    spec3row3col4.style.backgroundSize = "34px 34px";
+    spec3row3col4.style.backgroundPosition = "center center";
+    spec3row3col4.style.filter = "grayscale(100%)";
+
+    //Build spec3row4col1 EMPTY
+    spec3row4col1.style.display = "none";
+
+    //Build spec3row4col2 Tranquil Spirit
+    spec3row4col2.style.display = "block";
+    spec3row4col2.style.backgroundImage = "url('../images/spell icons/druid/talents/tranquil_spirit.jpg')";
+    spec3row4col2.style.backgroundRepeat = "no-repeat";
+    spec3row4col2.style.backgroundSize = "34px 34px";
+    spec3row4col2.style.backgroundPosition = "center center";
+    spec3row4col2.style.filter = "grayscale(100%)";
+        //Build arrow
+        var spec3row4col2div = document.createElement('div');
+        spec3row4col2div.style.maxHeight = "0px";
+        spec3row4col2div.style.position = "absolute";
+        spec3row4col2div.id = "spec3row4col2div";
+        document.getElementById('spec3row4col2').appendChild(spec3row4col2div);
+        var spec3row4col2arrow = document.createElement('img');
+        spec3row4col2arrow.src = '../images/table elements/arrow_skip2_down.png';
+        document.getElementById('spec3row4col2div').appendChild(spec3row4col2arrow);
+        spec3row4col2arrow.style.position = "relative";
+        spec3row4col2arrow.style.top = "-3px";
+        spec3row4col2arrow.style.left = "19px";
+        spec3row4col2arrow.style.zIndex += 1;
+        arrowArray.push(spec3row4col2div, spec3row4col2arrow);
+
+    //Build spec3row4col3 EMPTY
+    spec3row4col3.style.display = "none";
+
+    //Build spec3row4col4 Improved Rejuvination
+    spec3row4col4.style.display = "block";
+    spec3row4col4.style.backgroundImage = "url('../images/spell icons/druid/talents/improved_rejuvination.jpg')";
+    spec3row4col4.style.backgroundRepeat = "no-repeat";
+    spec3row4col4.style.backgroundSize = "34px 34px";
+    spec3row4col4.style.backgroundPosition = "center center";
+    spec3row4col4.style.filter = "grayscale(100%)";
+
+    //Build spec3row5col1 Nature's Swiftness
+    spec3row5col1.style.display = "block";
+    spec3row5col1.style.backgroundImage = "url('../images/spell icons/druid/talents/natures_swiftness.jpg')";
+    spec3row5col1.style.backgroundRepeat = "no-repeat";
+    spec3row5col1.style.backgroundSize = "34px 34px";
+    spec3row5col1.style.backgroundPosition = "center center";
+    spec3row5col1.style.filter = "grayscale(100%)";
+
+    //Build spec3row5col2 EMPTY
+    spec3row5col2.style.display = "none";
+
+    //Build spec3row5col3 Gift of Nature
+    spec3row5col3.style.display = "block";
+    spec3row5col3.style.backgroundImage = "url('../images/spell icons/druid/talents/gift_of_nature.jpg')";
+    spec3row5col3.style.backgroundRepeat = "no-repeat";
+    spec3row5col3.style.backgroundSize = "34px 34px";
+    spec3row5col3.style.backgroundPosition = "center center";
+    spec3row5col3.style.filter = "grayscale(100%)";
+
+    //Build spec3row5col4 Improved Tranquility
+    spec3row5col4.style.display = "block";
+    spec3row5col4.style.backgroundImage = "url('../images/spell icons/druid/talents/improved_tranquility.jpg')";
+    spec3row5col4.style.backgroundRepeat = "no-repeat";
+    spec3row5col4.style.backgroundSize = "34px 34px";
+    spec3row5col4.style.backgroundPosition = "center center";
+    spec3row5col4.style.filter = "grayscale(100%)";
+
+    //Build spec3row6col1 EMPTY
+    spec3row6col1.style.display = "none";
+
+    //Build spec3row6col2 EMPTY
+    spec3row6col2.style.display = "none";
+
+    //Build spec3row6col3 Improved Regrowth
+    spec3row6col3.style.display = "block";
+    spec3row6col3.style.backgroundImage = "url('../images/spell icons/druid/talents/improved_regrowth.jpg')";
+    spec3row6col3.style.backgroundRepeat = "no-repeat";
+    spec3row6col3.style.backgroundSize = "34px 34px";
+    spec3row6col3.style.backgroundPosition = "center center";
+    spec3row6col3.style.filter = "grayscale(100%)";
+
+    //Build spec3row6col4 EMPTY
+    spec3row6col4.style.display = "none";
+
+    //Build spec3row7col1 EMPTY
+    spec3row7col1.style.display = "none";
+
+    //Build spec3row7col2 Swiftmend
+    spec3row7col2.style.display = "block";
+    spec3row7col2.style.backgroundImage = "url('../images/spell icons/druid/talents/swiftmend.jpg')";
+    spec3row7col2.style.backgroundRepeat = "no-repeat";
+    spec3row7col2.style.backgroundSize = "34px 34px";
+    spec3row7col2.style.backgroundPosition = "center center";
+    spec3row7col2.style.filter = "grayscale(100%)";
+
+    //Build spec3row7col3 EMPTY
+    spec3row7col3.style.display = "none";
+
+    //Build spec3row7col4 EMPTY
+    spec3row7col4.style.display = "none";
 }
 
 function buildHunter(){
