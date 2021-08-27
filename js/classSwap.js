@@ -7,7 +7,6 @@ function classSwap(classID) {
     var column3 = document.getElementById("column3");
     var specBar = document.getElementById("specBar"); //This variable is used when a class is built (EX; buildDruid()), probably should be moved out of that
 
-    document.getElementById("startString").innerHTML = "";
 
     column1.style.border = "1px solid gray";
     column2.style.border = "1px solid gray";
@@ -19,63 +18,63 @@ function classSwap(classID) {
         column1.style.backgroundImage = "url('../images/spec backgrounds/background-druid-balance.jpg')";
         column2.style.backgroundImage = "url('../images/spec backgrounds/background-druid-feral-combat.jpg')";
         column3.style.backgroundImage = "url('../images/spec backgrounds/background-druid-restoration.jpg')";
-
+        document.getElementById("startString").innerHTML = "Druid";
         buildDruid();
     }
     else if(classID == "hunter"){
         column1.style.backgroundImage = "url('../images/spec backgrounds/background-hunter-beast-mastery.jpg')";
         column2.style.backgroundImage = "url('../images/spec backgrounds/background-hunter-marksmanship.jpg')";
         column3.style.backgroundImage = "url('../images/spec backgrounds/background-hunter-survival.jpg')";
-
+        document.getElementById("startString").innerHTML = "Hunter";
         buildHunter();
     }
     else if(classID == "mage"){
         column1.style.backgroundImage = "url('../images/spec backgrounds/background-mage-arcane.jpg')";
         column2.style.backgroundImage = "url('../images/spec backgrounds/background-mage-fire.jpg')";
         column3.style.backgroundImage = "url('../images/spec backgrounds/background-mage-frost.jpg')";
-        
+        document.getElementById("startString").innerHTML = "Mage";
         buildMage();
     }
     else if(classID == "paladin"){
         column1.style.backgroundImage = "url('../images/spec backgrounds/background-paladin-holy.jpg')";
         column2.style.backgroundImage = "url('../images/spec backgrounds/background-paladin-protection.jpg')";
         column3.style.backgroundImage = "url('../images/spec backgrounds/background-paladin-retribution.jpg')";
-
+        document.getElementById("startString").innerHTML = "Paladin";
         buildPaladin();
     }
     else if(classID == "priest"){
         column1.style.backgroundImage = "url('../images/spec backgrounds/background-priest-discipline.jpg')";
         column2.style.backgroundImage = "url('../images/spec backgrounds/background-priest-holy.jpg')";
         column3.style.backgroundImage = "url('../images/spec backgrounds/background-priest-shadow.jpg')";
-
+        document.getElementById("startString").innerHTML = "Priest";
         buildPriest();
     }
     else if(classID == "rogue"){
         column1.style.backgroundImage = "url('../images/spec backgrounds/background-rogue-assassination.jpg')";
         column2.style.backgroundImage = "url('../images/spec backgrounds/background-rogue-combat.jpg')";
         column3.style.backgroundImage = "url('../images/spec backgrounds/background-rogue-subtlety.jpg')";
-
+        document.getElementById("startString").innerHTML = "Rogue";
         buildRogue();
     }
     else if(classID == "shaman"){
         column1.style.backgroundImage = "url('../images/spec backgrounds/background-shaman-elemental.jpg')";
         column2.style.backgroundImage = "url('../images/spec backgrounds/background-shaman-enhancement.jpg')";
         column3.style.backgroundImage = "url('../images/spec backgrounds/background-shaman-restoration.jpg')";
-
+        document.getElementById("startString").innerHTML = "Shaman";
         buildShaman();
     }
     else if(classID == "warlock"){
         column1.style.backgroundImage = "url('../images/spec backgrounds/background-warlock-affliction.jpg')";
         column2.style.backgroundImage = "url('../images/spec backgrounds/background-warlock-demonology.jpg')";
         column3.style.backgroundImage = "url('../images/spec backgrounds/background-warlock-destruction.jpg')";
-
+        document.getElementById("startString").innerHTML = "Warlock";
         buildWarlock();
     }
     else if(classID == "warrior"){
         column1.style.backgroundImage = "url('../images/spec backgrounds/background-warrior-arms.jpg')";
         column2.style.backgroundImage = "url('../images/spec backgrounds/background-warrior-fury.jpg')";
         column3.style.backgroundImage = "url('../images/spec backgrounds/background-warrior-protection.jpg')";
-
+        document.getElementById("startString").innerHTML = "Warrior";
         buildWarrior();
     }
     else{
@@ -187,14 +186,20 @@ function buildDruid(){
         spec1icon.style.backgroundRepeat = "no-repeat";
         spec1icon.style.backgroundSize = "34px 34px";
         spec1icon.style.backgroundPosition = "center center";
+        spec1icon.style.width = "44px";
+        spec1icon.style.height = "44px";
     spec2icon.style.backgroundImage = "url('../images/class icons/spec icons/druid/feralcombat.jpg')";
         spec2icon.style.backgroundRepeat = "no-repeat";
         spec2icon.style.backgroundSize = "34px 34px";
         spec2icon.style.backgroundPosition = "center center";
+        spec2icon.style.width = "44px";
+        spec2icon.style.height = "44px";
     spec3icon.style.backgroundImage = "url('../images/class icons/spec icons/druid/restoration.jpg')";
         spec3icon.style.backgroundRepeat = "no-repeat";
         spec3icon.style.backgroundSize = "34px 34px";
         spec3icon.style.backgroundPosition = "center center";
+        spec3icon.style.width = "44px";
+        spec3icon.style.height = "44px";
     spec1name.innerHTML = "Balance";
     spec2name.innerHTML = "Feral Combat";
     spec3name.innerHTML = "Restoration";
@@ -851,14 +856,20 @@ function buildHunter(){
         spec1icon.style.backgroundRepeat = "no-repeat";
         spec1icon.style.backgroundSize = "34px 34px";
         spec1icon.style.backgroundPosition = "center center";
+        spec1icon.style.width = "44px";
+        spec1icon.style.height = "44px";
     spec2icon.style.backgroundImage = "url('../images/class icons/spec icons/hunter/marksmanship.jpg')";
         spec2icon.style.backgroundRepeat = "no-repeat";
         spec2icon.style.backgroundSize = "34px 34px";
         spec2icon.style.backgroundPosition = "center center";
+        spec2icon.style.width = "44px";
+        spec2icon.style.height = "44px";
     spec3icon.style.backgroundImage = "url('../images/class icons/spec icons/hunter/survival.jpg')";
         spec3icon.style.backgroundRepeat = "no-repeat";
         spec3icon.style.backgroundSize = "34px 34px";
         spec3icon.style.backgroundPosition = "center center";
+        spec1icon.style.width = "44px";
+        spec1icon.style.height = "44px";
     spec1name.innerHTML = "Beast Mastery";
     spec2name.innerHTML = "Marksmanship";
     spec3name.innerHTML = "Survival";
