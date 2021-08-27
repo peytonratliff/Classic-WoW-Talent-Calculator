@@ -212,6 +212,9 @@ function buildDruid(){
     spec1row1col1.style.backgroundSize = "34px 34px";
     spec1row1col1.style.backgroundPosition = "center center";
     spec1row1col1.style.filter = "grayscale(100%)";
+        //Build Tooltip
+        var addSpellId = document.getElementById('spec1row1col1icon');
+        addSpellId.setAttribute('data-spellId', 'natures_wrath');
 
     //Build spec1row1col2 Nature's Grasp
     spec1row1col2.style.display = "block";
