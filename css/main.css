@@ -200,6 +200,7 @@ td{
     text-align: center;
     color:white;
 }
+
 .sidebar a{
     color: white;
     text-decoration: none;
@@ -215,4 +216,62 @@ td{
 }
 .sidebarButton:hover{
     cursor: pointer;
+}
+
+/* Tooltip */
+.tooltip{
+    display: block;
+    position: absolute;
+    top: 400px;
+    left: 600px;
+    color: white;
+    border: 6px solid transparent;
+    border-image: url("../images/table elements/tooltip-border.png") 6 stretch;
+    width: 100%;
+    max-width: 320px;
+    overflow-wrap: normal;
+    height:fit-content;
+}
+
+.tooltipInner{
+    background-color: rgba(1, 7, 33, 0.8);
+    height: 100%;
+    width: 100%;
+    overflow-wrap: normal;
+}
+
+.tooltipName{
+    overflow-wrap: normal;
+}
+
+.tooltipRank{
+    overflow-wrap: normal;
+}
+
+.tooltipType{
+    overflow-wrap: normal;
+}
+
+.tooltipMana{
+    overflow-wrap: normal;
+}
+
+.tooltipCastTime{
+    overflow-wrap: normal;
+}
+
+.tooltipCooldown{
+    overflow-wrap: normal;
+}
+
+.tooltipClassReq{
+    overflow-wrap: normal;
+}
+
+.tooltipDesc{
+    overflow-wrap: normal;
+}
+
+.tooltipLearn{
+    overflow-wrap: normal;
 }

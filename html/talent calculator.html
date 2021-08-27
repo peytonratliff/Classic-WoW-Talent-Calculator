@@ -5,8 +5,10 @@
     <head>
         <title>Classic WoW Talent Calculator</title>
         <link href="../css/main.css" rel="stylesheet" type="text/css">
+        <!--<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>-->
         <script src=../js/classSwap.js></script>
         <script src=../js/onLoad.js></script>
+        <script src=../js/calculator.js></script>
     </head>
 
     <body onload="height()">
@@ -210,7 +212,25 @@
             <a href="(rebalanced) talent calculator.html"><button class="sidebarButton">Rebalanced Talent Calculator</button></a>
             <a href="(rebalanced) spellbook.html"><button class="sidebarButton">Rebalanced Spellbook</button></a>
             <a href="(rebalanced) character creation.html"><button class="sidebarButton">Rebalanced Character Creation</button></a>
+            <br><br><br><br>
+            <button class="sidebarButton" onmouseover=tooltipShow(this.id) onmouseout=tooltipHide(this.id)>Tooltip Testing</button>
+
             <a href="(rebalanced) character creation.html".html><button class="sidebarButton" style="position: absolute; bottom: 0; left: 0;">About</button></a>
+        </div>
+
+        <div class="tooltip" id="tooltip">
+            <div class=tooltipInner id=tooltipInner>
+                    <p id="tooltipName" class="tooltipName">Nature's Grasp</p>
+                    <p id="tooltipRank" class="tooltipRank">Rank 1</p>
+                    <p id="tooltipType" class="tooltipType">Talent</p>
+                    <p id="tooltipMana" class="tooltipMana">50 Mana</p>
+                    <p id="tooltipCastTime" class="tooltipCastTime">Instant</p>
+                    <p id="tooltipCooldown" class="tooltipCooldown">1 min cooldown</p>
+                    <p id="tooltipClassReq" class="tooltipClassReq">Druid (Balance)</p>
+                    <p id="tooltipDesc" class="tooltipDesc">While active, any time an enemy strikes the caster they have a 35% chance to become afflicted by Entangling Roots (Rank 1).  Only useable outdoors.  1 charge.  Lasts 45 sec.</p>
+                    <br>
+                    <p id="tooltipLearn" class="tooltipLearn">Click to learn</p>
+            </div>
         </div>
 
     </body>
