@@ -214,7 +214,7 @@ function buildDruid(){
     spec1row1col1.style.filter = "grayscale(100%)";
         //Build Tooltip
         var addSpellId = document.getElementById('spec1row1col1icon');
-        addSpellId.setAttribute('data-spellId', 'natures_wrath');
+        addSpellId.setAttribute('data-spellId', 'improved_wrath');
 
     //Build spec1row1col2 Nature's Grasp
     spec1row1col2.style.display = "block";
@@ -223,6 +223,9 @@ function buildDruid(){
     spec1row1col2.style.backgroundSize = "34px 34px";
     spec1row1col2.style.backgroundPosition = "center center";
     spec1row1col2.style.filter = "grayscale(100%)";
+        //Build Tooltip
+        var addSpellId = document.getElementById('spec1row1col2icon');
+        addSpellId.setAttribute('data-spellId', 'natures_grasp');
         //Build arrow
         var spec1row1col2div = document.createElement('div');
         spec1row1col2div.style.maxHeight = "0px";
