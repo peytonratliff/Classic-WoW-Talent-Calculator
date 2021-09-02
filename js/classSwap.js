@@ -212,7 +212,7 @@ function buildDruid(){
     spec1row1col1.style.backgroundSize = "34px 34px";
     spec1row1col1.style.backgroundPosition = "center center";
     spec1row1col1.style.filter = "grayscale(100%)";
-        //Build Tooltip
+        //Define Tooltip
         var addSpellId = document.getElementById('spec1row1col1icon');
         addSpellId.setAttribute('data-spellId', 'improved_wrath');
 
@@ -223,7 +223,7 @@ function buildDruid(){
     spec1row1col2.style.backgroundSize = "34px 34px";
     spec1row1col2.style.backgroundPosition = "center center";
     spec1row1col2.style.filter = "grayscale(100%)";
-        //Build Tooltip
+        //Define Tooltip
         var addSpellId = document.getElementById('spec1row1col2icon');
         addSpellId.setAttribute('data-spellId', 'natures_grasp');
         //Build arrow
@@ -248,6 +248,9 @@ function buildDruid(){
     spec1row1col3.style.backgroundSize = "34px 34px";
     spec1row1col3.style.backgroundPosition = "center center";
     spec1row1col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row1col3icon');
+        addSpellId.setAttribute('data-spellId', 'improved_natures_grasp');
 
     //Build spec1row1col4 EMPTY
     spec1row1col4.style.display = "none";
@@ -259,6 +262,9 @@ function buildDruid(){
     spec1row2col1.style.backgroundSize = "34px 34px";
     spec1row2col1.style.backgroundPosition = "center center";
     spec1row2col1.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row2col1icon');
+        addSpellId.setAttribute('data-spellId', 'improved_entangling_roots');
 
     //Build spec1row2col2 Improved Moonfire
     spec1row2col2.style.display = "block";

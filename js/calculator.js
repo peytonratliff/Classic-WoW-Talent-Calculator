@@ -1,13 +1,14 @@
 function tooltipShow(id){
     var tooltip = document.getElementById("tooltip");
+    var viewportHeight = window.innerHeight;
 
-    populate(tooltip, id);
+    populate(id);
 
-    var tooltipX = window.scrollX + document.getElementById(id).getBoundingClientRect().left // X
-    var tooltipY = window.scrollY + document.getElementById(id).getBoundingClientRect().top // Y
+    var tooltipX = document.getElementById(id).getBoundingClientRect().left + 42;
+    var tooltipY = viewportHeight - document.getElementById(id).getBoundingClientRect().top;
 
-    tooltip.style.left = tooltipX + 43 + "px";
-    tooltip.style.top = tooltipY - 195 + "px";
+    tooltip.style.left = tooltipX + "px";
+    tooltip.style.bottom = tooltipY + "px";
     tooltip.style.display = "block";
     tooltip.style.zIndex += 1;
 }
@@ -17,7 +18,7 @@ function tooltipHide(){
     tooltip.style.display = "none";
 }
 
-function populate(tooltip, elementId){
+function populate(elementId){
 
     var talent = document.getElementById(elementId);
     talentId = talent.getAttribute('data-spellId');
@@ -33,6 +34,7 @@ function populate(tooltip, elementId){
     tooltipLearn = document.getElementById('tooltipLearn');
 
 
+    //Eventually move this into class-wide if statement. EX: if druid(if1/if2/if3) if hunter(if1/if2/if3) if mage(if1/if2/if3)
     if(talentId == "improved_wrath"){
         tooltipName.innerHTML = "Improved Wrath";
         tooltipMana.innerHTML = null;
@@ -46,6 +48,20 @@ function populate(tooltip, elementId){
         tooltipCastTime.innerHTML = "Instant";
         tooltipCooldown.innerHTML = "&#x200E;1 min cooldown";
         tooltipDesc.innerHTML = "While active, any time an enemy strikes the caster they have a 35% chance to become afflicted by Entangling Roots (Rank 1).  Only useable outdoors.  1 charge.  Lasts 45 sec."
+    }
+    if(talentId == "improved_natures_grasp"){
+        tooltipName.innerHTML = "Improved Nature's Grasp";
+        tooltipMana.innerHTML = null;
+        tooltipCastTime.innerHTML = null;
+        tooltipCooldown.innerHTML = null;
+        tooltipDesc.innerHTML = "Increases the chance for your Nature's Grasp to entangle an enemy by 15%."
+    }
+    if(talentId == "improved_entangling_roots"){
+        tooltipName.innerHTML = "Improved Entangling Roots";
+        tooltipMana.innerHTML = null;
+        tooltipCastTime.innerHTML = null;
+        tooltipCooldown.innerHTML = null;
+        tooltipDesc.innerHTML = "Gives you a 40% chance to avoid interruption caused by damage while casting Entangling Roots."
     }
 
 }
