@@ -64,4 +64,13 @@ function populate(elementId){
         tooltipDesc.innerHTML = "Gives you a 40% chance to avoid interruption caused by damage while casting Entangling Roots."
     }
 
+    //Hunter talent, used for testing
+    if(talentId == "improved_aspect_of_the_hawk"){
+        tooltipName.innerHTML = "Improved Aspect of the Hawk";
+        tooltipMana.innerHTML = null;
+        tooltipCastTime.innerHTML = null;
+        tooltipCooldown.innerHTML = null;
+        tooltipDesc.innerHTML = "While Aspect of the Hawk is active, all normal ranged attacks have a 2% chance of increasing ranged attack speed by 30% for 12 sec."
+    }
+
 }
