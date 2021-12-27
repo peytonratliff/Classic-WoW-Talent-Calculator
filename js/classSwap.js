@@ -2886,6 +2886,458 @@ function buildPaladin(){
 
     //Build spec1row7col4 EMPTY
     spec1row7col4.style.display = "none";
+
+    //Build spec2 Protection
+    //Build spec2row1col1 EMPTY
+    spec2row1col1.style.display = "none";
+
+    //Build spec2row1col2 Improved Devotion Aura
+    spec2row1col2.style.display = "block";
+    spec2row1col2.style.backgroundImage = "url('../images/spell icons/paladin/talents/improved_devotion_aura.jpg')";
+    spec2row1col2.style.backgroundRepeat = "no-repeat";
+    spec2row1col2.style.backgroundSize = "34px 34px";
+    spec2row1col2.style.backgroundPosition = "center center";
+    spec2row1col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row1col2icon');
+        addSpellId.setAttribute('data-spellId', 'improved_devotion_aura');
+
+    //Build spec2row1col3 Redoubt
+    spec2row1col3.style.display = "block";
+    spec2row1col3.style.backgroundImage = "url('../images/spell icons/paladin/talents/redoubt.jpg')";
+    spec2row1col3.style.backgroundRepeat = "no-repeat";
+    spec2row1col3.style.backgroundSize = "34px 34px";
+    spec2row1col3.style.backgroundPosition = "center center";
+    spec2row1col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row1col3icon');
+        addSpellId.setAttribute('data-spellId', 'redoubt');
+        //Build arrow
+        var spec2row1col3div = document.createElement('div');
+        spec2row1col3div.style.maxHeight = "0px";
+        spec2row1col3div.style.position = "absolute";
+        spec2row1col3div.id = "spec2row1col3div";
+        document.getElementById('spec2row1col3').appendChild(spec2row1col3div);
+        var spec2row1col3arrow = document.createElement('img');
+        spec2row1col3arrow.src = '../images/table elements/arrow_skip1_down.png';
+        document.getElementById('spec2row1col3div').appendChild(spec2row1col3arrow);
+        spec2row1col3arrow.style.position = "relative";
+        spec2row1col3arrow.style.top = "-3px";
+        spec2row1col3arrow.style.left = "19px";
+        spec2row1col3arrow.style.zIndex += 1;
+        arrowArray.push(spec2row1col3div,  spec2row1col3arrow);
+
+    //Build spec2row1col4 EMPTY
+    spec2row1col4.style.display = "none";
+
+    //Build spec2row2col1 Precision
+    spec2row2col1.style.display = "block";
+    spec2row2col1.style.backgroundImage = "url('../images/spell icons/paladin/talents/precision.jpg')";
+    spec2row2col1.style.backgroundRepeat = "no-repeat";
+    spec2row2col1.style.backgroundSize = "34px 34px";
+    spec2row2col1.style.backgroundPosition = "center center";
+    spec2row2col1.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row2col1icon');
+        addSpellId.setAttribute('data-spellId', 'precision');
+
+    //Build spec2row2col2 Guardian's Favor
+    spec2row2col2.style.display = "block";
+    spec2row2col2.style.backgroundImage = "url('../images/spell icons/paladin/talents/guardians_favor.jpg')";
+    spec2row2col2.style.backgroundRepeat = "no-repeat";
+    spec2row2col2.style.backgroundSize = "34px 34px";
+    spec2row2col2.style.backgroundPosition = "center center";
+    spec2row2col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row2col2icon');
+        addSpellId.setAttribute('data-spellId', 'precision');
+
+    //Build spec2row2col3 EMPTY
+    spec2row2col3.style.display = "none";
+
+    //Build spec2row2col4 Toughness
+    spec2row2col4.style.display = "block";
+    spec2row2col4.style.backgroundImage = "url('../images/spell icons/paladin/talents/toughness.jpg')";
+    spec2row2col4.style.backgroundRepeat = "no-repeat";
+    spec2row2col4.style.backgroundSize = "34px 34px";
+    spec2row2col4.style.backgroundPosition = "center center";
+    spec2row2col4.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row2col4icon');
+        addSpellId.setAttribute('data-spellId', 'precision');
+
+    //Build spec2row3col1 Blessing of Kings
+    spec2row3col1.style.display = "block";
+    spec2row3col1.style.backgroundImage = "url('../images/spell icons/paladin/talents/blessing_of_kings.jpg')";
+    spec2row3col1.style.backgroundRepeat = "no-repeat";
+    spec2row3col1.style.backgroundSize = "34px 34px";
+    spec2row3col1.style.backgroundPosition = "center center";
+    spec2row3col1.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row3col1icon');
+        addSpellId.setAttribute('data-spellId', 'blessing_of_kings');
+
+    //Build spec2row3col2 Improved Righteous Fury
+    spec2row3col2.style.display = "block";
+    spec2row3col2.style.backgroundImage = "url('../images/spell icons/paladin/talents/improved_righteous_fury.jpg')";
+    spec2row3col2.style.backgroundRepeat = "no-repeat";
+    spec2row3col2.style.backgroundSize = "34px 34px";
+    spec2row3col2.style.backgroundPosition = "center center";
+    spec2row3col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row3col2icon');
+        addSpellId.setAttribute('data-spellId', 'improved_righteous_fury');
+
+    //Build spec2row3col3 Shield Specialization
+    spec2row3col3.style.display = "block";
+    spec2row3col3.style.backgroundImage = "url('../images/spell icons/paladin/talents/shield_specialization.jpg')";
+    spec2row3col3.style.backgroundRepeat = "no-repeat";
+    spec2row3col3.style.backgroundSize = "34px 34px";
+    spec2row3col3.style.backgroundPosition = "center center";
+    spec2row3col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row3col3icon');
+        addSpellId.setAttribute('data-spellId', 'shield_specialization');
+
+    //Build spec2row3col4 Anticipation
+    spec2row3col4.style.display = "block";
+    spec2row3col4.style.backgroundImage = "url('../images/spell icons/paladin/talents/anticipation.jpg')";
+    spec2row3col4.style.backgroundRepeat = "no-repeat";
+    spec2row3col4.style.backgroundSize = "34px 34px";
+    spec2row3col4.style.backgroundPosition = "center center";
+    spec2row3col4.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row3col4icon');
+        addSpellId.setAttribute('data-spellId', 'anticipation');
+
+    //Build spec2row4col1 EMPTY
+    spec2row4col1.style.display = "none";
+
+    //Build spec2row4col2 Improved Hammer of Justice
+    spec2row4col2.style.display = "block";
+    spec2row4col2.style.backgroundImage = "url('../images/spell icons/paladin/talents/improved_hammer_of_justice.jpg')";
+    spec2row4col2.style.backgroundRepeat = "no-repeat";
+    spec2row4col2.style.backgroundSize = "34px 34px";
+    spec2row4col2.style.backgroundPosition = "center center";
+    spec2row4col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row4col2icon');
+        addSpellId.setAttribute('data-spellId', 'improved_hammer_of_justice');
+
+    //Build spec2row4col3 Improved Concentration Aura
+    spec2row4col3.style.display = "block";
+    spec2row4col3.style.backgroundImage = "url('../images/spell icons/paladin/talents/improved_concentration_aura.jpg')";
+    spec2row4col3.style.backgroundRepeat = "no-repeat";
+    spec2row4col3.style.backgroundSize = "34px 34px";
+    spec2row4col3.style.backgroundPosition = "center center";
+    spec2row4col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row4col3icon');
+        addSpellId.setAttribute('data-spellId', 'improved_concentration_aura');
+
+    //Build spec2row4col4 EMPTY
+    spec2row4col4.style.display = "none";
+
+    //Build spec2row5col1 EMPTY
+    spec2row5col1.style.display = "none";
+
+    //Build spec2row5col2 Blessing of Sanctuary
+    spec2row5col2.style.display = "block";
+    spec2row5col2.style.backgroundImage = "url('../images/spell icons/paladin/talents/blessing_of_sanctuary.jpg')";
+    spec2row5col2.style.backgroundRepeat = "no-repeat";
+    spec2row5col2.style.backgroundSize = "34px 34px";
+    spec2row5col2.style.backgroundPosition = "center center";
+    spec2row5col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row5col2icon');
+        addSpellId.setAttribute('data-spellId', 'blessing_of_sanctuary');
+        //Build arrow
+        var spec2row5col2div = document.createElement('div');
+        spec2row5col2div.style.maxHeight = "0px";
+        spec2row5col2div.style.position = "absolute";
+        spec2row5col2div.id = "spec2row5col2div";
+        document.getElementById('spec2row5col2').appendChild(spec2row5col2div);
+        var spec2row5col2arrow = document.createElement('img');
+        spec2row5col2arrow.src = '../images/table elements/arrow_skip1_down.png';
+        document.getElementById('spec2row5col2div').appendChild(spec2row5col2arrow);
+        spec2row5col2arrow.style.position = "relative";
+        spec2row5col2arrow.style.top = "-3px";
+        spec2row5col2arrow.style.left = "19px";
+        spec2row5col2arrow.style.zIndex += 1;
+        arrowArray.push(spec2row5col2div,  spec2row5col2arrow);
+
+    //Build spec2row5col3 Reckoning
+    spec2row5col3.style.display = "block";
+    spec2row5col3.style.backgroundImage = "url('../images/spell icons/paladin/talents/reckoning.jpg')";
+    spec2row5col3.style.backgroundRepeat = "no-repeat";
+    spec2row5col3.style.backgroundSize = "34px 34px";
+    spec2row5col3.style.backgroundPosition = "center center";
+    spec2row5col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row5col3icon');
+        addSpellId.setAttribute('data-spellId', 'reckoning');
+
+    //Build spec2row5col4 EMPTY
+    spec2row5col4.style.display = "none";
+
+    //Build spec2row6col1 EMPTY
+    spec2row6col1.style.display = "none";
+
+    //Build spec2row6col2 EMPTY
+    spec2row6col2.style.display = "none";
+
+    //Build spec2row6col3 One-Handed Weapon Specialization
+    spec2row6col3.style.display = "block";
+    spec2row6col3.style.backgroundImage = "url('../images/spell icons/paladin/talents/one_handed_weapon_specialization.jpg')";
+    spec2row6col3.style.backgroundRepeat = "no-repeat";
+    spec2row6col3.style.backgroundSize = "34px 34px";
+    spec2row6col3.style.backgroundPosition = "center center";
+    spec2row6col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row6col3icon');
+        addSpellId.setAttribute('data-spellId', 'one_handed_weapon_specialization');
+
+    //Build spec2row6col4 EMPTY
+    spec2row6col4.style.display = "none";
+
+    //Build spec2row7col1 EMPTY
+    spec2row7col1.style.display = "none";
+
+    //Build spec2row7col2 Holy Shield
+    spec2row7col2.style.display = "block";
+    spec2row7col2.style.backgroundImage = "url('../images/spell icons/paladin/talents/holy_shield.jpg')";
+    spec2row7col2.style.backgroundRepeat = "no-repeat";
+    spec2row7col2.style.backgroundSize = "34px 34px";
+    spec2row7col2.style.backgroundPosition = "center center";
+    spec2row7col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row7col2icon');
+        addSpellId.setAttribute('data-spellId', 'holy_shield');
+
+    //Build spec2row7col3 EMPTY
+    spec2row7col3.style.display = "none";
+
+    //Build spec2row7col4 EMPTY
+    spec2row7col4.style.display = "none";
+
+    //Build spec3 Retribution
+    //Build spec3row1col1 EMPTY
+    spec3row1col1.style.display = "none";
+
+    //Build spec3row1col2 Improved Blessing of Might
+    spec3row1col2.style.display = "block";
+    spec3row1col2.style.backgroundImage = "url('../images/spell icons/paladin/talents/improved_blessing_of_might.jpg')";
+    spec3row1col2.style.backgroundRepeat = "no-repeat";
+    spec3row1col2.style.backgroundSize = "34px 34px";
+    spec3row1col2.style.backgroundPosition = "center center";
+    spec3row1col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec3row1col2icon');
+        addSpellId.setAttribute('data-spellId', 'improved_blessing_of_might');
+
+    //Build spec3row1col3 Benediction
+    spec3row1col3.style.display = "block";
+    spec3row1col3.style.backgroundImage = "url('../images/spell icons/paladin/talents/improved_blessing_of_might.jpg')";
+    spec3row1col3.style.backgroundRepeat = "no-repeat";
+    spec3row1col3.style.backgroundSize = "34px 34px";
+    spec3row1col3.style.backgroundPosition = "center center";
+    spec3row1col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec3row1col3icon');
+        addSpellId.setAttribute('data-spellId', 'improved_blessing_of_might');
+
+    //Build spec3row1col4 EMPTY
+    spec3row1col4.style.display = "none";
+
+    //Build spec3row2col1 Improved Judgement
+    spec3row2col1.style.display = "block";
+    spec3row2col1.style.backgroundImage = "url('../images/spell icons/paladin/talents/improved_judgement.jpg')";
+    spec3row2col1.style.backgroundRepeat = "no-repeat";
+    spec3row2col1.style.backgroundSize = "34px 34px";
+    spec3row2col1.style.backgroundPosition = "center center";
+    spec3row2col1.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec3row2col1icon');
+        addSpellId.setAttribute('data-spellId', 'improved_judgement');
+
+    //Build spec3row2col2 Improved Seal of the Crusader
+    spec3row2col2.style.display = "block";
+    spec3row2col2.style.backgroundImage = "url('../images/spell icons/paladin/talents/improved_seal_of_the_crusader.jpg')";
+    spec3row2col2.style.backgroundRepeat = "no-repeat";
+    spec3row2col2.style.backgroundSize = "34px 34px";
+    spec3row2col2.style.backgroundPosition = "center center";
+    spec3row2col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec3row2col2icon');
+        addSpellId.setAttribute('data-spellId', 'improved_seal_of_the_crusader');
+
+    //Build spec3row2col3 Deflection
+    spec3row2col3.style.display = "block";
+    spec3row2col3.style.backgroundImage = "url('../images/spell icons/paladin/talents/deflection.jpg')";
+    spec3row2col3.style.backgroundRepeat = "no-repeat";
+    spec3row2col3.style.backgroundSize = "34px 34px";
+    spec3row2col3.style.backgroundPosition = "center center";
+    spec3row2col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec3row2col3icon');
+        addSpellId.setAttribute('data-spellId', 'deflection');
+
+    //Build spec3row2col4 EMPTY
+    spec3row2col4.style.display = "none";
+
+    //Build spec3row3col1 Vindication
+    spec3row3col1.style.display = "block";
+    spec3row3col1.style.backgroundImage = "url('../images/spell icons/paladin/talents/vindication.jpg')";
+    spec3row3col1.style.backgroundRepeat = "no-repeat";
+    spec3row3col1.style.backgroundSize = "34px 34px";
+    spec3row3col1.style.backgroundPosition = "center center";
+    spec3row3col1.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec3row3col1icon');
+        addSpellId.setAttribute('data-spellId', 'vindication');
+
+    //Build spec3row3col2 Conviction
+    spec3row3col2.style.display = "block";
+    spec3row3col2.style.backgroundImage = "url('../images/spell icons/paladin/talents/conviction.jpg')";
+    spec3row3col2.style.backgroundRepeat = "no-repeat";
+    spec3row3col2.style.backgroundSize = "34px 34px";
+    spec3row3col2.style.backgroundPosition = "center center";
+    spec3row3col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec3row3col2icon');
+        addSpellId.setAttribute('data-spellId', 'vindication');
+        //Build arrow
+        var spec3row3col2div = document.createElement('div');
+        spec3row3col2div.style.maxHeight = "0px";
+        spec3row3col2div.style.position = "absolute";
+        spec3row3col2div.id = "spec3row3col2div";
+        document.getElementById('spec3row3col2').appendChild(spec3row3col2div);
+        var spec3row3col2arrow = document.createElement('img');
+        spec3row3col2arrow.src = '../images/table elements/arrow_skip2_down.png';
+        document.getElementById('spec3row3col2div').appendChild(spec3row3col2arrow);
+        spec3row3col2arrow.style.position = "relative";
+        spec3row3col2arrow.style.top = "-3px";
+        spec3row3col2arrow.style.left = "19px";
+        spec3row3col2arrow.style.zIndex += 1;
+        arrowArray.push(spec3row3col2div, spec3row3col2arrow);
+
+    //Build spec3row3col3 Seal of Command
+    spec3row3col3.style.display = "block";
+    spec3row3col3.style.backgroundImage = "url('../images/spell icons/paladin/talents/seal_of_command.jpg')";
+    spec3row3col3.style.backgroundRepeat = "no-repeat";
+    spec3row3col3.style.backgroundSize = "34px 34px";
+    spec3row3col3.style.backgroundPosition = "center center";
+    spec3row3col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec3row3col3icon');
+        addSpellId.setAttribute('data-spellId', 'seal_of_command');
+
+    //Build spec3row3col4 Pursuit of Justice
+    spec3row3col4.style.display = "block";
+    spec3row3col4.style.backgroundImage = "url('../images/spell icons/paladin/talents/pursuit_of_justice.jpg')";
+    spec3row3col4.style.backgroundRepeat = "no-repeat";
+    spec3row3col4.style.backgroundSize = "34px 34px";
+    spec3row3col4.style.backgroundPosition = "center center";
+    spec3row3col4.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec3row3col4icon');
+        addSpellId.setAttribute('data-spellId', 'pursuit_of_justice');
+
+    //Build spec3row4col1 Eye for an Eye
+    spec3row4col1.style.display = "block";
+    spec3row4col1.style.backgroundImage = "url('../images/spell icons/paladin/talents/eye_for_an_eye.jpg')";
+    spec3row4col1.style.backgroundRepeat = "no-repeat";
+    spec3row4col1.style.backgroundSize = "34px 34px";
+    spec3row4col1.style.backgroundPosition = "center center";
+    spec3row4col1.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec3row4col1icon');
+        addSpellId.setAttribute('data-spellId', 'eye_for_an_eye');
+
+    //Build spec3row4col2 Empty
+    spec3row4col2.style.display = "none";
+
+    //Build spec3row4col3 Improved Retribution Aura
+    spec3row4col3.style.display = "block";
+    spec3row4col3.style.backgroundImage = "url('../images/spell icons/paladin/talents/improved_retribution_aura.jpg')";
+    spec3row4col3.style.backgroundRepeat = "no-repeat";
+    spec3row4col3.style.backgroundSize = "34px 34px";
+    spec3row4col3.style.backgroundPosition = "center center";
+    spec3row4col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec3row4col3icon');
+        addSpellId.setAttribute('data-spellId', 'improved_retribution_aura');
+
+    //Build spec3row4col4 Empty
+    spec3row4col4.style.display = "none";
+
+    //Build spec3row5col1 Two-Handed Weapon Specialization
+    spec3row5col1.style.display = "block";
+    spec3row5col1.style.backgroundImage = "url('../images/spell icons/paladin/talents/two_handed_weapon_specialization.jpg')";
+    spec3row5col1.style.backgroundRepeat = "no-repeat";
+    spec3row5col1.style.backgroundSize = "34px 34px";
+    spec3row5col1.style.backgroundPosition = "center center";
+    spec3row5col1.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec3row5col1icon');
+        addSpellId.setAttribute('data-spellId', 'two_handed_weapon_specialization');
+
+    //Build spec3row5col2 Empty
+    spec3row5col2.style.display = "none";
+
+    //Build spec3row5col3 Sanctity Aura
+    spec3row5col3.style.display = "block";
+    spec3row5col3.style.backgroundImage = "url('../images/spell icons/paladin/talents/sanctity_aura.jpg')";
+    spec3row5col3.style.backgroundRepeat = "no-repeat";
+    spec3row5col3.style.backgroundSize = "34px 34px";
+    spec3row5col3.style.backgroundPosition = "center center";
+    spec3row5col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec3row5col3icon');
+        addSpellId.setAttribute('data-spellId', 'sanctity_aura');
+
+    //Build spec3row5col4 Empty
+    spec3row5col4.style.display = "none";
+
+    //Build spec3row6col1 Empty
+    spec3row6col1.style.display = "none";
+
+    //Build spec3row6col2 Vengeance
+    spec3row6col2.style.display = "block";
+    spec3row6col2.style.backgroundImage = "url('../images/spell icons/paladin/talents/vengeance.jpg')";
+    spec3row6col2.style.backgroundRepeat = "no-repeat";
+    spec3row6col2.style.backgroundSize = "34px 34px";
+    spec3row6col2.style.backgroundPosition = "center center";
+    spec3row6col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec3row6col2icon');
+        addSpellId.setAttribute('data-spellId', 'vengeance');
+
+    //Build spec3row6col3 Empty
+    spec3row6col3.style.display = "none";
+
+    //Build spec3row6col4 Empty
+    spec3row6col4.style.display = "none";
+
+    //Build spec3row7col1 Empty
+    spec3row7col1.style.display = "none";
+
+    //Build spec3row7col2 Repentance
+    spec3row7col2.style.display = "block";
+    spec3row7col2.style.backgroundImage = "url('../images/spell icons/paladin/talents/repentance.jpg')";
+    spec3row7col2.style.backgroundRepeat = "no-repeat";
+    spec3row7col2.style.backgroundSize = "34px 34px";
+    spec3row7col2.style.backgroundPosition = "center center";
+    spec3row7col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec3row7col2icon');
+        addSpellId.setAttribute('data-spellId', 'repentance');
+
+    //Build spec3row7col3 Empty
+    spec3row7col3.style.display = "none";
+
+    //Build spec3row7col4 Empty
+    spec3row7col4.style.display = "none";
 }
 
 function buildPriest(){
