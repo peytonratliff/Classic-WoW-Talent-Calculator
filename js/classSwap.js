@@ -3341,7 +3341,357 @@ function buildPaladin(){
 }
 
 function buildPriest(){
+    removeArrows(); //Arrows are built every time a new class is selected. The removeArrows() funtion clears the arrows from the previous selection
 
+    var spec1row1col1 = document.getElementById("spec1row1col1icon");
+    var spec1row1col2 = document.getElementById("spec1row1col2icon");
+    var spec1row1col3 = document.getElementById("spec1row1col3icon");
+    var spec1row1col4 = document.getElementById("spec1row1col4icon");
+    var spec1row2col1 = document.getElementById("spec1row2col1icon");
+    var spec1row2col2 = document.getElementById("spec1row2col2icon");
+    var spec1row2col3 = document.getElementById("spec1row2col3icon");
+    var spec1row2col4 = document.getElementById("spec1row2col4icon");
+    var spec1row3col1 = document.getElementById("spec1row3col1icon");
+    var spec1row3col2 = document.getElementById("spec1row3col2icon");
+    var spec1row3col3 = document.getElementById("spec1row3col3icon");
+    var spec1row3col4 = document.getElementById("spec1row3col4icon");
+    var spec1row4col1 = document.getElementById("spec1row4col1icon");
+    var spec1row4col2 = document.getElementById("spec1row4col2icon");
+    var spec1row4col3 = document.getElementById("spec1row4col3icon");
+    var spec1row4col4 = document.getElementById("spec1row4col4icon");
+    var spec1row5col1 = document.getElementById("spec1row5col1icon");
+    var spec1row5col2 = document.getElementById("spec1row5col2icon");
+    var spec1row5col3 = document.getElementById("spec1row5col3icon");
+    var spec1row5col4 = document.getElementById("spec1row5col4icon");
+    var spec1row6col1 = document.getElementById("spec1row6col1icon");
+    var spec1row6col2 = document.getElementById("spec1row6col2icon");
+    var spec1row6col3 = document.getElementById("spec1row6col3icon");
+    var spec1row6col4 = document.getElementById("spec1row6col4icon");
+    var spec1row7col1 = document.getElementById("spec1row7col1icon");
+    var spec1row7col2 = document.getElementById("spec1row7col2icon");
+    var spec1row7col3 = document.getElementById("spec1row7col3icon");
+    var spec1row7col4 = document.getElementById("spec1row7col4icon");
+
+    var spec2row1col1 = document.getElementById("spec2row1col1icon");
+    var spec2row1col2 = document.getElementById("spec2row1col2icon");
+    var spec2row1col3 = document.getElementById("spec2row1col3icon");
+    var spec2row1col4 = document.getElementById("spec2row1col4icon");
+    var spec2row2col1 = document.getElementById("spec2row2col1icon");
+    var spec2row2col2 = document.getElementById("spec2row2col2icon");
+    var spec2row2col3 = document.getElementById("spec2row2col3icon");
+    var spec2row2col4 = document.getElementById("spec2row2col4icon");
+    var spec2row3col1 = document.getElementById("spec2row3col1icon");
+    var spec2row3col2 = document.getElementById("spec2row3col2icon");
+    var spec2row3col3 = document.getElementById("spec2row3col3icon");
+    var spec2row3col4 = document.getElementById("spec2row3col4icon");
+    var spec2row4col1 = document.getElementById("spec2row4col1icon");
+    var spec2row4col2 = document.getElementById("spec2row4col2icon");
+    var spec2row4col3 = document.getElementById("spec2row4col3icon");
+    var spec2row4col4 = document.getElementById("spec2row4col4icon");
+    var spec2row5col1 = document.getElementById("spec2row5col1icon");
+    var spec2row5col2 = document.getElementById("spec2row5col2icon");
+    var spec2row5col3 = document.getElementById("spec2row5col3icon");
+    var spec2row5col4 = document.getElementById("spec2row5col4icon");
+    var spec2row6col1 = document.getElementById("spec2row6col1icon");
+    var spec2row6col2 = document.getElementById("spec2row6col2icon");
+    var spec2row6col3 = document.getElementById("spec2row6col3icon");
+    var spec2row6col4 = document.getElementById("spec2row6col4icon");
+    var spec2row7col1 = document.getElementById("spec2row7col1icon");
+    var spec2row7col2 = document.getElementById("spec2row7col2icon");
+    var spec2row7col3 = document.getElementById("spec2row7col3icon");
+    var spec2row7col4 = document.getElementById("spec2row7col4icon");
+
+    var spec3row1col1 = document.getElementById("spec3row1col1icon");
+    var spec3row1col2 = document.getElementById("spec3row1col2icon");
+    var spec3row1col3 = document.getElementById("spec3row1col3icon");
+    var spec3row1col4 = document.getElementById("spec3row1col4icon");
+    var spec3row2col1 = document.getElementById("spec3row2col1icon");
+    var spec3row2col2 = document.getElementById("spec3row2col2icon");
+    var spec3row2col3 = document.getElementById("spec3row2col3icon");
+    var spec3row2col4 = document.getElementById("spec3row2col4icon");
+    var spec3row3col1 = document.getElementById("spec3row3col1icon");
+    var spec3row3col2 = document.getElementById("spec3row3col2icon");
+    var spec3row3col3 = document.getElementById("spec3row3col3icon");
+    var spec3row3col4 = document.getElementById("spec3row3col4icon");
+    var spec3row4col1 = document.getElementById("spec3row4col1icon");
+    var spec3row4col2 = document.getElementById("spec3row4col2icon");
+    var spec3row4col3 = document.getElementById("spec3row4col3icon");
+    var spec3row4col4 = document.getElementById("spec3row4col4icon");
+    var spec3row5col1 = document.getElementById("spec3row5col1icon");
+    var spec3row5col2 = document.getElementById("spec3row5col2icon");
+    var spec3row5col3 = document.getElementById("spec3row5col3icon");
+    var spec3row5col4 = document.getElementById("spec3row5col4icon");
+    var spec3row6col1 = document.getElementById("spec3row6col1icon");
+    var spec3row6col2 = document.getElementById("spec3row6col2icon");
+    var spec3row6col3 = document.getElementById("spec3row6col3icon");
+    var spec3row6col4 = document.getElementById("spec3row6col4icon");
+    var spec3row7col1 = document.getElementById("spec3row7col1icon");
+    var spec3row7col2 = document.getElementById("spec3row7col2icon");
+    var spec3row7col3 = document.getElementById("spec3row7col3icon");
+    var spec3row7col4 = document.getElementById("spec3row7col4icon");
+
+    //Build specBar
+    var spec1icon = document.getElementById("spec1icon");
+    var spec2icon = document.getElementById("spec2icon");
+    var spec3icon = document.getElementById("spec3icon");
+    var spec1name = document.getElementById("spec1name");
+    var spec2name = document.getElementById("spec2name");
+    var spec3name = document.getElementById("spec3name");
+    specBar.style.display = "block";
+    spec1icon.style.backgroundImage = "url('../images/class icons/spec icons/priest/discipline.jpg')";
+        spec1icon.style.backgroundRepeat = "no-repeat";
+        spec1icon.style.backgroundSize = "34px 34px";
+        spec1icon.style.backgroundPosition = "left 5px top 10px";
+        spec1icon.style.width = "44px";
+        spec1icon.style.height = "44px";
+    spec2icon.style.backgroundImage = "url('../images/class icons/spec icons/priest/holy.jpg')";
+        spec2icon.style.backgroundRepeat = "no-repeat";
+        spec2icon.style.backgroundSize = "34px 34px";
+        spec2icon.style.backgroundPosition = "left 5px top 10px";
+        spec2icon.style.width = "44px";
+        spec2icon.style.height = "44px";
+    spec3icon.style.backgroundImage = "url('../images/class icons/spec icons/priest/shadow.jpg')";
+        spec3icon.style.backgroundRepeat = "no-repeat";
+        spec3icon.style.backgroundSize = "34px 34px";
+        spec3icon.style.backgroundPosition = "left 5px top 10px";
+        spec1icon.style.width = "44px";
+        spec1icon.style.height = "44px";
+    spec1name.innerHTML = "Discipline";
+    spec2name.innerHTML = "Holy";
+    spec3name.innerHTML = "Shadow";
+
+    //Build spec1 Discipline
+    //Build spec1row1col1 EMPTY
+    spec1row1col1.style.display = "none";
+
+    //Build spec1row1col2 Unbreakable Will
+    spec1row1col2.style.display = "block";
+    spec1row1col2.style.backgroundImage = "url('../images/spell icons/priest/talents/unbreakable_will.jpg')";
+    spec1row1col2.style.backgroundRepeat = "no-repeat";
+    spec1row1col2.style.backgroundSize = "34px 34px";
+    spec1row1col2.style.backgroundPosition = "center center";
+    spec1row1col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row1col2icon');
+        addSpellId.setAttribute('data-spellId', 'arcane_subtlety');
+
+    //Build spec1row1col3 Wand Specialization
+    spec1row1col3.style.display = "block";
+    spec1row1col3.style.backgroundImage = "url('../images/spell icons/priest/talents/wand_specialization.jpg')";
+    spec1row1col3.style.backgroundRepeat = "no-repeat";
+    spec1row1col3.style.backgroundSize = "34px 34px";
+    spec1row1col3.style.backgroundPosition = "center center";
+    spec1row1col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row1col3icon');
+        addSpellId.setAttribute('data-spellId', 'wand_specialization');
+
+    //Build spec1row1col4 EMPTY
+    spec1row1col4.style.display = "none";
+
+    //Build spec1row2col1 Silent Resolve
+    spec1row2col1.style.display = "block";
+    spec1row2col1.style.backgroundImage = "url('../images/spell icons/priest/talents/silent_resolve.jpg')";
+    spec1row2col1.style.backgroundRepeat = "no-repeat";
+    spec1row2col1.style.backgroundSize = "34px 34px";
+    spec1row2col1.style.backgroundPosition = "center center";
+    spec1row2col1.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row2col1icon');
+        addSpellId.setAttribute('data-spellId', 'silent_resolve');
+
+    //Build spec1row2col2 Improved Power Word: Fortitude
+    spec1row2col2.style.display = "block";
+    spec1row2col2.style.backgroundImage = "url('../images/spell icons/priest/talents/improved_power_word_fortitude.jpg')";
+    spec1row2col2.style.backgroundRepeat = "no-repeat";
+    spec1row2col2.style.backgroundSize = "34px 34px";
+    spec1row2col2.style.backgroundPosition = "center center";
+    spec1row2col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row2col2icon');
+        addSpellId.setAttribute('data-spellId', 'improved_power_word_fortitude');
+
+    //Build spec1row2col3 Improved Power Word: Shield
+    spec1row2col3.style.display = "block";
+    spec1row2col3.style.backgroundImage = "url('../images/spell icons/priest/talents/improved_power_word_shield.jpg')";
+    spec1row2col3.style.backgroundRepeat = "no-repeat";
+    spec1row2col3.style.backgroundSize = "34px 34px";
+    spec1row2col3.style.backgroundPosition = "center center";
+    spec1row2col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row2col3icon');
+        addSpellId.setAttribute('data-spellId', 'improved_power_word_shield');
+
+    //Build spec1row2col4 Martyrdom
+    spec1row2col4.style.display = "block";
+    spec1row2col4.style.backgroundImage = "url('../images/spell icons/priest/talents/martyrdom.jpg')";
+    spec1row2col4.style.backgroundRepeat = "no-repeat";
+    spec1row2col4.style.backgroundSize = "34px 34px";
+    spec1row2col4.style.backgroundPosition = "center center";
+    spec1row2col4.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row2col4icon');
+        addSpellId.setAttribute('data-spellId', 'martyrdom');
+
+    //Build spec1row3col1 EMPTY
+    spec1row3col1.style.display = "none";
+
+    //Build spec1row3col2 Inner Focus
+    spec1row3col2.style.display = "block";
+    spec1row3col2.style.backgroundImage = "url('../images/spell icons/priest/talents/inner_focus.jpg')";
+    spec1row3col2.style.backgroundRepeat = "no-repeat";
+    spec1row3col2.style.backgroundSize = "34px 34px";
+    spec1row3col2.style.backgroundPosition = "center center";
+    spec1row3col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row3col2icon');
+        addSpellId.setAttribute('data-spellId', 'inner_focus');
+
+    //Build spec1row3col3 Meditation
+    spec1row3col3.style.display = "block";
+    spec1row3col3.style.backgroundImage = "url('../images/spell icons/priest/talents/meditation.jpg')";
+    spec1row3col3.style.backgroundRepeat = "no-repeat";
+    spec1row3col3.style.backgroundSize = "34px 34px";
+    spec1row3col3.style.backgroundPosition = "center center";
+    spec1row3col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row3col3icon');
+        addSpellId.setAttribute('data-spellId', 'meditation');
+        //Build arrow
+        var spec1row3col3div = document.createElement('div');
+        spec1row3col3div.style.maxHeight = "0px";
+        spec1row3col3div.style.position = "absolute";
+        spec1row3col3div.id = "spec1row3col3div";
+        document.getElementById('spec1row3col3').appendChild(spec1row3col3div);
+        var spec1row3col3arrow = document.createElement('img');
+        spec1row3col3arrow.src = '../images/table elements/arrow_skip1_down.png';
+        document.getElementById('spec1row3col3div').appendChild(spec1row3col3arrow);
+        spec1row3col3arrow.style.position = "relative";
+        spec1row3col3arrow.style.top = "-3px";
+        spec1row3col3arrow.style.left = "19px";
+        spec1row3col3arrow.style.zIndex += 1;
+        arrowArray.push(spec1row3col3div,  spec1row3col3arrow);
+
+    //Build spec1row3col4 EMPTY
+    spec1row3col4.style.display = "none";
+
+    //Build spec1row4col1 Improved Inner Fire
+    spec1row4col1.style.display = "block";
+    spec1row4col1.style.backgroundImage = "url('../images/spell icons/priest/talents/improved_inner_fire.jpg')";
+    spec1row4col1.style.backgroundRepeat = "no-repeat";
+    spec1row4col1.style.backgroundSize = "34px 34px";
+    spec1row4col1.style.backgroundPosition = "center center";
+    spec1row4col1.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row4col1icon');
+        addSpellId.setAttribute('data-spellId', 'improved_inner_fire');
+
+    //Build spec1row4col2 Mental Agility
+    spec1row4col2.style.display = "block";
+    spec1row4col2.style.backgroundImage = "url('../images/spell icons/priest/talents/mental_agility.jpg')";
+    spec1row4col2.style.backgroundRepeat = "no-repeat";
+    spec1row4col2.style.backgroundSize = "34px 34px";
+    spec1row4col2.style.backgroundPosition = "center center";
+    spec1row4col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row4col2icon');
+        addSpellId.setAttribute('data-spellId', 'mental_agility');
+
+    //Build spec1row4col3 EMPTY
+    spec1row4col3.style.display = "none";
+
+    //Build spec1row4col4 Improved Mana Burn
+    spec1row4col4.style.display = "block";
+    spec1row4col4.style.backgroundImage = "url('../images/spell icons/priest/talents/improved_mana_burn.jpg')";
+    spec1row4col4.style.backgroundRepeat = "no-repeat";
+    spec1row4col4.style.backgroundSize = "34px 34px";
+    spec1row4col4.style.backgroundPosition = "center center";
+    spec1row4col4.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row4col4icon');
+        addSpellId.setAttribute('data-spellId', 'improved_mana_burn');
+
+    //Build spec1row5col1 EMPTY
+    spec1row5col1.style.display = "none";
+
+    //Build spec1row5col2 Mental Strength
+    spec1row5col2.style.display = "block";
+    spec1row5col2.style.backgroundImage = "url('../images/spell icons/priest/talents/mental_strength.jpg')";
+    spec1row5col2.style.backgroundRepeat = "no-repeat";
+    spec1row5col2.style.backgroundSize = "34px 34px";
+    spec1row5col2.style.backgroundPosition = "center center";
+    spec1row5col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row5col2icon');
+        addSpellId.setAttribute('data-spellId', 'mental_strength');
+        //Build arrow
+        var spec1row5col2div = document.createElement('div');
+        spec1row5col2div.style.maxHeight = "0px";
+        spec1row5col2div.style.position = "absolute";
+        spec1row5col2div.id = "spec1row5col2div";
+        document.getElementById('spec1row5col2').appendChild(spec1row5col2div);
+        var spec1row5col2arrow = document.createElement('img');
+        spec1row5col2arrow.src = '../images/table elements/arrow_skip1_down.png';
+        document.getElementById('spec1row5col2div').appendChild(spec1row5col2arrow);
+        spec1row5col2arrow.style.position = "relative";
+        spec1row5col2arrow.style.top = "-3px";
+        spec1row5col2arrow.style.left = "19px";
+        spec1row5col2arrow.style.zIndex += 1;
+        arrowArray.push(spec1row5col2div,  spec1row5col2arrow);
+
+    //Build spec1row5col3 Divine Spirit
+    spec1row5col3.style.display = "block";
+    spec1row5col3.style.backgroundImage = "url('../images/spell icons/priest/talents/divine_spirit.jpg')";
+    spec1row5col3.style.backgroundRepeat = "no-repeat";
+    spec1row5col3.style.backgroundSize = "34px 34px";
+    spec1row5col3.style.backgroundPosition = "center center";
+    spec1row5col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row5col3icon');
+        addSpellId.setAttribute('data-spellId', 'divine_spirit');
+
+    //Build spec1row5col4 EMPTY
+    spec1row5col4.style.display = "none";
+
+    //Build spec1row6col1 EMPTY
+    spec1row6col1.style.display = "none";
+
+    //Build spec1row6col2 EMPTY
+    spec1row6col2.style.display = "none";
+
+    //Build spec1row6col3 Force of Will
+    spec1row6col3.style.display = "block";
+    spec1row6col3.style.backgroundImage = "url('../images/spell icons/priest/talents/force_of_will.jpg')";
+    spec1row6col3.style.backgroundRepeat = "no-repeat";
+    spec1row6col3.style.backgroundSize = "34px 34px";
+    spec1row6col3.style.backgroundPosition = "center center";
+    spec1row6col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row6col3icon');
+        addSpellId.setAttribute('data-spellId', 'force_of_will');
+
+    //Build spec1row6col4 EMPTY
+    spec1row6col4.style.display = "none";
+
+    //Build spec1row7col1 EMPTY
+    spec1row7col1.style.display = "none";
+
+    //Build spec1row7col2 Power Infusion
+    spec1row7col2.style.display = "block";
+    spec1row7col2.style.backgroundImage = "url('../images/spell icons/priest/talents/power_infusion.jpg')";
+    spec1row7col2.style.backgroundRepeat = "no-repeat";
+    spec1row7col2.style.backgroundSize = "34px 34px";
+    spec1row7col2.style.backgroundPosition = "center center";
+    spec1row7col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row7col2icon');
+        addSpellId.setAttribute('data-spellId', 'power_infusion');
+
+    //Build spec1row7col3 EMPTY
+    spec1row7col3.style.display = "none";
+
+    //Build spec1row7col4 EMPTY
+    spec1row7col4.style.display = "none";
 }
 
 function buildRogue(){
