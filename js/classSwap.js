@@ -4543,6 +4543,285 @@ function buildRogue(){
     //Build spec1row7col4 EMPTY
     spec1row7col4.style.display = "none";
 
+    //Build spec2 Combat
+    //Build spec2row1col1 Improved Gouge
+    spec2row1col1.style.display = "block";
+    spec2row1col1.style.backgroundImage = "url('../images/spell icons/rogue/talents/improved_gouge.jpg')";
+    spec2row1col1.style.backgroundRepeat = "no-repeat";
+    spec2row1col1.style.backgroundSize = "34px 34px";
+    spec2row1col1.style.backgroundPosition = "center center";
+    spec2row1col1.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row1col1icon');
+        addSpellId.setAttribute('data-spellId', 'improved_gouge');
+
+    //Build spec2row1col2 Improved Sinister Strike
+    spec2row1col2.style.display = "block";
+    spec2row1col2.style.backgroundImage = "url('../images/spell icons/rogue/talents/improved_sinister_strike.jpg')";
+    spec2row1col2.style.backgroundRepeat = "no-repeat";
+    spec2row1col2.style.backgroundSize = "34px 34px";
+    spec2row1col2.style.backgroundPosition = "center center";
+    spec2row1col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row1col2icon');
+        addSpellId.setAttribute('data-spellId', 'improved_sinister_strike');
+
+    //Build spec2row1col3 Lightning Reflexes
+    spec2row1col3.style.display = "block";
+    spec2row1col3.style.backgroundImage = "url('../images/spell icons/rogue/talents/lightning_reflexes.jpg')";
+    spec2row1col3.style.backgroundRepeat = "no-repeat";
+    spec2row1col3.style.backgroundSize = "34px 34px";
+    spec2row1col3.style.backgroundPosition = "center center";
+    spec2row1col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row1col3icon');
+        addSpellId.setAttribute('data-spellId', 'lightning_reflexes');
+
+    //Build spec2row1col4 EMPTY
+    spec2row1col4.style.display = "none";
+
+    //Build spec2row2col1 Improved Backstab
+    spec2row2col1.style.display = "block";
+    spec2row2col1.style.backgroundImage = "url('../images/spell icons/rogue/talents/improved_backstab.jpg')";
+    spec2row2col1.style.backgroundRepeat = "no-repeat";
+    spec2row2col1.style.backgroundSize = "34px 34px";
+    spec2row2col1.style.backgroundPosition = "center center";
+    spec2row2col1.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row2col1icon');
+        addSpellId.setAttribute('data-spellId', 'improved_backstab');
+
+    //Build spec2row2col2 Deflection
+    spec2row2col2.style.display = "block";
+    spec2row2col2.style.backgroundImage = "url('../images/spell icons/rogue/talents/deflection.jpg')";
+    spec2row2col2.style.backgroundRepeat = "no-repeat";
+    spec2row2col2.style.backgroundSize = "34px 34px";
+    spec2row2col2.style.backgroundPosition = "center center";
+    spec2row2col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row2col2icon');
+        addSpellId.setAttribute('data-spellId', 'deflection');
+        //Build arrow
+        var spec2row2col2div = document.createElement('div');
+        spec2row2col2div.style.maxHeight = "0px";
+        spec2row2col2div.style.position = "absolute";
+        spec2row2col2div.id = "spec2row2col2div";
+        document.getElementById('spec2row2col2').appendChild(spec2row2col2div);
+        var spec2row2col2arrow = document.createElement('img');
+        spec2row2col2arrow.src = '../images/table elements/arrow_direct_down.png';
+        document.getElementById('spec2row2col2div').appendChild(spec2row2col2arrow);
+        spec2row2col2arrow.style.position = "relative";
+        spec2row2col2arrow.style.top = "-3px";
+        spec2row2col2arrow.style.left = "19px";
+        spec2row2col2arrow.style.zIndex += 1;
+        arrowArray.push(spec2row2col2div, spec2row2col2arrow);
+
+    //Build spec2row2col3 Precision
+    spec2row2col3.style.display = "block";
+    spec2row2col3.style.backgroundImage = "url('../images/spell icons/rogue/talents/precision.jpg')";
+    spec2row2col3.style.backgroundRepeat = "no-repeat";
+    spec2row2col3.style.backgroundSize = "34px 34px";
+    spec2row2col3.style.backgroundPosition = "center center";
+    spec2row2col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row2col3icon');
+        addSpellId.setAttribute('data-spellId', 'precision');
+        //Build arrow
+        var spec2row2col3div = document.createElement('div');
+        spec2row2col3div.style.maxHeight = "0px";
+        spec2row2col3div.style.position = "absolute";
+        spec2row2col3div.id = "spec2row2col3div";
+        document.getElementById('spec2row2col3').appendChild(spec2row2col3div);
+        var spec2row2col3arrow = document.createElement('img');
+        spec2row2col3arrow.src = '../images/table elements/arrow_skip1_down.png';
+        document.getElementById('spec2row2col3div').appendChild(spec2row2col3arrow);
+        spec2row2col3arrow.style.position = "relative";
+        spec2row2col3arrow.style.top = "-3px";
+        spec2row2col3arrow.style.left = "19px";
+        spec2row2col3arrow.style.zIndex += 1;
+        arrowArray.push(spec2row2col3div, spec2row2col3arrow);
+
+    //Build spec2row2col4 EMPTY
+    spec2row2col4.style.display = "none";
+
+    //Build spec2row3col1 Endurance
+    spec2row3col1.style.display = "block";
+    spec2row3col1.style.backgroundImage = "url('../images/spell icons/rogue/talents/endurance.jpg')";
+    spec2row3col1.style.backgroundRepeat = "no-repeat";
+    spec2row3col1.style.backgroundSize = "34px 34px";
+    spec2row3col1.style.backgroundPosition = "center center";
+    spec2row3col1.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row3col1icon');
+        addSpellId.setAttribute('data-spellId', 'endurance');
+
+    //Build spec2row3col2 Riposte
+    spec2row3col2.style.display = "block";
+    spec2row3col2.style.backgroundImage = "url('../images/spell icons/rogue/talents/riposte.jpg')";
+    spec2row3col2.style.backgroundRepeat = "no-repeat";
+    spec2row3col2.style.backgroundSize = "34px 34px";
+    spec2row3col2.style.backgroundPosition = "center center";
+    spec2row3col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row3col2icon');
+        addSpellId.setAttribute('data-spellId', 'riposte');
+    
+    //Build spec2row3col3 EMPTY
+    spec2row2col4.style.display = "none";
+
+    //Build spec2row3col4 Improved Sprint
+    spec2row3col4.style.display = "block";
+    spec2row3col4.style.backgroundImage = "url('../images/spell icons/rogue/talents/improved_sprint.jpg')";
+    spec2row3col4.style.backgroundRepeat = "no-repeat";
+    spec2row3col4.style.backgroundSize = "34px 34px";
+    spec2row3col4.style.backgroundPosition = "center center";
+    spec2row3col4.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row3col4icon');
+        addSpellId.setAttribute('data-spellId', 'improved_sprint');
+
+    //Build spec2row4col1 Improved Kick
+    spec2row4col1.style.display = "block";
+    spec2row4col1.style.backgroundImage = "url('../images/spell icons/rogue/talents/improved_kick.jpg')";
+    spec2row4col1.style.backgroundRepeat = "no-repeat";
+    spec2row4col1.style.backgroundSize = "34px 34px";
+    spec2row4col1.style.backgroundPosition = "center center";
+    spec2row4col1.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row4col1icon');
+        addSpellId.setAttribute('data-spellId', 'improved_kick');
+
+    //Build spec2row4col2 Dagger Specialization
+    spec2row4col2.style.display = "block";
+    spec2row4col2.style.backgroundImage = "url('../images/spell icons/rogue/talents/dagger_specialization.jpg')";
+    spec2row4col2.style.backgroundRepeat = "no-repeat";
+    spec2row4col2.style.backgroundSize = "34px 34px";
+    spec2row4col2.style.backgroundPosition = "center center";
+    spec2row4col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row4col2icon');
+        addSpellId.setAttribute('data-spellId', 'dagger_specialization');
+
+    //Build spec2row4col3 Dual Wield Specialization
+    spec2row4col3.style.display = "block";
+    spec2row4col3.style.backgroundImage = "url('../images/spell icons/rogue/talents/dual_wield_specialization.jpg')";
+    spec2row4col3.style.backgroundRepeat = "no-repeat";
+    spec2row4col3.style.backgroundSize = "34px 34px";
+    spec2row4col3.style.backgroundPosition = "center center";
+    spec2row4col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row4col3icon');
+        addSpellId.setAttribute('data-spellId', 'dual_wield_specialization');
+
+    //Build spec2row4col4 EMPTY
+    spec2row4col4.style.display = "none";
+
+    //Build spec2row5col1 Mace Specialization
+    spec2row5col1.style.display = "block";
+    spec2row5col1.style.backgroundImage = "url('../images/spell icons/rogue/talents/mace_specialization.jpg')";
+    spec2row5col1.style.backgroundRepeat = "no-repeat";
+    spec2row5col1.style.backgroundSize = "34px 34px";
+    spec2row5col1.style.backgroundPosition = "center center";
+    spec2row5col1.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row5col1icon');
+        addSpellId.setAttribute('data-spellId', 'mace_specialization');
+
+    //Build spec2row5col2 Blade Flurry
+    spec2row5col2.style.display = "block";
+    spec2row5col2.style.backgroundImage = "url('../images/spell icons/rogue/talents/blade_flurry.jpg')";
+    spec2row5col2.style.backgroundRepeat = "no-repeat";
+    spec2row5col2.style.backgroundSize = "34px 34px";
+    spec2row5col2.style.backgroundPosition = "center center";
+    spec2row5col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row5col2icon');
+        addSpellId.setAttribute('data-spellId', 'blade_flurry');
+        //Build arrow
+        var spec2row5col2div = document.createElement('div');
+        spec2row5col2div.style.maxHeight = "0px";
+        spec2row5col2div.style.position = "absolute";
+        spec2row5col2div.id = "spec2row5col2div";
+        document.getElementById('spec2row5col2').appendChild(spec2row5col2div);
+        var spec2row5col2arrow = document.createElement('img');
+        spec2row5col2arrow.src = '../images/table elements/arrow_direct_down.png';
+        document.getElementById('spec2row5col2div').appendChild(spec2row5col2arrow);
+        spec2row5col2arrow.style.position = "relative";
+        spec2row5col2arrow.style.top = "-3px";
+        spec2row5col2arrow.style.left = "19px";
+        spec2row5col2arrow.style.zIndex += 1;
+        arrowArray.push(spec2row5col2div, spec2row5col2arrow);
+
+    //Build spec2row5col3 Sword Specialization
+    spec2row5col3.style.display = "block";
+    spec2row5col3.style.backgroundImage = "url('../images/spell icons/rogue/talents/sword_specialization.jpg')";
+    spec2row5col3.style.backgroundRepeat = "no-repeat";
+    spec2row5col3.style.backgroundSize = "34px 34px";
+    spec2row5col3.style.backgroundPosition = "center center";
+    spec2row5col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row5col3icon');
+        addSpellId.setAttribute('data-spellId', 'sword_specialization');
+
+    //Build spec2row5col4 Fist Weapon Specialization
+    spec2row5col4.style.display = "block";
+    spec2row5col4.style.backgroundImage = "url('../images/spell icons/rogue/talents/fist_weapon_specialization.jpg')";
+    spec2row5col4.style.backgroundRepeat = "no-repeat";
+    spec2row5col4.style.backgroundSize = "34px 34px";
+    spec2row5col4.style.backgroundPosition = "center center";
+    spec2row5col4.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row5col4icon');
+        addSpellId.setAttribute('data-spellId', 'fist_weapon_specialization');
+
+    //Build spec2row6col1 EMPTY
+    spec2row6col1.style.display = "none";
+
+    //Build spec2row6col2 Weapon Expertise
+    spec2row6col2.style.display = "block";
+    spec2row6col2.style.backgroundImage = "url('../images/spell icons/rogue/talents/weapon_expertise.jpg')";
+    spec2row6col2.style.backgroundRepeat = "no-repeat";
+    spec2row6col2.style.backgroundSize = "34px 34px";
+    spec2row6col2.style.backgroundPosition = "center center";
+    spec2row6col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row6col2icon');
+        addSpellId.setAttribute('data-spellId', 'weapon_expertise');
+
+    //Build spec2row6col3 Aggression
+    spec2row6col3.style.display = "block";
+    spec2row6col3.style.backgroundImage = "url('../images/spell icons/rogue/talents/aggression.jpg')";
+    spec2row6col3.style.backgroundRepeat = "no-repeat";
+    spec2row6col3.style.backgroundSize = "34px 34px";
+    spec2row6col3.style.backgroundPosition = "center center";
+    spec2row6col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row6col3icon');
+        addSpellId.setAttribute('data-spellId', 'aggression');
+
+    //Build spec2row6col4 EMPTY
+    spec2row6col4.style.display = "none";
+
+    //Build spec2row7col1 EMPTY
+    spec2row7col1.style.display = "none";
+
+    //Build spec2row7col2 Adrenaline Rush
+    spec2row7col2.style.display = "block";
+    spec2row7col2.style.backgroundImage = "url('../images/spell icons/rogue/talents/adrenaline_rush.jpg')";
+    spec2row7col2.style.backgroundRepeat = "no-repeat";
+    spec2row7col2.style.backgroundSize = "34px 34px";
+    spec2row7col2.style.backgroundPosition = "center center";
+    spec2row7col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row7col2icon');
+        addSpellId.setAttribute('data-spellId', 'adrenaline_rush');
+
+    //Build spec2row7col3 EMPTY
+    spec2row7col3.style.display = "none";
+
+    //Build spec2row7col4 EMPTY
+    spec2row7col4.style.display = "none";
+
 }
 
 function buildShaman(){
