@@ -4191,6 +4191,357 @@ function buildPriest(){
 }
 
 function buildRogue(){
+    removeArrows(); //Arrows are built every time a new class is selected. The removeArrows() funtion clears the arrows from the previous selection
+
+    var spec1row1col1 = document.getElementById("spec1row1col1icon");
+    var spec1row1col2 = document.getElementById("spec1row1col2icon");
+    var spec1row1col3 = document.getElementById("spec1row1col3icon");
+    var spec1row1col4 = document.getElementById("spec1row1col4icon");
+    var spec1row2col1 = document.getElementById("spec1row2col1icon");
+    var spec1row2col2 = document.getElementById("spec1row2col2icon");
+    var spec1row2col3 = document.getElementById("spec1row2col3icon");
+    var spec1row2col4 = document.getElementById("spec1row2col4icon");
+    var spec1row3col1 = document.getElementById("spec1row3col1icon");
+    var spec1row3col2 = document.getElementById("spec1row3col2icon");
+    var spec1row3col3 = document.getElementById("spec1row3col3icon");
+    var spec1row3col4 = document.getElementById("spec1row3col4icon");
+    var spec1row4col1 = document.getElementById("spec1row4col1icon");
+    var spec1row4col2 = document.getElementById("spec1row4col2icon");
+    var spec1row4col3 = document.getElementById("spec1row4col3icon");
+    var spec1row4col4 = document.getElementById("spec1row4col4icon");
+    var spec1row5col1 = document.getElementById("spec1row5col1icon");
+    var spec1row5col2 = document.getElementById("spec1row5col2icon");
+    var spec1row5col3 = document.getElementById("spec1row5col3icon");
+    var spec1row5col4 = document.getElementById("spec1row5col4icon");
+    var spec1row6col1 = document.getElementById("spec1row6col1icon");
+    var spec1row6col2 = document.getElementById("spec1row6col2icon");
+    var spec1row6col3 = document.getElementById("spec1row6col3icon");
+    var spec1row6col4 = document.getElementById("spec1row6col4icon");
+    var spec1row7col1 = document.getElementById("spec1row7col1icon");
+    var spec1row7col2 = document.getElementById("spec1row7col2icon");
+    var spec1row7col3 = document.getElementById("spec1row7col3icon");
+    var spec1row7col4 = document.getElementById("spec1row7col4icon");
+
+    var spec2row1col1 = document.getElementById("spec2row1col1icon");
+    var spec2row1col2 = document.getElementById("spec2row1col2icon");
+    var spec2row1col3 = document.getElementById("spec2row1col3icon");
+    var spec2row1col4 = document.getElementById("spec2row1col4icon");
+    var spec2row2col1 = document.getElementById("spec2row2col1icon");
+    var spec2row2col2 = document.getElementById("spec2row2col2icon");
+    var spec2row2col3 = document.getElementById("spec2row2col3icon");
+    var spec2row2col4 = document.getElementById("spec2row2col4icon");
+    var spec2row3col1 = document.getElementById("spec2row3col1icon");
+    var spec2row3col2 = document.getElementById("spec2row3col2icon");
+    var spec2row3col3 = document.getElementById("spec2row3col3icon");
+    var spec2row3col4 = document.getElementById("spec2row3col4icon");
+    var spec2row4col1 = document.getElementById("spec2row4col1icon");
+    var spec2row4col2 = document.getElementById("spec2row4col2icon");
+    var spec2row4col3 = document.getElementById("spec2row4col3icon");
+    var spec2row4col4 = document.getElementById("spec2row4col4icon");
+    var spec2row5col1 = document.getElementById("spec2row5col1icon");
+    var spec2row5col2 = document.getElementById("spec2row5col2icon");
+    var spec2row5col3 = document.getElementById("spec2row5col3icon");
+    var spec2row5col4 = document.getElementById("spec2row5col4icon");
+    var spec2row6col1 = document.getElementById("spec2row6col1icon");
+    var spec2row6col2 = document.getElementById("spec2row6col2icon");
+    var spec2row6col3 = document.getElementById("spec2row6col3icon");
+    var spec2row6col4 = document.getElementById("spec2row6col4icon");
+    var spec2row7col1 = document.getElementById("spec2row7col1icon");
+    var spec2row7col2 = document.getElementById("spec2row7col2icon");
+    var spec2row7col3 = document.getElementById("spec2row7col3icon");
+    var spec2row7col4 = document.getElementById("spec2row7col4icon");
+
+    var spec3row1col1 = document.getElementById("spec3row1col1icon");
+    var spec3row1col2 = document.getElementById("spec3row1col2icon");
+    var spec3row1col3 = document.getElementById("spec3row1col3icon");
+    var spec3row1col4 = document.getElementById("spec3row1col4icon");
+    var spec3row2col1 = document.getElementById("spec3row2col1icon");
+    var spec3row2col2 = document.getElementById("spec3row2col2icon");
+    var spec3row2col3 = document.getElementById("spec3row2col3icon");
+    var spec3row2col4 = document.getElementById("spec3row2col4icon");
+    var spec3row3col1 = document.getElementById("spec3row3col1icon");
+    var spec3row3col2 = document.getElementById("spec3row3col2icon");
+    var spec3row3col3 = document.getElementById("spec3row3col3icon");
+    var spec3row3col4 = document.getElementById("spec3row3col4icon");
+    var spec3row4col1 = document.getElementById("spec3row4col1icon");
+    var spec3row4col2 = document.getElementById("spec3row4col2icon");
+    var spec3row4col3 = document.getElementById("spec3row4col3icon");
+    var spec3row4col4 = document.getElementById("spec3row4col4icon");
+    var spec3row5col1 = document.getElementById("spec3row5col1icon");
+    var spec3row5col2 = document.getElementById("spec3row5col2icon");
+    var spec3row5col3 = document.getElementById("spec3row5col3icon");
+    var spec3row5col4 = document.getElementById("spec3row5col4icon");
+    var spec3row6col1 = document.getElementById("spec3row6col1icon");
+    var spec3row6col2 = document.getElementById("spec3row6col2icon");
+    var spec3row6col3 = document.getElementById("spec3row6col3icon");
+    var spec3row6col4 = document.getElementById("spec3row6col4icon");
+    var spec3row7col1 = document.getElementById("spec3row7col1icon");
+    var spec3row7col2 = document.getElementById("spec3row7col2icon");
+    var spec3row7col3 = document.getElementById("spec3row7col3icon");
+    var spec3row7col4 = document.getElementById("spec3row7col4icon");
+
+    //Build specBar
+    var spec1icon = document.getElementById("spec1icon");
+    var spec2icon = document.getElementById("spec2icon");
+    var spec3icon = document.getElementById("spec3icon");
+    var spec1name = document.getElementById("spec1name");
+    var spec2name = document.getElementById("spec2name");
+    var spec3name = document.getElementById("spec3name");
+    specBar.style.display = "block";
+    spec1icon.style.backgroundImage = "url('../images/class icons/spec icons/rogue/assassination.jpg')";
+        spec1icon.style.backgroundRepeat = "no-repeat";
+        spec1icon.style.backgroundSize = "34px 34px";
+        spec1icon.style.backgroundPosition = "left 5px top 10px";
+        spec1icon.style.width = "44px";
+        spec1icon.style.height = "44px";
+    spec2icon.style.backgroundImage = "url('../images/class icons/spec icons/rogue/combat.jpg')";
+        spec2icon.style.backgroundRepeat = "no-repeat";
+        spec2icon.style.backgroundSize = "34px 34px";
+        spec2icon.style.backgroundPosition = "left 5px top 10px";
+        spec2icon.style.width = "44px";
+        spec2icon.style.height = "44px";
+    spec3icon.style.backgroundImage = "url('../images/class icons/spec icons/rogue/subtlety.jpg')";
+        spec3icon.style.backgroundRepeat = "no-repeat";
+        spec3icon.style.backgroundSize = "34px 34px";
+        spec3icon.style.backgroundPosition = "left 5px top 10px";
+        spec1icon.style.width = "44px";
+        spec1icon.style.height = "44px";
+    spec1name.innerHTML = "Assassination";
+    spec2name.innerHTML = "Combat";
+    spec3name.innerHTML = "Subtlety";
+
+    //Build spec1 Assassination
+    //Build spec1row1col1 Improved Eviscerate
+    spec1row1col1.style.display = "block";
+    spec1row1col1.style.backgroundImage = "url('../images/spell icons/rogue/talents/improved_eviscerate.jpg')";
+    spec1row1col1.style.backgroundRepeat = "no-repeat";
+    spec1row1col1.style.backgroundSize = "34px 34px";
+    spec1row1col1.style.backgroundPosition = "center center";
+    spec1row1col1.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row1col1icon');
+        addSpellId.setAttribute('data-spellId', 'improved_eviscerate');
+
+    //Build spec1row1col2 Remorseless Attacks
+    spec1row1col2.style.display = "block";
+    spec1row1col2.style.backgroundImage = "url('../images/spell icons/rogue/talents/remorseless_attacks.jpg')";
+    spec1row1col2.style.backgroundRepeat = "no-repeat";
+    spec1row1col2.style.backgroundSize = "34px 34px";
+    spec1row1col2.style.backgroundPosition = "center center";
+    spec1row1col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row1col2icon');
+        addSpellId.setAttribute('data-spellId', 'remorseless_attacks');
+
+    //Build spec1row1col3 Malice
+    spec1row1col3.style.display = "block";
+    spec1row1col3.style.backgroundImage = "url('../images/spell icons/rogue/talents/malice.jpg')";
+    spec1row1col3.style.backgroundRepeat = "no-repeat";
+    spec1row1col3.style.backgroundSize = "34px 34px";
+    spec1row1col3.style.backgroundPosition = "center center";
+    spec1row1col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row1col3icon');
+        addSpellId.setAttribute('data-spellId', 'malice');
+        //Build arrow
+        var spec1row1col3div = document.createElement('div');
+        spec1row1col3div.style.maxHeight = "0px";
+        spec1row1col3div.style.position = "absolute";
+        spec1row1col3div.id = "spec1row1col3div";
+        document.getElementById('spec1row1col3').appendChild(spec1row1col3div);
+        var spec1row1col3arrow = document.createElement('img');
+        spec1row1col3arrow.src = '../images/table elements/arrow_skip1_down.png';
+        document.getElementById('spec1row1col3div').appendChild(spec1row1col3arrow);
+        spec1row1col3arrow.style.position = "relative";
+        spec1row1col3arrow.style.top = "-3px";
+        spec1row1col3arrow.style.left = "19px";
+        spec1row1col3arrow.style.zIndex += 1;
+        arrowArray.push(spec1row1col3div, spec1row1col3arrow);
+
+    //Build spec1row1col4 EMPTY
+    spec1row1col4.style.display = "none";
+
+    //Build spec1row2col1 Ruthlessness
+    spec1row2col1.style.display = "block";
+    spec1row2col1.style.backgroundImage = "url('../images/spell icons/rogue/talents/ruthlessness.jpg')";
+    spec1row2col1.style.backgroundRepeat = "no-repeat";
+    spec1row2col1.style.backgroundSize = "34px 34px";
+    spec1row2col1.style.backgroundPosition = "center center";
+    spec1row2col1.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row2col1icon');
+        addSpellId.setAttribute('data-spellId', 'ruthlessness');
+    
+    //Build spec1row2col2 Murder
+    spec1row2col2.style.display = "block";
+    spec1row2col2.style.backgroundImage = "url('../images/spell icons/rogue/talents/murder.jpg')";
+    spec1row2col2.style.backgroundRepeat = "no-repeat";
+    spec1row2col2.style.backgroundSize = "34px 34px";
+    spec1row2col2.style.backgroundPosition = "center center";
+    spec1row2col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row2col2icon');
+        addSpellId.setAttribute('data-spellId', 'murder');
+
+    //Build spec1row2col3 EMPTY
+    spec1row2col3.style.display = "none";
+
+    //Build spec1row2col4 Improved Slice and Dice
+    spec1row2col4.style.display = "block";
+    spec1row2col4.style.backgroundImage = "url('../images/spell icons/rogue/talents/improved_slice_and_dice.jpg')";
+    spec1row2col4.style.backgroundRepeat = "no-repeat";
+    spec1row2col4.style.backgroundSize = "34px 34px";
+    spec1row2col4.style.backgroundPosition = "center center";
+    spec1row2col4.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row2col4icon');
+        addSpellId.setAttribute('data-spellId', 'improved_slice_and_dice');
+
+    //Build spec1row3col1 Relentless Strikes
+    spec1row3col1.style.display = "block";
+    spec1row3col1.style.backgroundImage = "url('../images/spell icons/rogue/talents/relentless_strikes.jpg')";
+    spec1row3col1.style.backgroundRepeat = "no-repeat";
+    spec1row3col1.style.backgroundSize = "34px 34px";
+    spec1row3col1.style.backgroundPosition = "center center";
+    spec1row3col1.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row3col1icon');
+        addSpellId.setAttribute('data-spellId', 'relentless_strikes');
+
+    //Build spec1row3col2 Improved Expose Armor
+    spec1row3col2.style.display = "block";
+    spec1row3col2.style.backgroundImage = "url('../images/spell icons/rogue/talents/improved_expose_armor.jpg')";
+    spec1row3col2.style.backgroundRepeat = "no-repeat";
+    spec1row3col2.style.backgroundSize = "34px 34px";
+    spec1row3col2.style.backgroundPosition = "center center";
+    spec1row3col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row3col2icon');
+        addSpellId.setAttribute('data-spellId', 'improved_expose_armor');
+
+    //Build spec1row3col3 Lethality
+    spec1row3col3.style.display = "block";
+    spec1row3col3.style.backgroundImage = "url('../images/spell icons/rogue/talents/lethality.jpg')";
+    spec1row3col3.style.backgroundRepeat = "no-repeat";
+    spec1row3col3.style.backgroundSize = "34px 34px";
+    spec1row3col3.style.backgroundPosition = "center center";
+    spec1row3col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row3col3icon');
+        addSpellId.setAttribute('data-spellId', 'lethality');
+
+    //Build spec1row3col4 EMPTY
+    spec1row3col4.style.display = "none";
+
+    //Build spec1row4col1 EMPTY
+    spec1row4col1.style.display = "none";
+
+    //Build spec1row4col2 Vile Poisons
+    spec1row4col2.style.display = "block";
+    spec1row4col2.style.backgroundImage = "url('../images/spell icons/rogue/talents/vile_poisons.jpg')";
+    spec1row4col2.style.backgroundRepeat = "no-repeat";
+    spec1row4col2.style.backgroundSize = "34px 34px";
+    spec1row4col2.style.backgroundPosition = "center center";
+    spec1row4col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row4col2icon');
+        addSpellId.setAttribute('data-spellId', 'vile_poisons');
+
+    //Build spec1row4col3 Improved Poisons
+    spec1row4col3.style.display = "block";
+    spec1row4col3.style.backgroundImage = "url('../images/spell icons/rogue/talents/improved_poisons.jpg')";
+    spec1row4col3.style.backgroundRepeat = "no-repeat";
+    spec1row4col3.style.backgroundSize = "34px 34px";
+    spec1row4col3.style.backgroundPosition = "center center";
+    spec1row4col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row4col3icon');
+        addSpellId.setAttribute('data-spellId', 'improved_poisons');
+
+    //Build spec1row4col4 EMPTY
+    spec1row4col4.style.display = "none";
+
+    //Build spec1row5col1 EMPTY
+    spec1row5col1.style.display = "none";
+
+    //Build spec1row5col2 Cold Blood
+    spec1row5col2.style.display = "block";
+    spec1row5col2.style.backgroundImage = "url('../images/spell icons/rogue/talents/cold_blood.jpg')";
+    spec1row5col2.style.backgroundRepeat = "no-repeat";
+    spec1row5col2.style.backgroundSize = "34px 34px";
+    spec1row5col2.style.backgroundPosition = "center center";
+    spec1row5col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row5col2icon');
+        addSpellId.setAttribute('data-spellId', 'cold_blood');
+        //Build arrow
+        var spec1row5col2div = document.createElement('div');
+        spec1row5col2div.style.maxHeight = "0px";
+        spec1row5col2div.style.position = "absolute";
+        spec1row5col2div.id = "spec1row5col2div";
+        document.getElementById('spec1row5col2').appendChild(spec1row5col2div);
+        var spec1row5col2arrow = document.createElement('img');
+        spec1row5col2arrow.src = '../images/table elements/arrow_direct_down.png';
+        document.getElementById('spec1row5col2div').appendChild(spec1row5col2arrow);
+        spec1row5col2arrow.style.position = "relative";
+        spec1row5col2arrow.style.top = "-3px";
+        spec1row5col2arrow.style.left = "19px";
+        spec1row5col2arrow.style.zIndex += 1;
+        arrowArray.push(spec1row5col2div, spec1row5col2arrow);
+
+    //Build spec1row5col3 Improved Kidney Shot
+    spec1row5col3.style.display = "block";
+    spec1row5col3.style.backgroundImage = "url('../images/spell icons/rogue/talents/improved_kidney_shot.jpg')";
+    spec1row5col3.style.backgroundRepeat = "no-repeat";
+    spec1row5col3.style.backgroundSize = "34px 34px";
+    spec1row5col3.style.backgroundPosition = "center center";
+    spec1row5col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row5col3icon');
+        addSpellId.setAttribute('data-spellId', 'improved_kidney_shot');
+
+    //Build spec1row5col4 EMPTY
+    spec1row5col4.style.display = "none";
+
+    //Build spec1row6col1 EMPTY
+    spec1row6col1.style.display = "none";
+
+    //Build spec1row6col2 Seal Fate
+    spec1row6col2.style.display = "block";
+    spec1row6col2.style.backgroundImage = "url('../images/spell icons/rogue/talents/seal_fate.jpg')";
+    spec1row6col2.style.backgroundRepeat = "no-repeat";
+    spec1row6col2.style.backgroundSize = "34px 34px";
+    spec1row6col2.style.backgroundPosition = "center center";
+    spec1row6col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row6col2icon');
+        addSpellId.setAttribute('data-spellId', 'seal_fate');
+
+    //Build spec1row6col3 EMPTY
+    spec1row6col3.style.display = "none";
+
+    //Build spec1row6col4 EMPTY
+    spec1row6col4.style.display = "none";
+
+    //Build spec1row7col1 EMPTY
+    spec1row7col1.style.display = "none";
+
+    //Build spec1row7col2 Vigor
+    spec1row7col2.style.display = "block";
+    spec1row7col2.style.backgroundImage = "url('../images/spell icons/rogue/talents/vigor.jpg')";
+    spec1row7col2.style.backgroundRepeat = "no-repeat";
+    spec1row7col2.style.backgroundSize = "34px 34px";
+    spec1row7col2.style.backgroundPosition = "center center";
+    spec1row7col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row7col2icon');
+        addSpellId.setAttribute('data-spellId', 'vigor');
+
+    //Build spec1row7col3 EMPTY
+    spec1row7col3.style.display = "none";
+
+    //Build spec1row7col4 EMPTY
+    spec1row7col4.style.display = "none";
 
 }
 
