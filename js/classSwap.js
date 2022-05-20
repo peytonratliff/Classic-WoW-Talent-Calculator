@@ -3137,14 +3137,14 @@ function buildPaladin(){
 
     //Build spec3row1col3 Benediction
     spec3row1col3.style.display = "block";
-    spec3row1col3.style.backgroundImage = "url('../images/spell icons/paladin/talents/improved_blessing_of_might.jpg')";
+    spec3row1col3.style.backgroundImage = "url('../images/spell icons/paladin/talents/benediction.jpg')";
     spec3row1col3.style.backgroundRepeat = "no-repeat";
     spec3row1col3.style.backgroundSize = "34px 34px";
     spec3row1col3.style.backgroundPosition = "center center";
     spec3row1col3.style.filter = "grayscale(100%)";
         //Define Tooltip
         var addSpellId = document.getElementById('spec3row1col3icon');
-        addSpellId.setAttribute('data-spellId', 'improved_blessing_of_might');
+        addSpellId.setAttribute('data-spellId', 'benediction');
 
     //Build spec3row1col4 EMPTY
     spec3row1col4.style.display = "none";
