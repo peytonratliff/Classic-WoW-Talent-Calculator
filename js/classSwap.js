@@ -84,7 +84,7 @@ function classSwap(classID) {
 }
 
 function buildDruid(){
-    removeArrows(); //Arrows are built every time a new class is selected. The removeArrows() funtion clears the arrows from the previous selection
+    removeArrows(); //Arrows are built every time a new class is selected. The removeArrows() function clears the arrows from the previous selection
 
     var spec1row1col1 = document.getElementById("spec1row1col1icon");
     var spec1row1col2 = document.getElementById("spec1row1col2icon");
@@ -849,7 +849,7 @@ function buildDruid(){
 }
 
 function buildHunter(){
-    removeArrows();
+    removeArrows(); //Arrows are built every time a new class is selected. The removeArrows() function clears the arrows from the previous selection
 
     var spec1row1col1 = document.getElementById("spec1row1col1icon");
     var spec1row1col2 = document.getElementById("spec1row1col2icon");
@@ -1677,7 +1677,7 @@ function buildHunter(){
 }
 
 function buildMage(){
-    removeArrows(); //Arrows are built every time a new class is selected. The removeArrows() funtion clears the arrows from the previous selection
+    removeArrows(); //Arrows are built every time a new class is selected. The removeArrows() function clears the arrows from the previous selection
 
     var spec1row1col1 = document.getElementById("spec1row1col1icon");
     var spec1row1col2 = document.getElementById("spec1row1col2icon");
@@ -2543,7 +2543,7 @@ function buildMage(){
 }
 
 function buildPaladin(){
-    removeArrows(); //Arrows are built every time a new class is selected. The removeArrows() funtion clears the arrows from the previous selection
+    removeArrows(); //Arrows are built every time a new class is selected. The removeArrows() function clears the arrows from the previous selection
 
     var spec1row1col1 = document.getElementById("spec1row1col1icon");
     var spec1row1col2 = document.getElementById("spec1row1col2icon");
@@ -3341,7 +3341,7 @@ function buildPaladin(){
 }
 
 function buildPriest(){
-    removeArrows(); //Arrows are built every time a new class is selected. The removeArrows() funtion clears the arrows from the previous selection
+    removeArrows(); //Arrows are built every time a new class is selected. The removeArrows() function clears the arrows from the previous selection
 
     var spec1row1col1 = document.getElementById("spec1row1col1icon");
     var spec1row1col2 = document.getElementById("spec1row1col2icon");
@@ -4191,7 +4191,7 @@ function buildPriest(){
 }
 
 function buildRogue(){
-    removeArrows(); //Arrows are built every time a new class is selected. The removeArrows() funtion clears the arrows from the previous selection
+    removeArrows(); //Arrows are built every time a new class is selected. The removeArrows() function clears the arrows from the previous selection
 
     var spec1row1col1 = document.getElementById("spec1row1col1icon");
     var spec1row1col2 = document.getElementById("spec1row1col2icon");
@@ -4821,6 +4821,255 @@ function buildRogue(){
 
     //Build spec2row7col4 EMPTY
     spec2row7col4.style.display = "none";
+
+    //Build spec3 Subtlety
+    //Build spec3row1col1 EMPTY
+    spec3row1col1.style.display = "none";
+
+    //Build spec3row1col2 Master of Deception
+    spec3row1col2.style.display = "block";
+    spec3row1col2.style.backgroundImage = "url('../images/spell icons/rogue/talents/master_of_deception.jpg')";
+    spec3row1col2.style.backgroundRepeat = "no-repeat";
+    spec3row1col2.style.backgroundSize = "34px 34px";
+    spec3row1col2.style.backgroundPosition = "center center";
+    spec3row1col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec3row1col2icon');
+        addSpellId.setAttribute('data-spellId', 'master_of_deception');
+
+    //Build spec3row1col3 Opportunity
+    spec3row1col3.style.display = "block";
+    spec3row1col3.style.backgroundImage = "url('../images/spell icons/rogue/talents/opportunity.jpg')";
+    spec3row1col3.style.backgroundRepeat = "no-repeat";
+    spec3row1col3.style.backgroundSize = "34px 34px";
+    spec3row1col3.style.backgroundPosition = "center center";
+    spec3row1col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec3row1col3icon');
+        addSpellId.setAttribute('data-spellId', 'opportunity');
+
+    //Build spec3row1col4 EMPTY
+    spec3row1col4.style.display = "none";
+
+    //Build spec3row2col1 Sleight of Hand
+    spec3row2col1.style.display = "block";
+    spec3row2col1.style.backgroundImage = "url('../images/spell icons/rogue/talents/sleight_of_hand.jpg')";
+    spec3row2col1.style.backgroundRepeat = "no-repeat";
+    spec3row2col1.style.backgroundSize = "34px 34px";
+    spec3row2col1.style.backgroundPosition = "center center";
+    spec3row2col1.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec3row2col1icon');
+        addSpellId.setAttribute('data-spellId', 'sleight_of_hand');
+
+    //Build spec3row2col2 Elusiveness
+    spec3row2col2.style.display = "block";
+    spec3row2col2.style.backgroundImage = "url('../images/spell icons/rogue/talents/elusiveness.jpg')";
+    spec3row2col2.style.backgroundRepeat = "no-repeat";
+    spec3row2col2.style.backgroundSize = "34px 34px";
+    spec3row2col2.style.backgroundPosition = "center center";
+    spec3row2col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec3row2col2icon');
+        addSpellId.setAttribute('data-spellId', 'elusiveness');
+
+    //Build spec3row2col3 Camouflage
+    spec3row2col3.style.display = "block";
+    spec3row2col3.style.backgroundImage = "url('../images/spell icons/rogue/talents/camouflage.jpg')";
+    spec3row2col3.style.backgroundRepeat = "no-repeat";
+    spec3row2col3.style.backgroundSize = "34px 34px";
+    spec3row2col3.style.backgroundPosition = "center center";
+    spec3row2col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec3row2col3icon');
+        addSpellId.setAttribute('data-spellId', 'camouflage');
+
+    //Build spec3row2col4 EMPTY
+    spec3row2col4.style.display = "none";
+
+    //Build spec3row3col1 Initiative
+    spec3row3col1.style.display = "block";
+    spec3row3col1.style.backgroundImage = "url('../images/spell icons/rogue/talents/initiative.jpg')";
+    spec3row3col1.style.backgroundRepeat = "no-repeat";
+    spec3row3col1.style.backgroundSize = "34px 34px";
+    spec3row3col1.style.backgroundPosition = "center center";
+    spec3row3col1.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec3row3col1icon');
+        addSpellId.setAttribute('data-spellId', 'initiative');
+
+    //Build spec3row3col2 Ghostly Strike
+    spec3row3col2.style.display = "block";
+    spec3row3col2.style.backgroundImage = "url('../images/spell icons/rogue/talents/ghostly_strike.jpg')";
+    spec3row3col2.style.backgroundRepeat = "no-repeat";
+    spec3row3col2.style.backgroundSize = "34px 34px";
+    spec3row3col2.style.backgroundPosition = "center center";
+    spec3row3col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec3row3col2icon');
+        addSpellId.setAttribute('data-spellId', 'ghostly_strike');
+
+    //Build spec3row3col3 Improved Ambush
+    spec3row3col3.style.display = "block";
+    spec3row3col3.style.backgroundImage = "url('../images/spell icons/rogue/talents/improved_ambush.jpg')";
+    spec3row3col3.style.backgroundRepeat = "no-repeat";
+    spec3row3col3.style.backgroundSize = "34px 34px";
+    spec3row3col3.style.backgroundPosition = "center center";
+    spec3row3col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec3row3col3icon');
+        addSpellId.setAttribute('data-spellId', 'improved_ambush');
+
+    //Build spec3row3col4 EMPTY
+    spec3row3col4.style.display = "none";
+
+    //Build spec3row4col1 Setup
+    spec3row4col1.style.display = "block";
+    spec3row4col1.style.backgroundImage = "url('../images/spell icons/rogue/talents/setup.jpg')";
+    spec3row4col1.style.backgroundRepeat = "no-repeat";
+    spec3row4col1.style.backgroundSize = "34px 34px";
+    spec3row4col1.style.backgroundPosition = "center center";
+    spec3row4col1.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec3row4col1icon');
+        addSpellId.setAttribute('data-spellId', 'setup');
+
+    //Build spec3row4col2 Improved Sap
+    spec3row4col2.style.display = "block";
+    spec3row4col2.style.backgroundImage = "url('../images/spell icons/rogue/talents/improved_sap.jpg')";
+    spec3row4col2.style.backgroundRepeat = "no-repeat";
+    spec3row4col2.style.backgroundSize = "34px 34px";
+    spec3row4col2.style.backgroundPosition = "center center";
+    spec3row4col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec3row4col2icon');
+        addSpellId.setAttribute('data-spellId', 'improved_sap');
+
+    //Build spec3row4col3 Serrated Blades
+    spec3row4col3.style.display = "block";
+    spec3row4col3.style.backgroundImage = "url('../images/spell icons/rogue/talents/serrated_blades.jpg')";
+    spec3row4col3.style.backgroundRepeat = "no-repeat";
+    spec3row4col3.style.backgroundSize = "34px 34px";
+    spec3row4col3.style.backgroundPosition = "center center";
+    spec3row4col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec3row4col2icon');
+        addSpellId.setAttribute('data-spellId', 'serrated_blades');
+        //Build arrow
+        var spec3row4col3div = document.createElement('div');
+        spec3row4col3div.style.maxHeight = "0px";
+        spec3row4col3div.style.position = "absolute";
+        spec3row4col3div.id = "spec3row4col3div";
+        document.getElementById('spec3row4col3').appendChild(spec3row4col3div);
+        var spec3row4col3arrow = document.createElement('img');
+        spec3row4col3arrow.src = '../images/table elements/arrow_right_down.png';
+        document.getElementById('spec3row4col3div').appendChild(spec3row4col3arrow);
+        spec3row4col3arrow.style.position = "relative";
+        spec3row4col3arrow.style.top = "-26px";
+        spec3row4col3arrow.style.left = "43px";
+        spec3row4col3arrow.style.zIndex += 1;
+        arrowArray.push(spec3row4col3div, spec3row4col3arrow);
+
+    //Build spec3row4col4 EMPTY
+    spec3row4col4.style.display = "none";
+
+    //Build spec3row5col1 Heightened Senses
+    spec3row5col1.style.display = "block";
+    spec3row5col1.style.backgroundImage = "url('../images/spell icons/rogue/talents/setup.jpg')";
+    spec3row5col1.style.backgroundRepeat = "no-repeat";
+    spec3row5col1.style.backgroundSize = "34px 34px";
+    spec3row5col1.style.backgroundPosition = "center center";
+    spec3row5col1.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec3row5col1icon');
+        addSpellId.setAttribute('data-spellId', 'setup');
+
+    //Build spec3row5col2 Preparation
+    spec3row5col2.style.display = "block";
+    spec3row5col2.style.backgroundImage = "url('../images/spell icons/rogue/talents/preparation.jpg')";
+    spec3row5col2.style.backgroundRepeat = "no-repeat";
+    spec3row5col2.style.backgroundSize = "34px 34px";
+    spec3row5col2.style.backgroundPosition = "center center";
+    spec3row5col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec3row5col2icon');
+        addSpellId.setAttribute('data-spellId', 'preparation');
+        //Build arrow
+        var spec3row5col2div = document.createElement('div');
+        spec3row5col2div.style.maxHeight = "0px";
+        spec3row5col2div.style.position = "absolute";
+        spec3row5col2div.id = "spec3row5col2div";
+        document.getElementById('spec3row5col2').appendChild(spec3row5col2div);
+        var spec3row5col2arrow = document.createElement('img');
+        spec3row5col2arrow.src = '../images/table elements/arrow_skip1_down.png';
+        document.getElementById('spec3row5col2div').appendChild(spec3row5col2arrow);
+        spec3row5col2arrow.style.position = "relative";
+        spec3row5col2arrow.style.top = "-3px";
+        spec3row5col2arrow.style.left = "19px";
+        spec3row5col2arrow.style.zIndex += 1;
+        arrowArray.push(spec3row5col2div, spec3row5col2arrow);
+
+    //Build spec3row5col3 Dirty Deeds
+    spec3row5col3.style.display = "block";
+    spec3row5col3.style.backgroundImage = "url('../images/spell icons/rogue/talents/dirty_deeds.jpg')";
+    spec3row5col3.style.backgroundRepeat = "no-repeat";
+    spec3row5col3.style.backgroundSize = "34px 34px";
+    spec3row5col3.style.backgroundPosition = "center center";
+    spec3row5col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec3row5col3icon');
+        addSpellId.setAttribute('data-spellId', 'dirty_deeds');
+
+    //Build spec3row5col4 Hemorrhage
+    spec3row5col4.style.display = "block";
+    spec3row5col4.style.backgroundImage = "url('../images/spell icons/rogue/talents/hemorrhage.jpg')";
+    spec3row5col4.style.backgroundRepeat = "no-repeat";
+    spec3row5col4.style.backgroundSize = "34px 34px";
+    spec3row5col4.style.backgroundPosition = "center center";
+    spec3row5col4.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec3row5col4icon');
+        addSpellId.setAttribute('data-spellId', 'hemorrhage');
+
+    //Build spec3row6col1 EMPTY
+    spec3row6col1.style.display = "none";
+
+    //Build spec3row6col2 EMPTY
+    spec3row6col2.style.display = "none";
+
+    //Build spec3row5col3 Deadliness
+    spec3row6col3.style.display = "block";
+    spec3row6col3.style.backgroundImage = "url('../images/spell icons/rogue/talents/deadliness.jpg')";
+    spec3row6col3.style.backgroundRepeat = "no-repeat";
+    spec3row6col3.style.backgroundSize = "34px 34px";
+    spec3row6col3.style.backgroundPosition = "center center";
+    spec3row6col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec3row6col3icon');
+        addSpellId.setAttribute('data-spellId', 'deadliness');
+
+    //Build spec3row6col4 EMPTY
+    spec3row6col4.style.display = "none";
+
+    //Build spec3row7col1 EMPTY
+    spec3row7col1.style.display = "none";
+
+    //Build spec3row7col2 Premeditation
+    spec3row7col2.style.display = "block";
+    spec3row7col2.style.backgroundImage = "url('../images/spell icons/rogue/talents/premeditation.jpg')";
+    spec3row7col2.style.backgroundRepeat = "no-repeat";
+    spec3row7col2.style.backgroundSize = "34px 34px";
+    spec3row7col2.style.backgroundPosition = "center center";
+    spec3row7col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec3row7col2icon');
+        addSpellId.setAttribute('data-spellId', 'premeditation');
+
+    //Build spec3row7col3 EMPTY
+    spec3row7col3.style.display = "none";
+
+    //Build spec3row7col4 EMPTY
+    spec3row7col4.style.display = "none";
 
 }
 
