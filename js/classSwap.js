@@ -5426,6 +5426,7 @@ function buildShaman(){
     //Build spec1row7col4 EMPTY
     spec1row7col4.style.display = "none";
 
+    //Build spec2 Enhancement
     //Build spec2row1col1 EMPTY
     spec2row1col1.style.display = "none";
 
@@ -5512,7 +5513,378 @@ function buildShaman(){
        var addSpellId = document.getElementById('spec2row2col4icon');
        addSpellId.setAttribute('data-spellId', 'improved_lightning_shield');
 
+    //Build spec2row3col1 Enhancing Totems
+    spec2row3col1.style.display = "block";
+    spec2row3col1.style.backgroundImage = "url('../images/spell icons/shaman/talents/enhancing_totems.jpg')";
+    spec2row3col1.style.backgroundRepeat = "no-repeat";
+    spec2row3col1.style.backgroundSize = "34px 34px";
+    spec2row3col1.style.backgroundPosition = "center center";
+    spec2row3col1.style.filter = "grayscale(100%)";
+        //Define Tooltip
+       var addSpellId = document.getElementById('spec2row3col1icon');
+       addSpellId.setAttribute('data-spellId', 'enhancing_totems');
 
+    //Build spec2row3col2 EMPTY
+    spec2row3col2.style.display = "none";
+
+    //Build spec2row3col3 Two Handed Axes and Maces
+    spec2row3col3.style.display = "block";
+    spec2row3col3.style.backgroundImage = "url('../images/spell icons/shaman/talents/two_handed_axes_and_maces.jpg')";
+    spec2row3col3.style.backgroundRepeat = "no-repeat";
+    spec2row3col3.style.backgroundSize = "34px 34px";
+    spec2row3col3.style.backgroundPosition = "center center";
+    spec2row3col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+       var addSpellId = document.getElementById('spec2row3col3icon');
+       addSpellId.setAttribute('data-spellId', 'two_handed_axes_and_maces');
+
+    //Build spec2row3col4 Anticipation
+    spec2row3col4.style.display = "block";
+    spec2row3col4.style.backgroundImage = "url('../images/spell icons/shaman/talents/anticipation.jpg')";
+    spec2row3col4.style.backgroundRepeat = "no-repeat";
+    spec2row3col4.style.backgroundSize = "34px 34px";
+    spec2row3col4.style.backgroundPosition = "center center";
+    spec2row3col4.style.filter = "grayscale(100%)";
+        //Define Tooltip
+       var addSpellId = document.getElementById('spec2row3col4icon');
+       addSpellId.setAttribute('data-spellId', 'anticipation');
+
+    //Build spec2row4col1 EMPTY
+    spec2row4col1.style.display = "none";
+
+    //Build spec2row4col2 Flurry
+    spec2row4col2.style.display = "block";
+    spec2row4col2.style.backgroundImage = "url('../images/spell icons/shaman/talents/flurry.jpg')";
+    spec2row4col2.style.backgroundRepeat = "no-repeat";
+    spec2row4col2.style.backgroundSize = "34px 34px";
+    spec2row4col2.style.backgroundPosition = "center center";
+    spec2row4col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+       var addSpellId = document.getElementById('spec2row4col2icon');
+       addSpellId.setAttribute('data-spellId', 'flurry');
+
+    //Build spec2row4col3 Toughness
+    spec2row4col3.style.display = "block";
+    spec2row4col3.style.backgroundImage = "url('../images/spell icons/shaman/talents/toughness.jpg')";
+    spec2row4col3.style.backgroundRepeat = "no-repeat";
+    spec2row4col3.style.backgroundSize = "34px 34px";
+    spec2row4col3.style.backgroundPosition = "center center";
+    spec2row4col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+       var addSpellId = document.getElementById('spec2row4col3icon');
+       addSpellId.setAttribute('data-spellId', 'toughness');
+
+    //Build spec2row4col4 EMPTY
+    spec2row4col4.style.display = "none";
+
+    //Build spec2row5col1 Improved Weapon Totems
+    spec2row5col1.style.display = "block";
+    spec2row5col1.style.backgroundImage = "url('../images/spell icons/shaman/talents/improved_weapon_totems.jpg')";
+    spec2row5col1.style.backgroundRepeat = "no-repeat";
+    spec2row5col1.style.backgroundSize = "34px 34px";
+    spec2row5col1.style.backgroundPosition = "center center";
+    spec2row5col1.style.filter = "grayscale(100%)";
+        //Define Tooltip
+       var addSpellId = document.getElementById('spec2row5col1icon');
+       addSpellId.setAttribute('data-spellId', 'improved_weapon_totems');
+
+    //Build spec2row5col2 Elemental Weapons
+    spec2row5col2.style.display = "block";
+    spec2row5col2.style.backgroundImage = "url('../images/spell icons/shaman/talents/elemental_weapons.jpg')";
+    spec2row5col2.style.backgroundRepeat = "no-repeat";
+    spec2row5col2.style.backgroundSize = "34px 34px";
+    spec2row5col2.style.backgroundPosition = "center center";
+    spec2row5col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+       var addSpellId = document.getElementById('spec2row5col2icon');
+       addSpellId.setAttribute('data-spellId', 'elemental_weapons');
+       //Build arrow
+       var spec2row5col2div = document.createElement('div');
+       spec2row5col2div.style.maxHeight = "0px";
+       spec2row5col2div.style.position = "absolute";
+       spec2row5col2div.id = "spec2row5col2div";
+       document.getElementById('spec2row5col2').appendChild(spec2row5col2div);
+       var spec2row5col2arrow = document.createElement('img');
+       spec2row5col2arrow.src = '../images/table elements/arrow_skip1_down.png';
+       document.getElementById('spec2row5col2div').appendChild(spec2row5col2arrow);
+       spec2row5col2arrow.style.position = "relative";
+       spec2row5col2arrow.style.top = "-3px";
+       spec2row5col2arrow.style.left = "19px";
+       spec2row5col2arrow.style.zIndex += 1;
+       arrowArray.push(spec2row5col2div, spec2row5col2arrow);
+
+    //Build spec2row5col3 Parry
+    spec2row5col3.style.display = "block";
+    spec2row5col3.style.backgroundImage = "url('../images/spell icons/shaman/talents/parry.jpg')";
+    spec2row5col3.style.backgroundRepeat = "no-repeat";
+    spec2row5col3.style.backgroundSize = "34px 34px";
+    spec2row5col3.style.backgroundPosition = "center center";
+    spec2row5col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+       var addSpellId = document.getElementById('spec2row5col3icon');
+       addSpellId.setAttribute('data-spellId', 'parry');
+
+    //Build spec2row5col4 EMPTY
+    spec2row5col4.style.display = "none";
+
+    //Build spec2row6col1 EMPTY
+    spec2row6col1.style.display = "none";
+
+    //Build spec2row6col2 EMPTY
+    spec2row6col2.style.display = "none";
+
+    //Build spec2row6col3 Weapon Mastery
+    spec2row6col3.style.display = "block";
+    spec2row6col3.style.backgroundImage = "url('../images/spell icons/shaman/talents/weapon_mastery.jpg')";
+    spec2row6col3.style.backgroundRepeat = "no-repeat";
+    spec2row6col3.style.backgroundSize = "34px 34px";
+    spec2row6col3.style.backgroundPosition = "center center";
+    spec2row6col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+       var addSpellId = document.getElementById('spec2row6col3icon');
+       addSpellId.setAttribute('data-spellId', 'weapon_mastery');
+
+    //Build spec2row6col4 EMPTY
+    spec2row6col4.style.display = "none";
+
+    //Build spec2row7col1 EMPTY
+    spec2row7col1.style.display = "none";
+
+    //Build spec2row7col2 Stormstrike
+    spec2row7col2.style.display = "block";
+    spec2row7col2.style.backgroundImage = "url('../images/spell icons/shaman/talents/stormstrike.jpg')";
+    spec2row7col2.style.backgroundRepeat = "no-repeat";
+    spec2row7col2.style.backgroundSize = "34px 34px";
+    spec2row7col2.style.backgroundPosition = "center center";
+    spec2row7col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+       var addSpellId = document.getElementById('spec2row7col2icon');
+       addSpellId.setAttribute('data-spellId', 'stormstrike');
+
+    //Build spec2row7col3 EMPTY
+    spec2row7col3.style.display = "none";
+
+    //Build spec2row7col4 EMPTY
+    spec2row7col4.style.display = "none";
+
+    //Build spec3 Restoration
+    //Build spec3row1col1 EMPTY
+    spec3row1col1.style.display = "none";
+
+    //Build spec3row1col2 Improved Healing Wave
+    spec3row1col2.style.display = "block";
+    spec3row1col2.style.backgroundImage = "url('../images/spell icons/shaman/talents/improved_healing_wave.jpg')";
+    spec3row1col2.style.backgroundRepeat = "no-repeat";
+    spec3row1col2.style.backgroundSize = "34px 34px";
+    spec3row1col2.style.backgroundPosition = "center center";
+    spec3row1col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+       var addSpellId = document.getElementById('spec3row1col2icon');
+       addSpellId.setAttribute('data-spellId', 'improved_healing_wave');
+
+    //Build spec3row1col3 Tidal Focus
+    spec3row1col3.style.display = "block";
+    spec3row1col3.style.backgroundImage = "url('../images/spell icons/shaman/talents/tidal_focus.jpg')";
+    spec3row1col3.style.backgroundRepeat = "no-repeat";
+    spec3row1col3.style.backgroundSize = "34px 34px";
+    spec3row1col3.style.backgroundPosition = "center center";
+    spec3row1col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+       var addSpellId = document.getElementById('spec3row1col3icon');
+       addSpellId.setAttribute('data-spellId', 'tidal_focus');
+
+    //Build spec3row1col4 EMPTY
+    spec3row1col4.style.display = "none";
+
+    //Build spec3row2col1 Improved Reincarnation
+    spec3row2col1.style.display = "block";
+    spec3row2col1.style.backgroundImage = "url('../images/spell icons/shaman/talents/improved_reincarnation.jpg')";
+    spec3row2col1.style.backgroundRepeat = "no-repeat";
+    spec3row2col1.style.backgroundSize = "34px 34px";
+    spec3row2col1.style.backgroundPosition = "center center";
+    spec3row2col1.style.filter = "grayscale(100%)";
+        //Define Tooltip
+       var addSpellId = document.getElementById('spec3row2col1icon');
+       addSpellId.setAttribute('data-spellId', 'improved_healing_wave');
+
+    //Build spec3row2col2 Ancestral Healing
+    spec3row2col2.style.display = "block";
+    spec3row2col2.style.backgroundImage = "url('../images/spell icons/shaman/talents/ancestral_healing.jpg')";
+    spec3row2col2.style.backgroundRepeat = "no-repeat";
+    spec3row2col2.style.backgroundSize = "34px 34px";
+    spec3row2col2.style.backgroundPosition = "center center";
+    spec3row2col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+       var addSpellId = document.getElementById('spec3row2col2icon');
+       addSpellId.setAttribute('data-spellId', 'ancestral_healing');
+
+    //Build spec3row2col3 Totemic Focus
+    spec3row2col3.style.display = "block";
+    spec3row2col3.style.backgroundImage = "url('../images/spell icons/shaman/talents/totemic_focus.jpg')";
+    spec3row2col3.style.backgroundRepeat = "no-repeat";
+    spec3row2col3.style.backgroundSize = "34px 34px";
+    spec3row2col3.style.backgroundPosition = "center center";
+    spec3row2col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+       var addSpellId = document.getElementById('spec3row2col3icon');
+       addSpellId.setAttribute('data-spellId', 'totemic_focus');
+
+    //Build spec3row2col4 EMPTY
+    spec3row2col4.style.display = "none";
+
+    //Build spec3row3col1 Nature's Guidance
+    spec3row3col1.style.display = "block";
+    spec3row3col1.style.backgroundImage = "url('../images/spell icons/shaman/talents/natures_guidance.jpg')";
+    spec3row3col1.style.backgroundRepeat = "no-repeat";
+    spec3row3col1.style.backgroundSize = "34px 34px";
+    spec3row3col1.style.backgroundPosition = "center center";
+    spec3row3col1.style.filter = "grayscale(100%)";
+        //Define Tooltip
+       var addSpellId = document.getElementById('spec3row3col1icon');
+       addSpellId.setAttribute('data-spellId', 'natures_guidance');
+
+    //Build spec3row3col2 Healing Focus
+    spec3row3col2.style.display = "block";
+    spec3row3col2.style.backgroundImage = "url('../images/spell icons/shaman/talents/healing_focus.jpg')";
+    spec3row3col2.style.backgroundRepeat = "no-repeat";
+    spec3row3col2.style.backgroundSize = "34px 34px";
+    spec3row3col2.style.backgroundPosition = "center center";
+    spec3row3col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+       var addSpellId = document.getElementById('spec3row3col2icon');
+       addSpellId.setAttribute('data-spellId', 'healing_focus');
+
+    //Build spec3row3col3 Totemic Mastery
+    spec3row3col3.style.display = "block";
+    spec3row3col3.style.backgroundImage = "url('../images/spell icons/shaman/talents/totemic_mastery.jpg')";
+    spec3row3col3.style.backgroundRepeat = "no-repeat";
+    spec3row3col3.style.backgroundSize = "34px 34px";
+    spec3row3col3.style.backgroundPosition = "center center";
+    spec3row3col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+       var addSpellId = document.getElementById('spec3row3col3icon');
+       addSpellId.setAttribute('data-spellId', 'totemic_mastery');
+
+    //Build spec3row3col4 Healing Grace
+    spec3row3col4.style.display = "block";
+    spec3row3col4.style.backgroundImage = "url('../images/spell icons/shaman/talents/healing_grace.jpg')";
+    spec3row3col4.style.backgroundRepeat = "no-repeat";
+    spec3row3col4.style.backgroundSize = "34px 34px";
+    spec3row3col4.style.backgroundPosition = "center center";
+    spec3row3col4.style.filter = "grayscale(100%)";
+        //Define Tooltip
+       var addSpellId = document.getElementById('spec3row3col4icon');
+       addSpellId.setAttribute('data-spellId', 'healing_grace');
+
+    //Build spec3row4col1 EMPTY
+    spec3row4col1.style.display = "none";
+
+    //Build spec3row4col2 Restorative Totems
+    spec3row4col2.style.display = "block";
+    spec3row4col2.style.backgroundImage = "url('../images/spell icons/shaman/talents/restorative_totems.jpg')";
+    spec3row4col2.style.backgroundRepeat = "no-repeat";
+    spec3row4col2.style.backgroundSize = "34px 34px";
+    spec3row4col2.style.backgroundPosition = "center center";
+    spec3row4col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+       var addSpellId = document.getElementById('spec3row4col2icon');
+       addSpellId.setAttribute('data-spellId', 'restorative_totems');
+       //Build arrow
+       var spec3row4col2div = document.createElement('div');
+       spec3row4col2div.style.maxHeight = "0px";
+       spec3row4col2div.style.position = "absolute";
+       spec3row4col2div.id = "spec3row4col2div";
+       document.getElementById('spec3row4col2').appendChild(spec3row4col2div);
+       var spec3row4col2arrow = document.createElement('img');
+       spec3row4col2arrow.src = '../images/table elements/arrow_skip2_down.png';
+       document.getElementById('spec3row4col2div').appendChild(spec3row4col2arrow);
+       spec3row4col2arrow.style.position = "relative";
+       spec3row4col2arrow.style.top = "-3px";
+       spec3row4col2arrow.style.left = "19px";
+       spec3row4col2arrow.style.zIndex += 1;
+       arrowArray.push(spec3row4col2div, spec3row4col2arrow);
+
+    //Build spec3row4col3 Tidal Mastery
+    spec3row4col3.style.display = "block";
+    spec3row4col3.style.backgroundImage = "url('../images/spell icons/shaman/talents/tidal_mastery.jpg')";
+    spec3row4col3.style.backgroundRepeat = "no-repeat";
+    spec3row4col3.style.backgroundSize = "34px 34px";
+    spec3row4col3.style.backgroundPosition = "center center";
+    spec3row4col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+       var addSpellId = document.getElementById('spec3row4col3icon');
+       addSpellId.setAttribute('data-spellId', 'tidal_mastery');
+
+    //Build spec3row4col4 EMPTY
+    spec3row4col4.style.display = "none";
+
+    //Build spec3row5col1 Healing Way
+    spec3row5col1.style.display = "block";
+    spec3row5col1.style.backgroundImage = "url('../images/spell icons/shaman/talents/healing_way.jpg')";
+    spec3row5col1.style.backgroundRepeat = "no-repeat";
+    spec3row5col1.style.backgroundSize = "34px 34px";
+    spec3row5col1.style.backgroundPosition = "center center";
+    spec3row5col1.style.filter = "grayscale(100%)";
+        //Define Tooltip
+       var addSpellId = document.getElementById('spec3row5col1icon');
+       addSpellId.setAttribute('data-spellId', 'healing_way');
+
+    //Build spec3row5col2 EMPTY
+    spec3row5col2.style.display = "none";
+
+    //Build spec3row5col3 Nature's Swiftness
+    spec3row5col3.style.display = "block";
+    spec3row5col3.style.backgroundImage = "url('../images/spell icons/shaman/talents/natures_swiftness.jpg')";
+    spec3row5col3.style.backgroundRepeat = "no-repeat";
+    spec3row5col3.style.backgroundSize = "34px 34px";
+    spec3row5col3.style.backgroundPosition = "center center";
+    spec3row5col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+       var addSpellId = document.getElementById('spec3row5col3icon');
+       addSpellId.setAttribute('data-spellId', 'natures_swiftness');
+
+    //Build spec3row5col4 EMPTY
+    spec3row5col4.style.display = "none";
+
+    //Build spec3row6col1 EMPTY
+    spec3row6col1.style.display = "none";
+
+    //Build spec3row6col2 EMPTY
+    spec3row6col2.style.display = "none";
+
+    //Build spec3row6col3 Purification
+    spec3row6col3.style.display = "block";
+    spec3row6col3.style.backgroundImage = "url('../images/spell icons/shaman/talents/purification.jpg')";
+    spec3row6col3.style.backgroundRepeat = "no-repeat";
+    spec3row6col3.style.backgroundSize = "34px 34px";
+    spec3row6col3.style.backgroundPosition = "center center";
+    spec3row6col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+       var addSpellId = document.getElementById('spec3row6col3icon');
+       addSpellId.setAttribute('data-spellId', 'purification');
+
+    //Build spec3row6col4 EMPTY
+    spec3row6col4.style.display = "none";
+
+    //Build spec3row7col1 EMPTY
+    spec3row7col1.style.display = "none";
+
+    //Build spec3row7col2 Mana Tide Totem
+    spec3row7col2.style.display = "block";
+    spec3row7col2.style.backgroundImage = "url('../images/spell icons/shaman/talents/mana_tide_totem.jpg')";
+    spec3row7col2.style.backgroundRepeat = "no-repeat";
+    spec3row7col2.style.backgroundSize = "34px 34px";
+    spec3row7col2.style.backgroundPosition = "center center";
+    spec3row7col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+       var addSpellId = document.getElementById('spec3row7col2icon');
+       addSpellId.setAttribute('data-spellId', 'mana_tide_totem');
+
+    //Build spec3row7col3 EMPTY
+    spec3row7col3.style.display = "none";
+
+    //Build spec3row7col4 EMPTY
+    spec3row7col4.style.display = "none";
 
 }
 
