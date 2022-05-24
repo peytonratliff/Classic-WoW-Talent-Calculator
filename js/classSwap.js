@@ -6271,6 +6271,266 @@ function buildWarlock(){
     //Build spec1row7col4 EMPTY
     spec1row7col4.style.display = "none";
 
+    //Build spec2 Demonology
+    //Build spec2row1col1 Improved Healthstone
+    spec2row1col1.style.display = "block";
+    spec2row1col1.style.backgroundImage = "url('../images/spell icons/warlock/talents/improved_healthstone.jpg')";
+    spec2row1col1.style.backgroundRepeat = "no-repeat";
+    spec2row1col1.style.backgroundSize = "34px 34px";
+    spec2row1col1.style.backgroundPosition = "center center";
+    spec2row1col1.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row1col1icon');
+        addSpellId.setAttribute('data-spellId', 'improved_healthstone');
+
+    //Build spec2row1col2 Improved Imp
+    spec2row1col2.style.display = "block";
+    spec2row1col2.style.backgroundImage = "url('../images/spell icons/warlock/talents/improved_imp.jpg')";
+    spec2row1col2.style.backgroundRepeat = "no-repeat";
+    spec2row1col2.style.backgroundSize = "34px 34px";
+    spec2row1col2.style.backgroundPosition = "center center";
+    spec2row1col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row1col2icon');
+        addSpellId.setAttribute('data-spellId', 'improved_imp');
+
+    //Build spec2row1col3 Demonic Embrace
+    spec2row1col3.style.display = "block";
+    spec2row1col3.style.backgroundImage = "url('../images/spell icons/warlock/talents/demonic_embrace.jpg')";
+    spec2row1col3.style.backgroundRepeat = "no-repeat";
+    spec2row1col3.style.backgroundSize = "34px 34px";
+    spec2row1col3.style.backgroundPosition = "center center";
+    spec2row1col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row1col3icon');
+        addSpellId.setAttribute('data-spellId', 'demonic_embrace');
+
+    //Build spec2row1col4 EMPTY
+    spec2row1col4.style.display = "none";
+
+    //Build spec2row2col1 Improved Health Funnel
+    spec2row2col1.style.display = "block";
+    spec2row2col1.style.backgroundImage = "url('../images/spell icons/warlock/talents/improved_health_funnel.jpg')";
+    spec2row2col1.style.backgroundRepeat = "no-repeat";
+    spec2row2col1.style.backgroundSize = "34px 34px";
+    spec2row2col1.style.backgroundPosition = "center center";
+    spec2row2col1.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row2col1icon');
+        addSpellId.setAttribute('data-spellId', 'improved_health_funnel');
+
+    //Build spec2row2col2 Improved Voidwalker
+    spec2row2col2.style.display = "block";
+    spec2row2col2.style.backgroundImage = "url('../images/spell icons/warlock/talents/improved_voidwalker.jpg')";
+    spec2row2col2.style.backgroundRepeat = "no-repeat";
+    spec2row2col2.style.backgroundSize = "34px 34px";
+    spec2row2col2.style.backgroundPosition = "center center";
+    spec2row2col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row2col2icon');
+        addSpellId.setAttribute('data-spellId', 'improved_voidwalker');
+
+    //Build spec2row2col3 Fel Intellect
+    spec2row2col3.style.display = "block";
+    spec2row2col3.style.backgroundImage = "url('../images/spell icons/warlock/talents/fel_intellect.jpg')";
+    spec2row2col3.style.backgroundRepeat = "no-repeat";
+    spec2row2col3.style.backgroundSize = "34px 34px";
+    spec2row2col3.style.backgroundPosition = "center center";
+    spec2row2col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row2col3icon');
+        addSpellId.setAttribute('data-spellId', 'fel_intellect');
+
+    //Build spec2row2col4 EMPTY
+    spec2row2col4.style.display = "none";
+
+    //Build spec2row3col1 Improved Succubus
+    spec2row3col1.style.display = "block";
+    spec2row3col1.style.backgroundImage = "url('../images/spell icons/warlock/talents/improved_succubus.jpg')";
+    spec2row3col1.style.backgroundRepeat = "no-repeat";
+    spec2row3col1.style.backgroundSize = "34px 34px";
+    spec2row3col1.style.backgroundPosition = "center center";
+    spec2row3col1.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row3col1icon');
+        addSpellId.setAttribute('data-spellId', 'improved_succubus');
+
+    //Build spec2row3col2 Fel Domination
+    spec2row3col2.style.display = "block";
+    spec2row3col2.style.backgroundImage = "url('../images/spell icons/warlock/talents/fel_domination.jpg')";
+    spec2row3col2.style.backgroundRepeat = "no-repeat";
+    spec2row3col2.style.backgroundSize = "34px 34px";
+    spec2row3col2.style.backgroundPosition = "center center";
+    spec2row3col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row3col2icon');
+        addSpellId.setAttribute('data-spellId', 'fel_domination');
+        //Build arrow
+        var spec2row3col2div = document.createElement('div');
+        spec2row3col2div.style.maxHeight = "0px";
+        spec2row3col2div.style.position = "absolute";
+        spec2row3col2div.id = "spec2row3col2div";
+        document.getElementById('spec2row3col2').appendChild(spec2row3col2div);
+        var spec2row3col2arrow = document.createElement('img');
+        spec2row3col2arrow.src = '../images/table elements/arrow_direct_down.png';
+        document.getElementById('spec2row3col2div').appendChild(spec2row3col2arrow);
+        spec2row3col2arrow.style.position = "relative";
+        spec2row3col2arrow.style.top = "-3px";
+        spec2row3col2arrow.style.left = "19px";
+        spec2row3col2arrow.style.zIndex += 1;
+        arrowArray.push(spec2row3col2div, spec2row3col2arrow);
+
+    //Build spec2row3col3 Fel Stamina
+    spec2row3col3.style.display = "block";
+    spec2row3col3.style.backgroundImage = "url('../images/spell icons/warlock/talents/fel_stamina.jpg')";
+    spec2row3col3.style.backgroundRepeat = "no-repeat";
+    spec2row3col3.style.backgroundSize = "34px 34px";
+    spec2row3col3.style.backgroundPosition = "center center";
+    spec2row3col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row3col3icon');
+        addSpellId.setAttribute('data-spellId', 'fel_stamina');
+
+    //Build spec2row3col4 EMPTY
+    spec2row3col4.style.display = "none";
+
+    //Build spec2row4col1 EMPTY
+    spec2row4col1.style.display = "none";
+
+    //Build spec2row4col2 Master Summoner
+    spec2row4col2.style.display = "block";
+    spec2row4col2.style.backgroundImage = "url('../images/spell icons/warlock/talents/master_summoner.jpg')";
+    spec2row4col2.style.backgroundRepeat = "no-repeat";
+    spec2row4col2.style.backgroundSize = "34px 34px";
+    spec2row4col2.style.backgroundPosition = "center center";
+    spec2row4col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row4col2icon');
+        addSpellId.setAttribute('data-spellId', 'master_summoner');
+
+    //Build spec2row4col3 Unholy Power
+    spec2row4col3.style.display = "block";
+    spec2row4col3.style.backgroundImage = "url('../images/spell icons/warlock/talents/unholy_power.jpg')";
+    spec2row4col3.style.backgroundRepeat = "no-repeat";
+    spec2row4col3.style.backgroundSize = "34px 34px";
+    spec2row4col3.style.backgroundPosition = "center center";
+    spec2row4col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row4col3icon');
+        addSpellId.setAttribute('data-spellId', 'unholy_power');
+        //Build arrow
+        var spec2row4col3div = document.createElement('div');
+        spec2row4col3div.style.maxHeight = "0px";
+        spec2row4col3div.style.position = "absolute";
+        spec2row4col3div.id = "spec2row4col3div";
+        document.getElementById('spec2row4col3').appendChild(spec2row4col3div);
+        var spec2row4col3arrow = document.createElement('img');
+        spec2row4col3arrow.src = '../images/table elements/arrow_skip1_down.png';
+        document.getElementById('spec2row4col3div').appendChild(spec2row4col3arrow);
+        spec2row4col3arrow.style.position = "relative";
+        spec2row4col3arrow.style.top = "-3px";
+        spec2row4col3arrow.style.left = "19px";
+        spec2row4col3arrow.style.zIndex += 1;
+        arrowArray.push(spec2row4col3div, spec2row4col3arrow);
+
+    //Build spec2row4col4 EMPTY
+    spec2row4col4.style.display = "none";
+
+    //Build spec2row5col1 Improved Enslave Demon
+    spec2row5col1.style.display = "block";
+    spec2row5col1.style.backgroundImage = "url('../images/spell icons/warlock/talents/improved_enslave_demon.jpg')";
+    spec2row5col1.style.backgroundRepeat = "no-repeat";
+    spec2row5col1.style.backgroundSize = "34px 34px";
+    spec2row5col1.style.backgroundPosition = "center center";
+    spec2row5col1.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row5col1icon');
+        addSpellId.setAttribute('data-spellId', 'improved_enslave_demon');
+
+    //Build spec2row5col2 Demonic Sacrifice
+    spec2row5col2.style.display = "block";
+    spec2row5col2.style.backgroundImage = "url('../images/spell icons/warlock/talents/demonic_sacrifice.jpg')";
+    spec2row5col2.style.backgroundRepeat = "no-repeat";
+    spec2row5col2.style.backgroundSize = "34px 34px";
+    spec2row5col2.style.backgroundPosition = "center center";
+    spec2row5col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row5col2icon');
+        addSpellId.setAttribute('data-spellId', 'demonic_sacrifice');
+        //Build arrow
+        var spec2row5col2div = document.createElement('div');
+        spec2row5col2div.style.maxHeight = "0px";
+        spec2row5col2div.style.position = "absolute";
+        spec2row5col2div.id = "spec2row5col2div";
+        document.getElementById('spec2row5col2').appendChild(spec2row5col2div);
+        var spec2row5col2arrow = document.createElement('img');
+        spec2row5col2arrow.src = '../images/table elements/arrow_skip1_down.png';
+        document.getElementById('spec2row5col2div').appendChild(spec2row5col2arrow);
+        spec2row5col2arrow.style.position = "relative";
+        spec2row5col2arrow.style.top = "-3px";
+        spec2row5col2arrow.style.left = "19px";
+        spec2row5col2arrow.style.zIndex += 1;
+        arrowArray.push(spec2row5col2div, spec2row5col2arrow);
+
+    //Build spec2row5col3 EMPTY
+    spec2row5col3.style.display = "none";
+
+    //Build spec2row5col4 Improved Firestone
+    spec2row5col4.style.display = "block";
+    spec2row5col4.style.backgroundImage = "url('../images/spell icons/warlock/talents/improved_firestone.jpg')";
+    spec2row5col4.style.backgroundRepeat = "no-repeat";
+    spec2row5col4.style.backgroundSize = "34px 34px";
+    spec2row5col4.style.backgroundPosition = "center center";
+    spec2row5col4.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row5col4icon');
+        addSpellId.setAttribute('data-spellId', 'improved_firestone');
+
+    //Build spec2row6col1 EMPTY
+    spec2row6col1.style.display = "none";
+
+    //Build spec2row6col2 EMPTY
+    spec2row6col2.style.display = "none";
+
+    //Build spec2row6col3 Master Demonologist
+    spec2row6col3.style.display = "block";
+    spec2row6col3.style.backgroundImage = "url('../images/spell icons/warlock/talents/master_demonologist.jpg')";
+    spec2row6col3.style.backgroundRepeat = "no-repeat";
+    spec2row6col3.style.backgroundSize = "34px 34px";
+    spec2row6col3.style.backgroundPosition = "center center";
+    spec2row6col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row6col3icon');
+        addSpellId.setAttribute('data-spellId', 'master_demonologist');
+
+    //Build spec2row6col4 EMPTY
+    spec2row6col4.style.display = "none";
+
+    //Build spec2row7col1 EMPTY
+    spec2row7col1.style.display = "none";
+
+    //Build spec2row7col2 Soul Link
+    spec2row7col2.style.display = "block";
+    spec2row7col2.style.backgroundImage = "url('../images/spell icons/warlock/talents/soul_link.jpg')";
+    spec2row7col2.style.backgroundRepeat = "no-repeat";
+    spec2row7col2.style.backgroundSize = "34px 34px";
+    spec2row7col2.style.backgroundPosition = "center center";
+    spec2row7col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row7col2icon');
+        addSpellId.setAttribute('data-spellId', 'soul_link');
+
+    //Build spec2row7col3 Improved Spellstone
+    spec2row7col3.style.display = "block";
+    spec2row7col3.style.backgroundImage = "url('../images/spell icons/warlock/talents/improved_spellstone.jpg')";
+    spec2row7col3.style.backgroundRepeat = "no-repeat";
+    spec2row7col3.style.backgroundSize = "34px 34px";
+    spec2row7col3.style.backgroundPosition = "center center";
+    spec2row7col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row7col3icon');
+        addSpellId.setAttribute('data-spellId', 'improved_spellstone');
+
 }
 
 function buildWarrior(){
