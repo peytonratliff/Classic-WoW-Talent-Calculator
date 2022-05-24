@@ -6531,6 +6531,261 @@ function buildWarlock(){
         var addSpellId = document.getElementById('spec2row7col3icon');
         addSpellId.setAttribute('data-spellId', 'improved_spellstone');
 
+    //Build spec3 Destruction
+    //Build spec3row1col1 EMPTY
+    spec3row1col1.style.display = "none";
+
+    //Build spec3row1col2 Improved Shadow Bolt
+    spec3row1col2.style.display = "block";
+    spec3row1col2.style.backgroundImage = "url('../images/spell icons/warlock/talents/improved_shadow_bolt.jpg')";
+    spec3row1col2.style.backgroundRepeat = "no-repeat";
+    spec3row1col2.style.backgroundSize = "34px 34px";
+    spec3row1col2.style.backgroundPosition = "center center";
+    spec3row1col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec3row1col2icon');
+        addSpellId.setAttribute('data-spellId', 'improved_shadow_bolt');
+
+    //Build spec3row1col3 Cataclysm
+    spec3row1col3.style.display = "block";
+    spec3row1col3.style.backgroundImage = "url('../images/spell icons/warlock/talents/cataclysm.jpg')";
+    spec3row1col3.style.backgroundRepeat = "no-repeat";
+    spec3row1col3.style.backgroundSize = "34px 34px";
+    spec3row1col3.style.backgroundPosition = "center center";
+    spec3row1col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec3row1col3icon');
+        addSpellId.setAttribute('data-spellId', 'cataclysm');
+
+    //Build spec3row1col4 EMPTY
+    spec3row1col4.style.display = "none";
+
+    //Build spec3row2col1 EMPTY
+    spec3row2col1.style.display = "none";
+
+    //Build spec3row2col2 Bane
+    spec3row2col2.style.display = "block";
+    spec3row2col2.style.backgroundImage = "url('../images/spell icons/warlock/talents/bane.jpg')";
+    spec3row2col2.style.backgroundRepeat = "no-repeat";
+    spec3row2col2.style.backgroundSize = "34px 34px";
+    spec3row2col2.style.backgroundPosition = "center center";
+    spec3row2col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec3row2col2icon');
+        addSpellId.setAttribute('data-spellId', 'bane');
+
+    //Build spec3row2col3 Aftermath
+    spec3row2col3.style.display = "block";
+    spec3row2col3.style.backgroundImage = "url('../images/spell icons/warlock/talents/aftermath.jpg')";
+    spec3row2col3.style.backgroundRepeat = "no-repeat";
+    spec3row2col3.style.backgroundSize = "34px 34px";
+    spec3row2col3.style.backgroundPosition = "center center";
+    spec3row2col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec3row2col3icon');
+        addSpellId.setAttribute('data-spellId', 'aftermath');
+
+    //Build spec3row2col4 EMPTY
+    spec3row2col4.style.display = "none";
+
+    //Build spec3row3col1 Improved Firebolt
+    spec3row3col1.style.display = "block";
+    spec3row3col1.style.backgroundImage = "url('../images/spell icons/warlock/talents/improved_firebolt.jpg')";
+    spec3row3col1.style.backgroundRepeat = "no-repeat";
+    spec3row3col1.style.backgroundSize = "34px 34px";
+    spec3row3col1.style.backgroundPosition = "center center";
+    spec3row3col1.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec3row3col1icon');
+        addSpellId.setAttribute('data-spellId', 'improved_firebolt');
+
+    //Build spec3row3col2 Improved Lash of Pain
+    spec3row3col2.style.display = "block";
+    spec3row3col2.style.backgroundImage = "url('../images/spell icons/warlock/talents/improved_lash_of_pain.jpg')";
+    spec3row3col2.style.backgroundRepeat = "no-repeat";
+    spec3row3col2.style.backgroundSize = "34px 34px";
+    spec3row3col2.style.backgroundPosition = "center center";
+    spec3row3col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec3row3col2icon');
+        addSpellId.setAttribute('data-spellId', 'improved_lash_of_pain');
+
+    //Build spec3row3col3 Devastation
+    spec3row3col3.style.display = "block";
+    spec3row3col3.style.backgroundImage = "url('../images/spell icons/warlock/talents/devastation.jpg')";
+    spec3row3col3.style.backgroundRepeat = "no-repeat";
+    spec3row3col3.style.backgroundSize = "34px 34px";
+    spec3row3col3.style.backgroundPosition = "center center";
+    spec3row3col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec3row3col3icon');
+        addSpellId.setAttribute('data-spellId', 'devastation');
+        //Build arrow
+        var spec3row3col3div = document.createElement('div');
+        spec3row3col3div.style.maxHeight = "0px";
+        spec3row3col3div.style.position = "absolute";
+        spec3row3col3div.id = "spec3row3col3div";
+        document.getElementById('spec3row3col3').appendChild(spec3row3col3div);
+        var spec3row3col3arrow = document.createElement('img');
+        spec3row3col3arrow.src = '../images/table elements/arrow_skip1_down.png';
+        document.getElementById('spec3row3col3div').appendChild(spec3row3col3arrow);
+        spec3row3col3arrow.style.position = "relative";
+        spec3row3col3arrow.style.top = "-3px";
+        spec3row3col3arrow.style.left = "19px";
+        spec3row3col3arrow.style.zIndex += 1;
+        arrowArray.push(spec3row3col3div, spec3row3col3arrow);
+
+    //Build spec3row3col4 Shadowburn
+    spec3row3col4.style.display = "block";
+    spec3row3col4.style.backgroundImage = "url('../images/spell icons/warlock/talents/shadowburn.jpg')";
+    spec3row3col4.style.backgroundRepeat = "no-repeat";
+    spec3row3col4.style.backgroundSize = "34px 34px";
+    spec3row3col4.style.backgroundPosition = "center center";
+    spec3row3col4.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec3row4col4icon');
+        addSpellId.setAttribute('data-spellId', 'shadowburn');
+
+    //Build spec3row4col1 Intensity
+    spec3row4col1.style.display = "block";
+    spec3row4col1.style.backgroundImage = "url('../images/spell icons/warlock/talents/intensity.jpg')";
+    spec3row4col1.style.backgroundRepeat = "no-repeat";
+    spec3row4col1.style.backgroundSize = "34px 34px";
+    spec3row4col1.style.backgroundPosition = "center center";
+    spec3row4col1.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec3row4col1icon');
+        addSpellId.setAttribute('data-spellId', 'intensity');
+        //Build arrow
+        var spec3row4col1div = document.createElement('div');
+        spec3row4col1div.style.maxHeight = "0px";
+        spec3row4col1div.style.position = "absolute";
+        spec3row4col1div.id = "spec3row4col1div";
+        document.getElementById('spec3row4col1').appendChild(spec3row4col1div);
+        var spec3row4col1arrow = document.createElement('img');
+        spec3row4col1arrow.src = '../images/table elements/arrow_direct_down.png';
+        document.getElementById('spec3row4col1div').appendChild(spec3row4col1arrow);
+        spec3row4col1arrow.style.position = "relative";
+        spec3row4col1arrow.style.top = "-3px";
+        spec3row4col1arrow.style.left = "19px";
+        spec3row4col1arrow.style.zIndex += 1;
+        arrowArray.push(spec3row4col1div, spec3row4col1arrow);
+
+    //Build spec3row4col2 Destructive Reach
+    spec3row4col2.style.display = "block";
+    spec3row4col2.style.backgroundImage = "url('../images/spell icons/warlock/talents/destructive_reach.jpg')";
+    spec3row4col2.style.backgroundRepeat = "no-repeat";
+    spec3row4col2.style.backgroundSize = "34px 34px";
+    spec3row4col2.style.backgroundPosition = "center center";
+    spec3row4col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec3row4col2icon');
+        addSpellId.setAttribute('data-spellId', 'destructive_reach');
+
+    //Build spec3row4col3 EMPTY
+    spec3row4col3.style.display = "none";
+
+    //Build spec3row4col4 Improved Searing Pain
+    spec3row4col4.style.display = "block";
+    spec3row4col4.style.backgroundImage = "url('../images/spell icons/warlock/talents/improved_searing_pain.jpg')";
+    spec3row4col4.style.backgroundRepeat = "no-repeat";
+    spec3row4col4.style.backgroundSize = "34px 34px";
+    spec3row4col4.style.backgroundPosition = "center center";
+    spec3row4col4.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec3row4col4icon');
+        addSpellId.setAttribute('data-spellId', 'improved_searing_pain');
+
+    //Build spec3row5col1 Pyroclasm
+    spec3row5col1.style.display = "block";
+    spec3row5col1.style.backgroundImage = "url('../images/spell icons/warlock/talents/pyroclasm.jpg')";
+    spec3row5col1.style.backgroundRepeat = "no-repeat";
+    spec3row5col1.style.backgroundSize = "34px 34px";
+    spec3row5col1.style.backgroundPosition = "center center";
+    spec3row5col1.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec3row5col1icon');
+        addSpellId.setAttribute('data-spellId', 'pyroclasm');
+
+    //Build spec3row5col2 Improved Immolate
+    spec3row5col2.style.display = "block";
+    spec3row5col2.style.backgroundImage = "url('../images/spell icons/warlock/talents/improved_immolate.jpg')";
+    spec3row5col2.style.backgroundRepeat = "no-repeat";
+    spec3row5col2.style.backgroundSize = "34px 34px";
+    spec3row5col2.style.backgroundPosition = "center center";
+    spec3row5col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec3row5col2icon');
+        addSpellId.setAttribute('data-spellId', 'improved_immolate');
+        //Build arrow
+        var spec3row5col2div = document.createElement('div');
+        spec3row5col2div.style.maxHeight = "0px";
+        spec3row5col2div.style.position = "absolute";
+        spec3row5col2div.id = "spec3row5col2div";
+        document.getElementById('spec3row5col2').appendChild(spec3row5col2div);
+        var spec3row5col2arrow = document.createElement('img');
+        spec3row5col2arrow.src = '../images/table elements/arrow_skip1_down.png';
+        document.getElementById('spec3row5col2div').appendChild(spec3row5col2arrow);
+        spec3row5col2arrow.style.position = "relative";
+        spec3row5col2arrow.style.top = "-3px";
+        spec3row5col2arrow.style.left = "19px";
+        spec3row5col2arrow.style.zIndex += 1;
+        arrowArray.push(spec3row5col2div, spec3row5col2arrow);
+
+    //Build spec3row5col3 Ruin
+    spec3row5col3.style.display = "block";
+    spec3row5col3.style.backgroundImage = "url('../images/spell icons/warlock/talents/ruin.jpg')";
+    spec3row5col3.style.backgroundRepeat = "no-repeat";
+    spec3row5col3.style.backgroundSize = "34px 34px";
+    spec3row5col3.style.backgroundPosition = "center center";
+    spec3row5col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec3row5col3icon');
+        addSpellId.setAttribute('data-spellId', 'ruin');
+
+    //Build spec3row5col4 EMPTY
+    spec3row5col4.style.display = "none";
+
+    //Build spec3row6col1 EMPTY
+    spec3row6col1.style.display = "none";
+
+    //Build spec3row6col2 EMPTY
+    spec3row6col2.style.display = "none";
+
+    //Build spec3row6col3 Emberstorm
+    spec3row6col3.style.display = "block";
+    spec3row6col3.style.backgroundImage = "url('../images/spell icons/warlock/talents/emberstorm.jpg')";
+    spec3row6col3.style.backgroundRepeat = "no-repeat";
+    spec3row6col3.style.backgroundSize = "34px 34px";
+    spec3row6col3.style.backgroundPosition = "center center";
+    spec3row6col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec3row6col3icon');
+        addSpellId.setAttribute('data-spellId', 'emberstorm');
+
+    //Build spec3row6col4 EMPTY
+    spec3row6col4.style.display = "none";
+
+    //Build spec3row7col1 EMPTY
+    spec3row7col1.style.display = "none";
+
+    //Build spec3row7col2 Conflagrate
+    spec3row7col2.style.display = "block";
+    spec3row7col2.style.backgroundImage = "url('../images/spell icons/warlock/talents/conflagrate.jpg')";
+    spec3row7col2.style.backgroundRepeat = "no-repeat";
+    spec3row7col2.style.backgroundSize = "34px 34px";
+    spec3row7col2.style.backgroundPosition = "center center";
+    spec3row7col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec3row7col2icon');
+        addSpellId.setAttribute('data-spellId', 'conflagrate');
+
+    //Build spec3row7col3 EMPTY
+    spec3row7col3.style.display = "none";
+
+    //Build spec3row7col4 EMPTY
+    spec3row7col4.style.display = "none";
+
 }
 
 function buildWarrior(){
