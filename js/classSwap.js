@@ -5889,6 +5889,387 @@ function buildShaman(){
 }
 
 function buildWarlock(){
+    removeArrows(); //Arrows are built every time a new class is selected. The removeArrows() function clears the arrows from the previous selection
+
+    var spec1row1col1 = document.getElementById("spec1row1col1icon");
+    var spec1row1col2 = document.getElementById("spec1row1col2icon");
+    var spec1row1col3 = document.getElementById("spec1row1col3icon");
+    var spec1row1col4 = document.getElementById("spec1row1col4icon");
+    var spec1row2col1 = document.getElementById("spec1row2col1icon");
+    var spec1row2col2 = document.getElementById("spec1row2col2icon");
+    var spec1row2col3 = document.getElementById("spec1row2col3icon");
+    var spec1row2col4 = document.getElementById("spec1row2col4icon");
+    var spec1row3col1 = document.getElementById("spec1row3col1icon");
+    var spec1row3col2 = document.getElementById("spec1row3col2icon");
+    var spec1row3col3 = document.getElementById("spec1row3col3icon");
+    var spec1row3col4 = document.getElementById("spec1row3col4icon");
+    var spec1row4col1 = document.getElementById("spec1row4col1icon");
+    var spec1row4col2 = document.getElementById("spec1row4col2icon");
+    var spec1row4col3 = document.getElementById("spec1row4col3icon");
+    var spec1row4col4 = document.getElementById("spec1row4col4icon");
+    var spec1row5col1 = document.getElementById("spec1row5col1icon");
+    var spec1row5col2 = document.getElementById("spec1row5col2icon");
+    var spec1row5col3 = document.getElementById("spec1row5col3icon");
+    var spec1row5col4 = document.getElementById("spec1row5col4icon");
+    var spec1row6col1 = document.getElementById("spec1row6col1icon");
+    var spec1row6col2 = document.getElementById("spec1row6col2icon");
+    var spec1row6col3 = document.getElementById("spec1row6col3icon");
+    var spec1row6col4 = document.getElementById("spec1row6col4icon");
+    var spec1row7col1 = document.getElementById("spec1row7col1icon");
+    var spec1row7col2 = document.getElementById("spec1row7col2icon");
+    var spec1row7col3 = document.getElementById("spec1row7col3icon");
+    var spec1row7col4 = document.getElementById("spec1row7col4icon");
+
+    var spec2row1col1 = document.getElementById("spec2row1col1icon");
+    var spec2row1col2 = document.getElementById("spec2row1col2icon");
+    var spec2row1col3 = document.getElementById("spec2row1col3icon");
+    var spec2row1col4 = document.getElementById("spec2row1col4icon");
+    var spec2row2col1 = document.getElementById("spec2row2col1icon");
+    var spec2row2col2 = document.getElementById("spec2row2col2icon");
+    var spec2row2col3 = document.getElementById("spec2row2col3icon");
+    var spec2row2col4 = document.getElementById("spec2row2col4icon");
+    var spec2row3col1 = document.getElementById("spec2row3col1icon");
+    var spec2row3col2 = document.getElementById("spec2row3col2icon");
+    var spec2row3col3 = document.getElementById("spec2row3col3icon");
+    var spec2row3col4 = document.getElementById("spec2row3col4icon");
+    var spec2row4col1 = document.getElementById("spec2row4col1icon");
+    var spec2row4col2 = document.getElementById("spec2row4col2icon");
+    var spec2row4col3 = document.getElementById("spec2row4col3icon");
+    var spec2row4col4 = document.getElementById("spec2row4col4icon");
+    var spec2row5col1 = document.getElementById("spec2row5col1icon");
+    var spec2row5col2 = document.getElementById("spec2row5col2icon");
+    var spec2row5col3 = document.getElementById("spec2row5col3icon");
+    var spec2row5col4 = document.getElementById("spec2row5col4icon");
+    var spec2row6col1 = document.getElementById("spec2row6col1icon");
+    var spec2row6col2 = document.getElementById("spec2row6col2icon");
+    var spec2row6col3 = document.getElementById("spec2row6col3icon");
+    var spec2row6col4 = document.getElementById("spec2row6col4icon");
+    var spec2row7col1 = document.getElementById("spec2row7col1icon");
+    var spec2row7col2 = document.getElementById("spec2row7col2icon");
+    var spec2row7col3 = document.getElementById("spec2row7col3icon");
+    var spec2row7col4 = document.getElementById("spec2row7col4icon");
+
+    var spec3row1col1 = document.getElementById("spec3row1col1icon");
+    var spec3row1col2 = document.getElementById("spec3row1col2icon");
+    var spec3row1col3 = document.getElementById("spec3row1col3icon");
+    var spec3row1col4 = document.getElementById("spec3row1col4icon");
+    var spec3row2col1 = document.getElementById("spec3row2col1icon");
+    var spec3row2col2 = document.getElementById("spec3row2col2icon");
+    var spec3row2col3 = document.getElementById("spec3row2col3icon");
+    var spec3row2col4 = document.getElementById("spec3row2col4icon");
+    var spec3row3col1 = document.getElementById("spec3row3col1icon");
+    var spec3row3col2 = document.getElementById("spec3row3col2icon");
+    var spec3row3col3 = document.getElementById("spec3row3col3icon");
+    var spec3row3col4 = document.getElementById("spec3row3col4icon");
+    var spec3row4col1 = document.getElementById("spec3row4col1icon");
+    var spec3row4col2 = document.getElementById("spec3row4col2icon");
+    var spec3row4col3 = document.getElementById("spec3row4col3icon");
+    var spec3row4col4 = document.getElementById("spec3row4col4icon");
+    var spec3row5col1 = document.getElementById("spec3row5col1icon");
+    var spec3row5col2 = document.getElementById("spec3row5col2icon");
+    var spec3row5col3 = document.getElementById("spec3row5col3icon");
+    var spec3row5col4 = document.getElementById("spec3row5col4icon");
+    var spec3row6col1 = document.getElementById("spec3row6col1icon");
+    var spec3row6col2 = document.getElementById("spec3row6col2icon");
+    var spec3row6col3 = document.getElementById("spec3row6col3icon");
+    var spec3row6col4 = document.getElementById("spec3row6col4icon");
+    var spec3row7col1 = document.getElementById("spec3row7col1icon");
+    var spec3row7col2 = document.getElementById("spec3row7col2icon");
+    var spec3row7col3 = document.getElementById("spec3row7col3icon");
+    var spec3row7col4 = document.getElementById("spec3row7col4icon");
+
+    //Build specBar
+    var spec1icon = document.getElementById("spec1icon");
+    var spec2icon = document.getElementById("spec2icon");
+    var spec3icon = document.getElementById("spec3icon");
+    var spec1name = document.getElementById("spec1name");
+    var spec2name = document.getElementById("spec2name");
+    var spec3name = document.getElementById("spec3name");
+    specBar.style.display = "block";
+    spec1icon.style.backgroundImage = "url('../images/class icons/spec icons/warlock/affliction.jpg')";
+        spec1icon.style.backgroundRepeat = "no-repeat";
+        spec1icon.style.backgroundSize = "34px 34px";
+        spec1icon.style.backgroundPosition = "left 5px top 10px";
+        spec1icon.style.width = "44px";
+        spec1icon.style.height = "44px";
+    spec2icon.style.backgroundImage = "url('../images/class icons/spec icons/warlock/demonology.jpg')";
+        spec2icon.style.backgroundRepeat = "no-repeat";
+        spec2icon.style.backgroundSize = "34px 34px";
+        spec2icon.style.backgroundPosition = "left 5px top 10px";
+        spec2icon.style.width = "44px";
+        spec2icon.style.height = "44px";
+    spec3icon.style.backgroundImage = "url('../images/class icons/spec icons/warlock/destruction.jpg')";
+        spec3icon.style.backgroundRepeat = "no-repeat";
+        spec3icon.style.backgroundSize = "34px 34px";
+        spec3icon.style.backgroundPosition = "left 5px top 10px";
+        spec1icon.style.width = "44px";
+        spec1icon.style.height = "44px";
+    spec1name.innerHTML = "Affliction";
+    spec2name.innerHTML = "Demonology";
+    spec3name.innerHTML = "Destruction";
+
+    //Build spec1 Affliction
+    //Build spec1row1col1 EMPTY
+    spec1row1col1.style.display = "none";
+
+    //Build spec1row1col2 Suppression
+    spec1row1col2.style.display = "block";
+    spec1row1col2.style.backgroundImage = "url('../images/spell icons/warlock/talents/suppression.jpg')";
+    spec1row1col2.style.backgroundRepeat = "no-repeat";
+    spec1row1col2.style.backgroundSize = "34px 34px";
+    spec1row1col2.style.backgroundPosition = "center center";
+    spec1row1col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row1col2icon');
+        addSpellId.setAttribute('data-spellId', 'suppression');
+
+    //Build spec1row1col3 Improved Corruption
+    spec1row1col3.style.display = "block";
+    spec1row1col3.style.backgroundImage = "url('../images/spell icons/warlock/talents/improved_corruption.jpg')";
+    spec1row1col3.style.backgroundRepeat = "no-repeat";
+    spec1row1col3.style.backgroundSize = "34px 34px";
+    spec1row1col3.style.backgroundPosition = "center center";
+    spec1row1col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row1col3icon');
+        addSpellId.setAttribute('data-spellId', 'improved_corruption');
+
+    //Build spec1row1col4 EMPTY
+    spec1row1col4.style.display = "none";
+
+    //Build spec1row2col1 Improved Curse of Weakness
+    spec1row2col1.style.display = "block";
+    spec1row2col1.style.backgroundImage = "url('../images/spell icons/warlock/talents/improved_curse_of_weakness.jpg')";
+    spec1row2col1.style.backgroundRepeat = "no-repeat";
+    spec1row2col1.style.backgroundSize = "34px 34px";
+    spec1row2col1.style.backgroundPosition = "center center";
+    spec1row2col1.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row2col1icon');
+        addSpellId.setAttribute('data-spellId', 'improved_curse_of_weakness');
+
+    //Build spec1row2col2 Improved Drain Soul
+    spec1row2col2.style.display = "block";
+    spec1row2col2.style.backgroundImage = "url('../images/spell icons/warlock/talents/improved_drain_soul.jpg')";
+    spec1row2col2.style.backgroundRepeat = "no-repeat";
+    spec1row2col2.style.backgroundSize = "34px 34px";
+    spec1row2col2.style.backgroundPosition = "center center";
+    spec1row2col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row2col2icon');
+        addSpellId.setAttribute('data-spellId', 'improved_drain_soul');
+
+    //Build spec1row2col3 Improved Life Tap
+    spec1row2col3.style.display = "block";
+    spec1row2col3.style.backgroundImage = "url('../images/spell icons/warlock/talents/improved_life_tap.jpg')";
+    spec1row2col3.style.backgroundRepeat = "no-repeat";
+    spec1row2col3.style.backgroundSize = "34px 34px";
+    spec1row2col3.style.backgroundPosition = "center center";
+    spec1row2col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row2col3icon');
+        addSpellId.setAttribute('data-spellId', 'improved_life_tap');
+
+    //Build spec1row2col4 Improved Drain Life
+    spec1row2col4.style.display = "block";
+    spec1row2col4.style.backgroundImage = "url('../images/spell icons/warlock/talents/improved_drain_life.jpg')";
+    spec1row2col4.style.backgroundRepeat = "no-repeat";
+    spec1row2col4.style.backgroundSize = "34px 34px";
+    spec1row2col4.style.backgroundPosition = "center center";
+    spec1row2col4.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row2col4icon');
+        addSpellId.setAttribute('data-spellId', 'improved_drain_life');
+
+    //Build spec1row3col1 Improved Curse of Agony
+    spec1row3col1.style.display = "block";
+    spec1row3col1.style.backgroundImage = "url('../images/spell icons/warlock/talents/improved_curse_of_agony.jpg')";
+    spec1row3col1.style.backgroundRepeat = "no-repeat";
+    spec1row3col1.style.backgroundSize = "34px 34px";
+    spec1row3col1.style.backgroundPosition = "center center";
+    spec1row3col1.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row3col1icon');
+        addSpellId.setAttribute('data-spellId', 'improved_curse_of_agony');
+
+    //Build spec1row3col2 Fel Concentration
+    spec1row3col2.style.display = "block";
+    spec1row3col2.style.backgroundImage = "url('../images/spell icons/warlock/talents/fel_concentration.jpg')";
+    spec1row3col2.style.backgroundRepeat = "no-repeat";
+    spec1row3col2.style.backgroundSize = "34px 34px";
+    spec1row3col2.style.backgroundPosition = "center center";
+    spec1row3col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row3col2icon');
+        addSpellId.setAttribute('data-spellId', 'fel_concentration');
+
+    //Build spec1row3col3 Amplify Curse
+    spec1row3col3.style.display = "block";
+    spec1row3col3.style.backgroundImage = "url('../images/spell icons/warlock/talents/amplify_curse.jpg')";
+    spec1row3col3.style.backgroundRepeat = "no-repeat";
+    spec1row3col3.style.backgroundSize = "34px 34px";
+    spec1row3col3.style.backgroundPosition = "center center";
+    spec1row3col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row3col3icon');
+        addSpellId.setAttribute('data-spellId', 'amplify_curse');
+        //Build arrow
+        var spec1row3col3div = document.createElement('div');
+        spec1row3col3div.style.maxHeight = "0px";
+        spec1row3col3div.style.position = "absolute";
+        spec1row3col3div.id = "spec1row3col3div";
+        document.getElementById('spec1row3col3').appendChild(spec1row3col3div);
+        var spec1row3col3arrow = document.createElement('img');
+        spec1row3col3arrow.src = '../images/table elements/arrow_skip1_down.png';
+        document.getElementById('spec1row3col3div').appendChild(spec1row3col3arrow);
+        spec1row3col3arrow.style.position = "relative";
+        spec1row3col3arrow.style.top = "-3px";
+        spec1row3col3arrow.style.left = "19px";
+        spec1row3col3arrow.style.zIndex += 1;
+        arrowArray.push(spec1row3col3div, spec1row3col3arrow);
+
+    //Build spec1row3col4 EMPTY
+    spec1row3col4.style.display = "none";
+
+    //Build spec1row4col1 Grim Reach
+    spec1row4col1.style.display = "block";
+    spec1row4col1.style.backgroundImage = "url('../images/spell icons/warlock/talents/grim_reach.jpg')";
+    spec1row4col1.style.backgroundRepeat = "no-repeat";
+    spec1row4col1.style.backgroundSize = "34px 34px";
+    spec1row4col1.style.backgroundPosition = "center center";
+    spec1row4col1.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row4col1icon');
+        addSpellId.setAttribute('data-spellId', 'grim_reach');
+    
+    //Build spec1row4col2 Nightfall
+    spec1row4col2.style.display = "block";
+    spec1row4col2.style.backgroundImage = "url('../images/spell icons/warlock/talents/nightfall.jpg')";
+    spec1row4col2.style.backgroundRepeat = "no-repeat";
+    spec1row4col2.style.backgroundSize = "34px 34px";
+    spec1row4col2.style.backgroundPosition = "center center";
+    spec1row4col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row4col2icon');
+        addSpellId.setAttribute('data-spellId', 'nightfall');
+
+    //Build spec1row4col3 EMPTY
+    spec1row4col3.style.display = "none";
+
+    //Build spec1row4col4 Improved Drain Mana
+    spec1row4col4.style.display = "block";
+    spec1row4col4.style.backgroundImage = "url('../images/spell icons/warlock/talents/improved_drain_mana.jpg')";
+    spec1row4col4.style.backgroundRepeat = "no-repeat";
+    spec1row4col4.style.backgroundSize = "34px 34px";
+    spec1row4col4.style.backgroundPosition = "center center";
+    spec1row4col4.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row4col4icon');
+        addSpellId.setAttribute('data-spellId', 'improved_drain_mana');
+
+    //Build spec1row5col1 EMPTY
+    spec1row5col1.style.display = "none";
+
+    //Build spec1row5col2 Siphon Life
+    spec1row5col2.style.display = "block";
+    spec1row5col2.style.backgroundImage = "url('../images/spell icons/warlock/talents/siphon_life.jpg')";
+    spec1row5col2.style.backgroundRepeat = "no-repeat";
+    spec1row5col2.style.backgroundSize = "34px 34px";
+    spec1row5col2.style.backgroundPosition = "center center";
+    spec1row5col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row5col2icon');
+        addSpellId.setAttribute('data-spellId', 'siphon_life');
+        //Build arrow
+        var spec1row5col2div = document.createElement('div');
+        spec1row5col2div.style.maxHeight = "0px";
+        spec1row5col2div.style.position = "absolute";
+        spec1row5col2div.id = "spec1row5col2div";
+        document.getElementById('spec1row5col2').appendChild(spec1row5col2div);
+        var spec1row5col2arrow = document.createElement('img');
+        spec1row5col2arrow.src = '../images/table elements/arrow_direct_down.png';
+        document.getElementById('spec1row5col2div').appendChild(spec1row5col2arrow);
+        spec1row5col2arrow.style.position = "relative";
+        spec1row5col2arrow.style.top = "-3px";
+        spec1row5col2arrow.style.left = "19px";
+        spec1row5col2arrow.style.zIndex += 1;
+        arrowArray.push(spec1row5col2div, spec1row5col2arrow);
+
+    //Build spec1row5col3 Curse of Exhaustion
+    spec1row5col3.style.display = "block";
+    spec1row5col3.style.backgroundImage = "url('../images/spell icons/warlock/talents/curse_of_exhaustion.jpg')";
+    spec1row5col3.style.backgroundRepeat = "no-repeat";
+    spec1row5col3.style.backgroundSize = "34px 34px";
+    spec1row5col3.style.backgroundPosition = "center center";
+    spec1row5col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row5col3icon');
+        addSpellId.setAttribute('data-spellId', 'curse_of_exhaustion');
+        //Build arrow
+        var spec1row5col3div = document.createElement('div');
+        spec1row5col3div.style.maxHeight = "0px";
+        spec1row5col3div.style.position = "absolute";
+        spec1row5col3div.id = "spec1row5col3div";
+        document.getElementById('spec1row5col3').appendChild(spec1row5col3div);
+        var spec1row5col3arrow = document.createElement('img');
+        spec1row5col3arrow.src = '../images/table elements/arrow_direct_right.png';
+        document.getElementById('spec1row5col3div').appendChild(spec1row5col3arrow);
+        spec1row5col3arrow.style.position = "relative";
+        spec1row5col3arrow.style.top = "-31px";
+        spec1row5col3arrow.style.left = "43px";
+        spec1row5col3arrow.style.zIndex += 1;
+        arrowArray.push(spec1row5col3div, spec1row5col3arrow);
+
+    //Build spec1row5col4 Improved Curse of Exhaustion
+    spec1row5col4.style.display = "block";
+    spec1row5col4.style.backgroundImage = "url('../images/spell icons/warlock/talents/improved_curse_of_exhaustion.jpg')";
+    spec1row5col4.style.backgroundRepeat = "no-repeat";
+    spec1row5col4.style.backgroundSize = "34px 34px";
+    spec1row5col4.style.backgroundPosition = "center center";
+    spec1row5col4.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row5col4icon');
+        addSpellId.setAttribute('data-spellId', 'improved_curse_of_exhaustion');
+
+    //Build spec1row6col1 EMPTY
+    spec1row6col1.style.display = "none";
+
+    //Build spec1row6col2 Shadow Mastery
+    spec1row6col2.style.display = "block";
+    spec1row6col2.style.backgroundImage = "url('../images/spell icons/warlock/talents/shadow_mastery.jpg')";
+    spec1row6col2.style.backgroundRepeat = "no-repeat";
+    spec1row6col2.style.backgroundSize = "34px 34px";
+    spec1row6col2.style.backgroundPosition = "center center";
+    spec1row6col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row6col2icon');
+        addSpellId.setAttribute('data-spellId', 'shadow_mastery');
+
+    //Build spec1row6col3 EMPTY
+    spec1row6col3.style.display = "none";
+
+    //Build spec1row6col4 EMPTY
+    spec1row6col4.style.display = "none";
+
+    //Build spec1row7col1 EMPTY
+    spec1row7col1.style.display = "none";
+
+    //Build spec1row7col2 Dark Pact
+    spec1row7col2.style.display = "block";
+    spec1row7col2.style.backgroundImage = "url('../images/spell icons/warlock/talents/dark_pact.jpg')";
+    spec1row7col2.style.backgroundRepeat = "no-repeat";
+    spec1row7col2.style.backgroundSize = "34px 34px";
+    spec1row7col2.style.backgroundPosition = "center center";
+    spec1row7col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row7col2icon');
+        addSpellId.setAttribute('data-spellId', 'dark_pact');
+
+    //Build spec1row7col3 EMPTY
+    spec1row7col3.style.display = "none";
+
+    //Build spec1row7col4 EMPTY
+    spec1row7col4.style.display = "none";
 
 }
 
