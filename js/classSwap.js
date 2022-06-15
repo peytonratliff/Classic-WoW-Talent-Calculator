@@ -6531,6 +6531,9 @@ function buildWarlock(){
         var addSpellId = document.getElementById('spec2row7col3icon');
         addSpellId.setAttribute('data-spellId', 'improved_spellstone');
 
+    //Build spec2row7col4 EMPTY
+    spec2row7col4.style.display = "none";
+
     //Build spec3 Destruction
     //Build spec3row1col1 EMPTY
     spec3row1col1.style.display = "none";
@@ -6789,6 +6792,658 @@ function buildWarlock(){
 }
 
 function buildWarrior(){
+    removeArrows(); //Arrows are built every time a new class is selected. The removeArrows() function clears the arrows from the previous selection
+
+    var spec1row1col1 = document.getElementById("spec1row1col1icon");
+    var spec1row1col2 = document.getElementById("spec1row1col2icon");
+    var spec1row1col3 = document.getElementById("spec1row1col3icon");
+    var spec1row1col4 = document.getElementById("spec1row1col4icon");
+    var spec1row2col1 = document.getElementById("spec1row2col1icon");
+    var spec1row2col2 = document.getElementById("spec1row2col2icon");
+    var spec1row2col3 = document.getElementById("spec1row2col3icon");
+    var spec1row2col4 = document.getElementById("spec1row2col4icon");
+    var spec1row3col1 = document.getElementById("spec1row3col1icon");
+    var spec1row3col2 = document.getElementById("spec1row3col2icon");
+    var spec1row3col3 = document.getElementById("spec1row3col3icon");
+    var spec1row3col4 = document.getElementById("spec1row3col4icon");
+    var spec1row4col1 = document.getElementById("spec1row4col1icon");
+    var spec1row4col2 = document.getElementById("spec1row4col2icon");
+    var spec1row4col3 = document.getElementById("spec1row4col3icon");
+    var spec1row4col4 = document.getElementById("spec1row4col4icon");
+    var spec1row5col1 = document.getElementById("spec1row5col1icon");
+    var spec1row5col2 = document.getElementById("spec1row5col2icon");
+    var spec1row5col3 = document.getElementById("spec1row5col3icon");
+    var spec1row5col4 = document.getElementById("spec1row5col4icon");
+    var spec1row6col1 = document.getElementById("spec1row6col1icon");
+    var spec1row6col2 = document.getElementById("spec1row6col2icon");
+    var spec1row6col3 = document.getElementById("spec1row6col3icon");
+    var spec1row6col4 = document.getElementById("spec1row6col4icon");
+    var spec1row7col1 = document.getElementById("spec1row7col1icon");
+    var spec1row7col2 = document.getElementById("spec1row7col2icon");
+    var spec1row7col3 = document.getElementById("spec1row7col3icon");
+    var spec1row7col4 = document.getElementById("spec1row7col4icon");
+
+    var spec2row1col1 = document.getElementById("spec2row1col1icon");
+    var spec2row1col2 = document.getElementById("spec2row1col2icon");
+    var spec2row1col3 = document.getElementById("spec2row1col3icon");
+    var spec2row1col4 = document.getElementById("spec2row1col4icon");
+    var spec2row2col1 = document.getElementById("spec2row2col1icon");
+    var spec2row2col2 = document.getElementById("spec2row2col2icon");
+    var spec2row2col3 = document.getElementById("spec2row2col3icon");
+    var spec2row2col4 = document.getElementById("spec2row2col4icon");
+    var spec2row3col1 = document.getElementById("spec2row3col1icon");
+    var spec2row3col2 = document.getElementById("spec2row3col2icon");
+    var spec2row3col3 = document.getElementById("spec2row3col3icon");
+    var spec2row3col4 = document.getElementById("spec2row3col4icon");
+    var spec2row4col1 = document.getElementById("spec2row4col1icon");
+    var spec2row4col2 = document.getElementById("spec2row4col2icon");
+    var spec2row4col3 = document.getElementById("spec2row4col3icon");
+    var spec2row4col4 = document.getElementById("spec2row4col4icon");
+    var spec2row5col1 = document.getElementById("spec2row5col1icon");
+    var spec2row5col2 = document.getElementById("spec2row5col2icon");
+    var spec2row5col3 = document.getElementById("spec2row5col3icon");
+    var spec2row5col4 = document.getElementById("spec2row5col4icon");
+    var spec2row6col1 = document.getElementById("spec2row6col1icon");
+    var spec2row6col2 = document.getElementById("spec2row6col2icon");
+    var spec2row6col3 = document.getElementById("spec2row6col3icon");
+    var spec2row6col4 = document.getElementById("spec2row6col4icon");
+    var spec2row7col1 = document.getElementById("spec2row7col1icon");
+    var spec2row7col2 = document.getElementById("spec2row7col2icon");
+    var spec2row7col3 = document.getElementById("spec2row7col3icon");
+    var spec2row7col4 = document.getElementById("spec2row7col4icon");
+
+    var spec3row1col1 = document.getElementById("spec3row1col1icon");
+    var spec3row1col2 = document.getElementById("spec3row1col2icon");
+    var spec3row1col3 = document.getElementById("spec3row1col3icon");
+    var spec3row1col4 = document.getElementById("spec3row1col4icon");
+    var spec3row2col1 = document.getElementById("spec3row2col1icon");
+    var spec3row2col2 = document.getElementById("spec3row2col2icon");
+    var spec3row2col3 = document.getElementById("spec3row2col3icon");
+    var spec3row2col4 = document.getElementById("spec3row2col4icon");
+    var spec3row3col1 = document.getElementById("spec3row3col1icon");
+    var spec3row3col2 = document.getElementById("spec3row3col2icon");
+    var spec3row3col3 = document.getElementById("spec3row3col3icon");
+    var spec3row3col4 = document.getElementById("spec3row3col4icon");
+    var spec3row4col1 = document.getElementById("spec3row4col1icon");
+    var spec3row4col2 = document.getElementById("spec3row4col2icon");
+    var spec3row4col3 = document.getElementById("spec3row4col3icon");
+    var spec3row4col4 = document.getElementById("spec3row4col4icon");
+    var spec3row5col1 = document.getElementById("spec3row5col1icon");
+    var spec3row5col2 = document.getElementById("spec3row5col2icon");
+    var spec3row5col3 = document.getElementById("spec3row5col3icon");
+    var spec3row5col4 = document.getElementById("spec3row5col4icon");
+    var spec3row6col1 = document.getElementById("spec3row6col1icon");
+    var spec3row6col2 = document.getElementById("spec3row6col2icon");
+    var spec3row6col3 = document.getElementById("spec3row6col3icon");
+    var spec3row6col4 = document.getElementById("spec3row6col4icon");
+    var spec3row7col1 = document.getElementById("spec3row7col1icon");
+    var spec3row7col2 = document.getElementById("spec3row7col2icon");
+    var spec3row7col3 = document.getElementById("spec3row7col3icon");
+    var spec3row7col4 = document.getElementById("spec3row7col4icon");
+
+    //Build specBar
+    var spec1icon = document.getElementById("spec1icon");
+    var spec2icon = document.getElementById("spec2icon");
+    var spec3icon = document.getElementById("spec3icon");
+    var spec1name = document.getElementById("spec1name");
+    var spec2name = document.getElementById("spec2name");
+    var spec3name = document.getElementById("spec3name");
+    specBar.style.display = "block";
+    spec1icon.style.backgroundImage = "url('../images/class icons/spec icons/warrior/arms.jpg')";
+        spec1icon.style.backgroundRepeat = "no-repeat";
+        spec1icon.style.backgroundSize = "34px 34px";
+        spec1icon.style.backgroundPosition = "left 5px top 10px";
+        spec1icon.style.width = "44px";
+        spec1icon.style.height = "44px";
+    spec2icon.style.backgroundImage = "url('../images/class icons/spec icons/warrior/fury.jpg')";
+        spec2icon.style.backgroundRepeat = "no-repeat";
+        spec2icon.style.backgroundSize = "34px 34px";
+        spec2icon.style.backgroundPosition = "left 5px top 10px";
+        spec2icon.style.width = "44px";
+        spec2icon.style.height = "44px";
+    spec3icon.style.backgroundImage = "url('../images/class icons/spec icons/warrior/protection.jpg')";
+        spec3icon.style.backgroundRepeat = "no-repeat";
+        spec3icon.style.backgroundSize = "34px 34px";
+        spec3icon.style.backgroundPosition = "left 5px top 10px";
+        spec1icon.style.width = "44px";
+        spec1icon.style.height = "44px";
+    spec1name.innerHTML = "Arms";
+    spec2name.innerHTML = "Fury";
+    spec3name.innerHTML = "Protection";
+
+    //Build spec1 Arms
+    //Build spec1row1col1 Improved Heroic Strike
+    spec1row1col1.style.display = "block";
+    spec1row1col1.style.backgroundImage = "url('../images/spell icons/warrior/talents/improved_heroic_strike.jpg')";
+    spec1row1col1.style.backgroundRepeat = "no-repeat";
+    spec1row1col1.style.backgroundSize = "34px 34px";
+    spec1row1col1.style.backgroundPosition = "center center";
+    spec1row1col1.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row1col1icon');
+        addSpellId.setAttribute('data-spellId', 'improved_heroic_strike');
+
+    //Build spec1row1col2 Deflection
+    spec1row1col2.style.display = "block";
+    spec1row1col2.style.backgroundImage = "url('../images/spell icons/warrior/talents/deflection.jpg')";
+    spec1row1col2.style.backgroundRepeat = "no-repeat";
+    spec1row1col2.style.backgroundSize = "34px 34px";
+    spec1row1col2.style.backgroundPosition = "center center";
+    spec1row1col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row1col2icon');
+        addSpellId.setAttribute('data-spellId', 'deflection');
+
+    //Build spec1row1col3 Improved Rend
+    spec1row1col3.style.display = "block";
+    spec1row1col3.style.backgroundImage = "url('../images/spell icons/warrior/talents/improved_rend.jpg')";
+    spec1row1col3.style.backgroundRepeat = "no-repeat";
+    spec1row1col3.style.backgroundSize = "34px 34px";
+    spec1row1col3.style.backgroundPosition = "center center";
+    spec1row1col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row1col3icon');
+        addSpellId.setAttribute('data-spellId', 'improved_rend');
+        //Build arrow
+        var spec1row1col3div = document.createElement('div');
+        spec1row1col3div.style.maxHeight = "0px";
+        spec1row1col3div.style.position = "absolute";
+        spec1row1col3div.id = "spec1row1col3div";
+        document.getElementById('spec1row1col3').appendChild(spec1row1col3div);
+        var spec1row1col3arrow = document.createElement('img');
+        spec1row1col3arrow.src = '../images/table elements/arrow_skip1_down.png';
+        document.getElementById('spec1row1col3div').appendChild(spec1row1col3arrow);
+        spec1row1col3arrow.style.position = "relative";
+        spec1row1col3arrow.style.top = "-3px";
+        spec1row1col3arrow.style.left = "19px";
+        spec1row1col3arrow.style.zIndex += 1;
+        arrowArray.push(spec1row1col3div, spec1row1col3arrow);
+
+    //Build spec1row1col4 EMPTY
+    spec1row1col4.style.display = "none";
+
+    //Build spec1row2col1 Improved Charge
+    spec1row2col1.style.display = "block";
+    spec1row2col1.style.backgroundImage = "url('../images/spell icons/warrior/talents/improved_charge.jpg')";
+    spec1row2col1.style.backgroundRepeat = "no-repeat";
+    spec1row2col1.style.backgroundSize = "34px 34px";
+    spec1row2col1.style.backgroundPosition = "center center";
+    spec1row2col1.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row2col1icon');
+        addSpellId.setAttribute('data-spellId', 'improved_charge');
+
+    //Build spec1row2col2 Tactical Mastery
+    spec1row2col2.style.display = "block";
+    spec1row2col2.style.backgroundImage = "url('../images/spell icons/warrior/talents/tactical_mastery.jpg')";
+    spec1row2col2.style.backgroundRepeat = "no-repeat";
+    spec1row2col2.style.backgroundSize = "34px 34px";
+    spec1row2col2.style.backgroundPosition = "center center";
+    spec1row2col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row2col2icon');
+        addSpellId.setAttribute('data-spellId', 'tactical_mastery');
+        //Build arrow
+        var spec1row2col2div = document.createElement('div');
+        spec1row2col2div.style.maxHeight = "0px";
+        spec1row2col2div.style.position = "absolute";
+        spec1row2col2div.id = "spec1row2col2div";
+        document.getElementById('spec1row2col2').appendChild(spec1row2col2div);
+        var spec1row2col2arrow = document.createElement('img');
+        spec1row2col2arrow.src = '../images/table elements/arrow_direct_down.png';
+        document.getElementById('spec1row2col2div').appendChild(spec1row2col2arrow);
+        spec1row2col2arrow.style.position = "relative";
+        spec1row2col2arrow.style.top = "-3px";
+        spec1row2col2arrow.style.left = "19px";
+        spec1row2col2arrow.style.zIndex += 1;
+        arrowArray.push(spec1row2col2div, spec1row2col2arrow);
+
+    //Build spec1row2col3 EMPTY
+    spec1row2col3.style.display = "none";
+
+    //Build spec1row2col4 Improved Thunder Clap
+    spec1row2col4.style.display = "block";
+    spec1row2col4.style.backgroundImage = "url('../images/spell icons/warrior/talents/improved_thunder_clap.jpg')";
+    spec1row2col4.style.backgroundRepeat = "no-repeat";
+    spec1row2col4.style.backgroundSize = "34px 34px";
+    spec1row2col4.style.backgroundPosition = "center center";
+    spec1row2col4.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row2col4icon');
+        addSpellId.setAttribute('data-spellId', 'improved_thunder_clap');
+
+    //Build spec1row3col1 Improved Overpower
+    spec1row3col1.style.display = "block";
+    spec1row3col1.style.backgroundImage = "url('../images/spell icons/warrior/talents/improved_overpower.jpg')";
+    spec1row3col1.style.backgroundRepeat = "no-repeat";
+    spec1row3col1.style.backgroundSize = "34px 34px";
+    spec1row3col1.style.backgroundPosition = "center center";
+    spec1row3col1.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row3col1icon');
+        addSpellId.setAttribute('data-spellId', 'improved_overpower');
+
+    //Build spec1row3col2 Anger Management
+    spec1row3col2.style.display = "block";
+    spec1row3col2.style.backgroundImage = "url('../images/spell icons/warrior/talents/anger_management.jpg')";
+    spec1row3col2.style.backgroundRepeat = "no-repeat";
+    spec1row3col2.style.backgroundSize = "34px 34px";
+    spec1row3col2.style.backgroundPosition = "center center";
+    spec1row3col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row3col2icon');
+        addSpellId.setAttribute('data-spellId', 'anger_management');
+
+    //Build spec1row3col3 Deep Wounds
+    spec1row3col3.style.display = "block";
+    spec1row3col3.style.backgroundImage = "url('../images/spell icons/warrior/talents/deep_wounds.jpg')";
+    spec1row3col3.style.backgroundRepeat = "no-repeat";
+    spec1row3col3.style.backgroundSize = "34px 34px";
+    spec1row3col3.style.backgroundPosition = "center center";
+    spec1row3col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row3col3icon');
+        addSpellId.setAttribute('data-spellId', 'deep_wounds');
+        //Build arrow
+        var spec1row3col3div = document.createElement('div');
+        spec1row3col3div.style.maxHeight = "0px";
+        spec1row3col3div.style.position = "absolute";
+        spec1row3col3div.id = "spec1row3col3div";
+        document.getElementById('spec1row3col3').appendChild(spec1row3col3div);
+        var spec1row3col3arrow = document.createElement('img');
+        spec1row3col3arrow.src = '../images/table elements/arrow_direct_down.png';
+        document.getElementById('spec1row3col3div').appendChild(spec1row3col3arrow);
+        spec1row3col3arrow.style.position = "relative";
+        spec1row3col3arrow.style.top = "-3px";
+        spec1row3col3arrow.style.left = "19px";
+        spec1row3col3arrow.style.zIndex += 1;
+        arrowArray.push(spec1row3col3div, spec1row3col3arrow);
+
+    //Build spec1row3col4 EMPTY
+    spec1row3col4.style.display = "none";
+
+    //Build spec1row4col1 EMPTY
+    spec1row4col1.style.display = "none";
+
+    //Build spec1row4col2 Two-Handed Weapon Specialization
+    spec1row4col2.style.display = "block";
+    spec1row4col2.style.backgroundImage = "url('../images/spell icons/warrior/talents/two_handed_weapon_specialization.jpg')";
+    spec1row4col2.style.backgroundRepeat = "no-repeat";
+    spec1row4col2.style.backgroundSize = "34px 34px";
+    spec1row4col2.style.backgroundPosition = "center center";
+    spec1row4col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row4col2icon');
+        addSpellId.setAttribute('data-spellId', 'two_handed_weapon_specialization');
+
+    //Build spec1row4col3 Impale
+    spec1row4col3.style.display = "block";
+    spec1row4col3.style.backgroundImage = "url('../images/spell icons/warrior/talents/impale.jpg')";
+    spec1row4col3.style.backgroundRepeat = "no-repeat";
+    spec1row4col3.style.backgroundSize = "34px 34px";
+    spec1row4col3.style.backgroundPosition = "center center";
+    spec1row4col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row4col3icon');
+        addSpellId.setAttribute('data-spellId', 'impale');
+
+    //Build spec1row4col4 EMPTY
+    spec1row4col4.style.display = "none";
+
+    //Build spec1row5col1 Axe Specialization
+    spec1row5col1.style.display = "block";
+    spec1row5col1.style.backgroundImage = "url('../images/spell icons/warrior/talents/axe_specialization.jpg')";
+    spec1row5col1.style.backgroundRepeat = "no-repeat";
+    spec1row5col1.style.backgroundSize = "34px 34px";
+    spec1row5col1.style.backgroundPosition = "center center";
+    spec1row5col1.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row5col1icon');
+        addSpellId.setAttribute('data-spellId', 'axe_specialization');
+
+    //Build spec1row5col2 Sweeping Strikes
+    spec1row5col2.style.display = "block";
+    spec1row5col2.style.backgroundImage = "url('../images/spell icons/warrior/talents/sweeping_strikes.jpg')";
+    spec1row5col2.style.backgroundRepeat = "no-repeat";
+    spec1row5col2.style.backgroundSize = "34px 34px";
+    spec1row5col2.style.backgroundPosition = "center center";
+    spec1row5col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row5col2icon');
+        addSpellId.setAttribute('data-spellId', 'sweeping_strikes');
+        //Build arrow
+        var spec1row5col2div = document.createElement('div');
+        spec1row5col2div.style.maxHeight = "0px";
+        spec1row5col2div.style.position = "absolute";
+        spec1row5col2div.id = "spec1row5col2div";
+        document.getElementById('spec1row5col2').appendChild(spec1row5col2div);
+        var spec1row5col2arrow = document.createElement('img');
+        spec1row5col2arrow.src = '../images/table elements/arrow_skip1_down.png';
+        document.getElementById('spec1row5col2div').appendChild(spec1row5col2arrow);
+        spec1row5col2arrow.style.position = "relative";
+        spec1row5col2arrow.style.top = "-3px";
+        spec1row5col2arrow.style.left = "19px";
+        spec1row5col2arrow.style.zIndex += 1;
+        arrowArray.push(spec1row5col2div, spec1row5col2arrow);
+
+    //Build spec1row5col3 Mace Specialization
+    spec1row5col3.style.display = "block";
+    spec1row5col3.style.backgroundImage = "url('../images/spell icons/warrior/talents/mace_specialization.jpg')";
+    spec1row5col3.style.backgroundRepeat = "no-repeat";
+    spec1row5col3.style.backgroundSize = "34px 34px";
+    spec1row5col3.style.backgroundPosition = "center center";
+    spec1row5col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row5col3icon');
+        addSpellId.setAttribute('data-spellId', 'mace_specialization');
+
+    //Build spec1row5col4 Sword Specialization
+    spec1row5col4.style.display = "block";
+    spec1row5col4.style.backgroundImage = "url('../images/spell icons/warrior/talents/sword_specialization.jpg')";
+    spec1row5col4.style.backgroundRepeat = "no-repeat";
+    spec1row5col4.style.backgroundSize = "34px 34px";
+    spec1row5col4.style.backgroundPosition = "center center";
+    spec1row5col4.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row5col4icon');
+        addSpellId.setAttribute('data-spellId', 'sword_specialization');
+
+    //Build spec1row6col1 Polearm Specialization
+    spec1row6col1.style.display = "block";
+    spec1row6col1.style.backgroundImage = "url('../images/spell icons/warrior/talents/polearm_specialization.jpg')";
+    spec1row6col1.style.backgroundRepeat = "no-repeat";
+    spec1row6col1.style.backgroundSize = "34px 34px";
+    spec1row6col1.style.backgroundPosition = "center center";
+    spec1row6col1.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row6col1icon');
+        addSpellId.setAttribute('data-spellId', 'polearm_specialization');
+
+    //Build spec1row6col2 EMPTY
+    spec1row6col2.style.display = "none";
+
+    //Build spec1row6col3 Improved Hamstring
+    spec1row6col3.style.display = "block";
+    spec1row6col3.style.backgroundImage = "url('../images/spell icons/warrior/talents/improved_hamstring.jpg')";
+    spec1row6col3.style.backgroundRepeat = "no-repeat";
+    spec1row6col3.style.backgroundSize = "34px 34px";
+    spec1row6col3.style.backgroundPosition = "center center";
+    spec1row6col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row6col3icon');
+        addSpellId.setAttribute('data-spellId', 'improved_hamstring');
+
+    //Build spec1row6col4 EMPTY
+    spec1row6col4.style.display = "none";
+
+    //Build spec1row7col1 EMPTY
+    spec1row7col1.style.display = "none";
+
+    //Build spec1row7col2 Improved Hamstring
+    spec1row7col2.style.display = "block";
+    spec1row7col2.style.backgroundImage = "url('../images/spell icons/warrior/talents/improved_hamstring.jpg')";
+    spec1row7col2.style.backgroundRepeat = "no-repeat";
+    spec1row7col2.style.backgroundSize = "34px 34px";
+    spec1row7col2.style.backgroundPosition = "center center";
+    spec1row7col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec1row7col2icon');
+        addSpellId.setAttribute('data-spellId', 'improved_hamstring');
+
+    //Build spec1row7col3 EMPTY
+    spec1row7col3.style.display = "none";
+
+    //Build spec1row7col4 EMPTY
+    spec1row7col4.style.display = "none";
+
+    //Build spec2 Fury
+    //Build spec2row1col1 EMPTY
+    spec2row1col1.style.display = "none;"
+
+    //Build spec2row1col2 Booming Voice
+    spec2row1col2.style.display = "block";
+    spec2row1col2.style.backgroundImage = "url('../images/spell icons/warrior/talents/booming_voice.jpg')";
+    spec2row1col2.style.backgroundRepeat = "no-repeat";
+    spec2row1col2.style.backgroundSize = "34px 34px";
+    spec2row1col2.style.backgroundPosition = "center center";
+    spec2row1col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row1col2icon');
+        addSpellId.setAttribute('data-spellId', 'booming_voice');
+
+    //Build spec2row1col3 Cruelty
+    spec2row1col3.style.display = "block";
+    spec2row1col3.style.backgroundImage = "url('../images/spell icons/warrior/talents/cruelty.jpg')";
+    spec2row1col3.style.backgroundRepeat = "no-repeat";
+    spec2row1col3.style.backgroundSize = "34px 34px";
+    spec2row1col3.style.backgroundPosition = "center center";
+    spec2row1col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row1col3icon');
+        addSpellId.setAttribute('data-spellId', 'cruelty');
+
+    //Build spec2row1col4 EMPTY
+    spec2row1col4.style.display = "none";
+
+    //Build spec2row2col1 EMPTY
+    spec2row2col1.style.display = "none";
+
+    //Build spec2row2col2 Improved Demoralizing Shout
+    spec2row2col2.style.display = "block";
+    spec2row2col2.style.backgroundImage = "url('../images/spell icons/warrior/talents/improved_demoralizing_shout.jpg')";
+    spec2row2col2.style.backgroundRepeat = "no-repeat";
+    spec2row2col2.style.backgroundSize = "34px 34px";
+    spec2row2col2.style.backgroundPosition = "center center";
+    spec2row2col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row2col2icon');
+        addSpellId.setAttribute('data-spellId', 'improved_demoralizing_shout');
+
+    //Build spec2row2col3 Unbridled Wrath
+    spec2row2col3.style.display = "block";
+    spec2row2col3.style.backgroundImage = "url('../images/spell icons/warrior/talents/unbridled_wrath.jpg')";
+    spec2row2col3.style.backgroundRepeat = "no-repeat";
+    spec2row2col3.style.backgroundSize = "34px 34px";
+    spec2row2col3.style.backgroundPosition = "center center";
+    spec2row2col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row2col3icon');
+        addSpellId.setAttribute('data-spellId', 'unbridled_wrath');
+
+    //Build spec2row2col4 EMPTY
+    spec2row2col1.style.display = "none";
+
+    //Build spec2row3col1 Improved Cleave
+    spec2row3col1.style.display = "block";
+    spec2row3col1.style.backgroundImage = "url('../images/spell icons/warrior/talents/improved_cleave.jpg')";
+    spec2row3col1.style.backgroundRepeat = "no-repeat";
+    spec2row3col1.style.backgroundSize = "34px 34px";
+    spec2row3col1.style.backgroundPosition = "center center";
+    spec2row3col1.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row3col1icon');
+        addSpellId.setAttribute('data-spellId', 'improved_cleave');
+
+    //Build spec2row3col2 Piercing Howl
+    spec2row3col2.style.display = "block";
+    spec2row3col2.style.backgroundImage = "url('../images/spell icons/warrior/talents/piercing_howl.jpg')";
+    spec2row3col2.style.backgroundRepeat = "no-repeat";
+    spec2row3col2.style.backgroundSize = "34px 34px";
+    spec2row3col2.style.backgroundPosition = "center center";
+    spec2row3col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row3col2icon');
+        addSpellId.setAttribute('data-spellId', 'piercing_howl');
+
+    //Build spec2row3col3 Blood Craze
+    spec2row3col3.style.display = "block";
+    spec2row3col3.style.backgroundImage = "url('../images/spell icons/warrior/talents/blood_craze.jpg')";
+    spec2row3col3.style.backgroundRepeat = "no-repeat";
+    spec2row3col3.style.backgroundSize = "34px 34px";
+    spec2row3col3.style.backgroundPosition = "center center";
+    spec2row3col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row3col3icon');
+        addSpellId.setAttribute('data-spellId', 'blood_craze');
+
+    //Build spec2row3col4 Improved Battle Shout
+    spec2row3col4.style.display = "block";
+    spec2row3col4.style.backgroundImage = "url('../images/spell icons/warrior/talents/improved_battle_shout.jpg')";
+    spec2row3col4.style.backgroundRepeat = "no-repeat";
+    spec2row3col4.style.backgroundSize = "34px 34px";
+    spec2row3col4.style.backgroundPosition = "center center";
+    spec2row3col4.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row3col4icon');
+        addSpellId.setAttribute('data-spellId', 'blood_craze');
+
+    //Build spec2row4col1 Dual Wield Specialization
+    spec2row4col1.style.display = "block";
+    spec2row4col1.style.backgroundImage = "url('../images/spell icons/warrior/talents/dual_wield_specialization.jpg')";
+    spec2row4col1.style.backgroundRepeat = "no-repeat";
+    spec2row4col1.style.backgroundSize = "34px 34px";
+    spec2row4col1.style.backgroundPosition = "center center";
+    spec2row4col1.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row4col1icon');
+        addSpellId.setAttribute('data-spellId', 'dual_wield_specialization');
+
+    //Build spec2row4col2 Improved Execute
+    spec2row4col2.style.display = "block";
+    spec2row4col2.style.backgroundImage = "url('../images/spell icons/warrior/talents/improved_execute.jpg')";
+    spec2row4col2.style.backgroundRepeat = "no-repeat";
+    spec2row4col2.style.backgroundSize = "34px 34px";
+    spec2row4col2.style.backgroundPosition = "center center";
+    spec2row4col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row4col2icon');
+        addSpellId.setAttribute('data-spellId', 'improved_execute');
+
+    //Build spec2row4col3 Enrage
+    spec2row4col3.style.display = "block";
+    spec2row4col3.style.backgroundImage = "url('../images/spell icons/warrior/talents/enrage.jpg')";
+    spec2row4col3.style.backgroundRepeat = "no-repeat";
+    spec2row4col3.style.backgroundSize = "34px 34px";
+    spec2row4col3.style.backgroundPosition = "center center";
+    spec2row4col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row4col3icon');
+        addSpellId.setAttribute('data-spellId', 'enrage');
+        //Build arrow
+        var spec2row4col3div = document.createElement('div');
+        spec2row4col3div.style.maxHeight = "0px";
+        spec2row4col3div.style.position = "absolute";
+        spec2row4col3div.id = "spec2row4col3div";
+        document.getElementById('spec2row4col3').appendChild(spec2row4col3div);
+        var spec2row4col3arrow = document.createElement('img');
+        spec2row4col3arrow.src = '../images/table elements/arrow_skip1_down.png';
+        document.getElementById('spec2row4col3div').appendChild(spec2row4col3arrow);
+        spec2row4col3arrow.style.position = "relative";
+        spec2row4col3arrow.style.top = "-3px";
+        spec2row4col3arrow.style.left = "19px";
+        spec2row4col3arrow.style.zIndex += 1;
+        arrowArray.push(spec2row4col3div, spec2row4col3arrow);
+
+    //Build spec2row4col4 EMPTY
+    spec2row4col4.style.display = "none";
+
+    //Build spec2row5col1 Improved Slam
+    spec2row5col1.style.display = "block";
+    spec2row5col1.style.backgroundImage = "url('../images/spell icons/warrior/talents/improved_slam.jpg')";
+    spec2row5col1.style.backgroundRepeat = "no-repeat";
+    spec2row5col1.style.backgroundSize = "34px 34px";
+    spec2row5col1.style.backgroundPosition = "center center";
+    spec2row5col1.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row5col1icon');
+        addSpellId.setAttribute('data-spellId', 'improved_slam');
+
+    //Build spec2row5col2 Death Wish
+    spec2row5col2.style.display = "block";
+    spec2row5col2.style.backgroundImage = "url('../images/spell icons/warrior/talents/death_wish.jpg')";
+    spec2row5col2.style.backgroundRepeat = "no-repeat";
+    spec2row5col2.style.backgroundSize = "34px 34px";
+    spec2row5col2.style.backgroundPosition = "center center";
+    spec2row5col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row5col2icon');
+        addSpellId.setAttribute('data-spellId', 'death_wish');
+        //Build arrow
+        var spec2row5col2div = document.createElement('div');
+        spec2row5col2div.style.maxHeight = "0px";
+        spec2row5col2div.style.position = "absolute";
+        spec2row5col2div.id = "spec2row5col2div";
+        document.getElementById('spec2row5col2').appendChild(spec2row5col2div);
+        var spec2row5col2arrow = document.createElement('img');
+        spec2row5col2arrow.src = '../images/table elements/arrow_skip1_down.png';
+        document.getElementById('spec2row5col2div').appendChild(spec2row5col2arrow);
+        spec2row5col2arrow.style.position = "relative";
+        spec2row5col2arrow.style.top = "-3px";
+        spec2row5col2arrow.style.left = "19px";
+        spec2row5col2arrow.style.zIndex += 1;
+        arrowArray.push(spec2row5col2div, spec2row5col2arrow);
+
+    //Build spec2row5col3 EMPTY
+    spec2row5col3.style.display = "none";
+
+    //Build spec2row5col4 Death Wish
+    spec2row5col4.style.display = "block";
+    spec2row5col4.style.backgroundImage = "url('../images/spell icons/warrior/talents/death_wish.jpg')";
+    spec2row5col4.style.backgroundRepeat = "no-repeat";
+    spec2row5col4.style.backgroundSize = "34px 34px";
+    spec2row5col4.style.backgroundPosition = "center center";
+    spec2row5col4.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row5col4icon');
+        addSpellId.setAttribute('data-spellId', 'death_wish');
+
+    //Build spec2row6col1 Improved Berserker Rage
+    spec2row6col1.style.display = "block";
+    spec2row6col1.style.backgroundImage = "url('../images/spell icons/warrior/talents/improved_berserker_rage.jpg')";
+    spec2row6col1.style.backgroundRepeat = "no-repeat";
+    spec2row6col1.style.backgroundSize = "34px 34px";
+    spec2row6col1.style.backgroundPosition = "center center";
+    spec2row6col1.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row6col1icon');
+        addSpellId.setAttribute('data-spellId', 'improved_berserker_rage');
+
+    //Build spec2row6col2 EMPTY
+    spec2row6col2.style.display = "none";
+
+    //Build spec2row6col3 Flurry
+    spec2row6col3.style.display = "block";
+    spec2row6col3.style.backgroundImage = "url('../images/spell icons/warrior/talents/flurry.jpg')";
+    spec2row6col3.style.backgroundRepeat = "no-repeat";
+    spec2row6col3.style.backgroundSize = "34px 34px";
+    spec2row6col3.style.backgroundPosition = "center center";
+    spec2row6col3.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row6col3icon');
+        addSpellId.setAttribute('data-spellId', 'flurry');
+
+    //Build spec2row6col4 EMPTY
+    spec2row6col4.style.display = "none";
+
+    //Build spec2row7col1 EMPTY
+    spec2row7col1.style.display = "none";
+
+    //Build spec2row7col2 Bloodthirst
+    spec2row7col2.style.display = "block";
+    spec2row7col2.style.backgroundImage = "url('../images/spell icons/warrior/talents/bloodthirst.jpg')";
+    spec2row7col2.style.backgroundRepeat = "no-repeat";
+    spec2row7col2.style.backgroundSize = "34px 34px";
+    spec2row7col2.style.backgroundPosition = "center center";
+    spec2row7col2.style.filter = "grayscale(100%)";
+        //Define Tooltip
+        var addSpellId = document.getElementById('spec2row7col2icon');
+        addSpellId.setAttribute('data-spellId', 'bloodthirst');
+
+    //Build spec2row7col3 EMPTY
+    spec2row7col3.style.display = "none";
+
+    //Build spec2row7col4 EMPTY
+    spec2row7col4.style.display = "none";
 
 }
 
