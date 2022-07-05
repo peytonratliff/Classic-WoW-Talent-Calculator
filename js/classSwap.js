@@ -846,6 +846,8 @@ function buildDruid(){
 
     //Build spec3row7col4 EMPTY
     spec3row7col4.style.display = "none";
+
+    calculator("druid");
 }
 
 function buildHunter(){
@@ -1674,6 +1676,8 @@ function buildHunter(){
 
     //Build spec3row7col4 EMPTY
     spec3row7col4.style.display = "none";
+
+    calculator("hunter");
 }
 
 function buildMage(){
@@ -2540,6 +2544,8 @@ function buildMage(){
 
     //Build spec3row7col4 Empty
     spec3row7col4.style.display = "none";
+
+    calculator("mage");
 }
 
 function buildPaladin(){
@@ -3338,6 +3344,8 @@ function buildPaladin(){
 
     //Build spec3row7col4 Empty
     spec3row7col4.style.display = "none";
+
+    calculator("paladin");
 }
 
 function buildPriest(){
@@ -4188,6 +4196,8 @@ function buildPriest(){
 
     //Build spec3row7col4 EMPTY
     spec3row7col4.style.display = "none";
+
+    calculator("priest");
 }
 
 function buildRogue(){
@@ -5070,6 +5080,8 @@ function buildRogue(){
 
     //Build spec3row7col4 EMPTY
     spec3row7col4.style.display = "none";
+
+    calculator("rogue");
 }
 
 function buildShaman(){
@@ -5884,6 +5896,8 @@ function buildShaman(){
 
     //Build spec3row7col4 EMPTY
     spec3row7col4.style.display = "none";
+
+    calculator("shaman");
 }
 
 function buildWarlock(){
@@ -6786,6 +6800,8 @@ function buildWarlock(){
 
     //Build spec3row7col4 EMPTY
     spec3row7col4.style.display = "none";
+
+    calculator("warlock");
 }
 
 function buildWarrior(){
@@ -7701,6 +7717,8 @@ function buildWarrior(){
 
     //Build spec3row7col4 Empty
     spec3row7col4.style.display = "none";
+
+    calculator("warrior");
 }
 
 function removeArrows(){

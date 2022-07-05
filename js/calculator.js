@@ -74,3 +74,41 @@ function populate(elementId){
     }
 
 }
+
+function calculator(sourceClass){
+    if(sourceClass == "druid"){
+        window.alert("Initialize calc (" + sourceClass + ").");
+    }
+    
+    if(sourceClass == "hunter"){
+        window.alert("Initialize calc (" + sourceClass + ").");
+    }
+
+    if(sourceClass == "mage"){
+        window.alert("Initialize calc (" + sourceClass + ").");
+    }
+
+    if(sourceClass == "paladin"){
+        window.alert("Initialize calc (" + sourceClass + ").");
+    }
+
+    if(sourceClass == "priest"){
+        window.alert("Initialize calc (" + sourceClass + ").");
+    }
+
+    if(sourceClass == "rogue"){
+        window.alert("Initialize calc (" + sourceClass + ").");
+    }
+
+    if(sourceClass == "shaman"){
+        window.alert("Initialize calc (" + sourceClass + ").");
+    }
+
+    if(sourceClass == "warlock"){
+        window.alert("Initialize calc (" + sourceClass + ").");
+    }
+
+    if(sourceClass == "warrior"){
+        window.alert("Initialize calc (" + sourceClass + ").");
+    }
+}
