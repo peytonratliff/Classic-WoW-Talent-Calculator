@@ -7264,7 +7264,7 @@ function buildWarrior(){
         addSpellId.setAttribute('data-spellId', 'unbridled_wrath');
 
     //Build spec2row2col4 EMPTY
-    spec2row2col1.style.display = "none";
+    spec2row2col4.style.display = "none";
 
     //Build spec2row3col1 Improved Cleave
     spec2row3col1.style.display = "block";
@@ -7677,6 +7677,9 @@ function buildWarrior(){
         //Define Tooltip
         var addSpellId = document.getElementById('spec3row5col3icon');
         addSpellId.setAttribute('data-spellId', 'improved_shield_bash');
+
+    //Build spec3row5col4 Empty
+    spec3row5col4.style.display = "none";
 
     //Build spec3row6col1 Empty
     spec3row6col1.style.display = "none";
